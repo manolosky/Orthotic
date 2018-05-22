@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Orthotic RX</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0">
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500italic,500,700,900,700italic,900italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="libs/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css"/>
+
+        <link rel="stylesheet" href="css/main.css">
+
+        <!-- media-queries.js (fallback) -->
+        <!--[if lt IE 9]>
+            <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <![endif]-->
+
+        <!--[if lt IE 9]>
+            <script src="dist/html5shiv.js"></script>
+        <![endif]-->
+
+    </head>
+    <body>
+
+        
+        <div class="container mb-5">
+            <div class="col-12">            
+                <div class="row justify-content-md-center">
+                    <div class="col-12 col-md-6 col-xl-4 mt-3">
+                        <img src="images/logo.png" alt="" class="">
+                    </div>
+                </div>
+                <div class="row justify-content-md-center">
+                    <form class="col-12 col-md-6 col-xl-4">
+                        <hr>
+                        <div class="row">
+                            <div class="form-group col-12">
+                                <label for="laboratoryName" class="text-dark"><small>Laboratory Name:</small></label>
+                                <input type="text" class="form-control" id="laboratoryName" aria-describedby="emailHelp" placeholder="Username">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-12">
+                                <label for="title" class="text-dark"><small>Title:</small></label>
+                                <input type="text" class="form-control" id="title" aria-describedby="emailHelp" placeholder="Dr">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-6">
+                                <label for="firstName" class="text-dark"><small>First Name:</small></label>
+                                <input type="text" class="form-control" id="firstName" placeholder="">
+                            </div>
+                            <div class="form-group col-6">
+                                <label for="sureName" class="text-dark"><small>Sure Name:</small></label>
+                                <input type="text" class="form-control" id="sureName" placeholder="">
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="row">
+                            <div class="form-group col-12">
+                                <label for="" class="text-dark"><small>Please select the type of orthotic services your lab provides.</small></label>
+                                
+                                <div class="clearfix"></div>
+
+                                <div class="btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-outline-primary btn-sm my-1 active">
+                                        <input type="radio" name="optionsOrthotic" id="" autocomplete="off" checked> Foot Pads
+                                    </label>
+                                    <label class="btn btn-outline-primary btn-sm my-1">
+                                        <input type="radio" name="optionsOrthotic" id="" autocomplete="off"> Simple Insoles
+                                    </label>
+
+                                    <label class="btn btn-outline-primary btn-sm my-1">
+                                        <input type="radio" name="optionsOrthotic" id="" autocomplete="off"> Custom Library
+                                    </label>
+                                    <label class="btn btn-outline-primary btn-sm my-1">
+                                        <input type="radio" name="optionsOrthotic" id="" autocomplete="off"> Custom Moulded
+                                    </label>
+                                    <label class="btn btn-outline-primary btn-sm my-1">
+                                        <input type="radio" name="optionsOrthotic" id="" autocomplete="off"> CAD CAM
+                                    </label>
+                                    <label class="btn btn-outline-primary btn-sm my-1">
+                                        <input type="radio" name="optionsOrthotic" id="" autocomplete="off"> Foot & Ankle Brace
+                                    </label>
+                                    <label class="btn btn-outline-primary btn-sm my-1">
+                                        <input type="radio" name="optionsOrthotic" id="" autocomplete="off"> AFO
+                                    </label>
+                                    <label class="btn btn-outline-primary btn-sm my-1">
+                                        <input type="radio" name="optionsOrthotic" id="" autocomplete="off"> Orthopaedic Footwear
+                                    </label>
+                                    <label class="btn btn-outline-primary btn-sm my-1">
+                                        <input type="radio" name="optionsOrthotic" id="" autocomplete="off"> Custom Footwear
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-12">
+                                <label for="measurementsSupplied" class="text-dark"><small>Please select the type of orthotic material your lab provides.</small></label>
+                                
+                                <div class="clearfix"></div>
+                                <div class="btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-outline-primary btn-sm my-1">
+                                        <input type="radio" name="optionsOrthoticMaterial" id="" autocomplete="off">Thermoplastic
+                                    </label>
+                                    <label class="btn btn-outline-primary btn-sm my-1">
+                                        <input type="radio" name="optionsOrthoticMaterial" id="" autocomplete="off">Thermofoam
+                                    </label>
+                                    <label class="btn btn-outline-primary btn-sm my-1">
+                                        <input type="radio" name="optionsOrthoticMaterial" id="" autocomplete="off">Composite
+                                    </label>
+                                    <label class="btn btn-outline-primary btn-sm my-1">
+                                        <input type="radio" name="optionsOrthoticMaterial" id="" autocomplete="off">Carbon Fibre
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-12">
+                                <label for="measurementsSupplied" class="text-dark"><small>Please select the depth your lab provides.</small></label>
+                                
+                                <div class="clearfix"></div>
+                                <div class="btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-outline-primary btn-sm my-1">
+                                        <input type="radio" name="optionsDepth" id="" autocomplete="off">FHC
+                                    </label>
+                                    <label class="btn btn-outline-primary btn-sm my-1">
+                                        <input type="radio" name="optionsDepth" id="" autocomplete="off">SHC
+                                    </label>
+                                    <label class="btn btn-outline-primary btn-sm my-1">
+                                        <input type="radio" name="optionsDepth" id="" autocomplete="off">DHC
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-12">
+                                <label for="measurementsSupplied" class="text-dark"><small>Please select the Lenght your lab provides.</small></label>
+                                
+                                <div class="clearfix"></div>
+
+                                <div class="btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-outline-primary btn-sm my-1">
+                                        <input type="radio" name="optionsLenght" id="" autocomplete="off">To Mets
+                                    </label>
+                                    <label class="btn btn-outline-primary btn-sm my-1">
+                                        <input type="radio" name="optionsLenght" id="" autocomplete="off">To Sulcus
+                                    </label>
+                                    <label class="btn btn-outline-primary btn-sm my-1">
+                                        <input type="radio" name="optionsLenght" id="" autocomplete="off">Full Length
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-12">
+                                <label for="measurementsSupplied" class="text-dark"><small>Please select the Styles your lab provides.</small></label>
+                                
+                                <div class="clearfix"></div>
+                                <div class="btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-outline-primary btn-sm my-1">
+                                        <input type="radio" name="optionsStyles" id="" autocomplete="off">Dress
+                                    </label>
+                                    <label class="btn btn-outline-primary btn-sm my-1">
+                                        <input type="radio" name="optionsStyles" id="" autocomplete="off">Casual
+                                    </label>
+                                    <label class="btn btn-outline-primary btn-sm my-1">
+                                        <input type="radio" name="optionsStyles" id="" autocomplete="off">Sport
+                                    </label>
+                                    <label class="btn btn-outline-primary btn-sm my-1">
+                                        <input type="radio" name="optionsStyles" id="" autocomplete="off">TCI
+                                    </label>
+                                    <label class="btn btn-outline-primary btn-sm my-1">
+                                        <input type="radio" name="optionsStyles" id="" autocomplete="off">Diabetic
+                                    </label>
+                                    <label class="btn btn-outline-primary btn-sm my-1">
+                                        <input type="radio" name="optionsStyles" id="" autocomplete="off">Supinator
+                                    </label>
+                                    <label class="btn btn-outline-primary btn-sm my-1">
+                                        <input type="radio" name="optionsStyles" id="" autocomplete="off">Pronator
+                                    </label>
+                                    <label class="btn btn-outline-primary btn-sm my-1">
+                                        <input type="radio" name="optionsStyles" id="" autocomplete="off">Gait Plates
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="row">
+                            <div class="form-group col-12">
+                                <label for="address" class="text-dark"><small>Address:</small></label>
+                                <input type="text" class="form-control" id="address" aria-describedby="" placeholder="Dr">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-6">
+                                <label for="townCity" class="text-dark"><small>Town / City:</small></label>
+                                <input type="text" class="form-control" id="townCity" placeholder="">
+                            </div>
+                            <div class="form-group col-6">
+                                <label for="country" class="text-dark"><small>Country:</small></label>
+                                <input type="text" class="form-control" id="country" placeholder="">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-6">
+                                <label for="postCode" class="text-dark"><small>Postcode:</small></label>
+                                <input type="text" class="form-control" id="postCode" placeholder="">
+                            </div>
+                            <div class="form-group col-6">
+                                <label for="king" class="text-dark"><small>Location:</small></label>
+                                <input type="text" class="form-control" id="king" placeholder="">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <label for="number" class="text-dark"><small>Please type your mobile number after country code (without spaces or plus signs or leading zeros):</small></label>
+                            </div>
+                            <div class="form-group col-6">
+                                <input type="text" class="form-control" id="number" placeholder="Number">
+                            </div>
+                            <div class="form-group col-6">
+                                <input type="text" class="form-control" id="landingNumber" placeholder="Landing Number">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-12">
+                                <label for="email" class="text-dark"><small>Email:</small></label>
+                                <input type="email" class="form-control" id="email" aria-describedby="" placeholder="">
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-12">
+                                <label for="number" class="text-dark"><small>Select your prefered account activation method:</small></label>
+                            </div>
+                            <div class="form-group btn-group btn-group-toggle col" data-toggle="buttons">
+                                <label class="btn btn-primary btn-sm active w-50">
+                                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Email
+                                </label>
+                                <label class="btn btn-primary btn-sm w-50">
+                                    <input type="radio" name="options" id="option2" autocomplete="off"> SMS
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-12">
+                                <label for="webUrl" class="text-dark"><small>Web:</small></label>
+                                <input type="text" class="form-control" id="webUrl" aria-describedby="" placeholder="">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-6">
+                                <label for="password" class="text-dark"><small>Password:</small></label>
+                                <input type="password" class="form-control" id="password" placeholder="">
+                            </div>
+                            <div class="form-group col-6">
+                                <label for="confirmPassword" class="text-dark"><small>Confirm Password:</small></label>
+                                <input type="text" class="form-control" id="confirmPassword" placeholder="">
+                            </div>
+                            <div class="col">
+                                <small class="text-dark">Password must have numbers, letters and six characters or more.</small>
+                            </div>
+                        </div>
+
+                        <hr>
+                        
+                        <button type="submit" class="btn btn-primary btn-block mb-2">Register as New Lab</button>
+
+                        <small class="text-dark">If you have an account, please <strong>Log In</strong></small>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script src="libs/jQuery/jquery-3.3.1.slim.min.js"></script>
+        <script>window.jQuery || document.write('<script src="libs/jQuery/jquery-3.3.1.slim.min.js"><\/script>')</script>
+
+        <script src="libs/popper/popper.min.js"></script>
+        <script>window.jQuery || document.write('<script src="libs/popper/popper.min.js"><\/script>')</script>
+
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+
+        <script src="libs/slick/slick.min.js"></script>
+        <script>window.jQuery || document.write('<script src="libs/slick/slick.min.js"><\/script>')</script>
+
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
