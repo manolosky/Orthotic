@@ -1,3 +1,17 @@
 .nav
 	&--example
 		background silver
+	&--footer
+		border-radius 0
+		background white
+		border-top 1px solid silver
+		.nav-link
+			border-radius 0
+			border-left 1px solid silver
+			& > a, .nav-link
+				border-radius 0 !important
+		.nav-item
+			&:first-child
+				.nav-link
+					border-left none
+			
