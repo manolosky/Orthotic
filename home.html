@@ -138,43 +138,79 @@
         <footer class="fixed-bottom">
             <ul class="nav nav-pills nav--footer nav-fill">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">
+                    <a class="nav-link text--azul active" href="#">
                         <span class="icon-user text--xlg"></span><br>
                         Profile
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link text--azul" href="#" data-toggle="modal" data-target="#modalAttachments">
                         <span class="icon-paperclip text--xlg"></span><br>
                         Attach
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link text--azul" href="#">
                         <span class="icon-edit text--xlg"></span><br>
                         Edit
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link text--azul" href="#">
                         <span class="icon-save text--xlg"></span><br>
                         Save
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link text--azul" href="#">
                         <span class="icon-file-o text--xlg"></span><br>
                         New
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link text--azul" href="#">
                         <span class="icon-search text--xlg"></span><br>
                         Search
                     </a>
                 </li>
             </ul>
         </footer>
+
+        <!-- MODAL -->
+
+        <div class="modal fade" tabindex="-1" role="dialog" id="modalAttachments">
+            <div class="modal-dialog  modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header py-2 border-0">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body pt-0">
+
+                        <div class="row px-0 mx-0">                        
+                            <div class="col-4 p-2">
+                                <img src="images/camera.png" alt="" class="img-fluid img-thumbnail">
+                            </div>
+                            <div class="col-4 p-2">
+                                <img src="images/camera.png" alt="" class="img-fluid img-thumbnail">
+                            </div>
+                            <div class="col-4 p-2">
+                                <img src="images/camera.png" alt="" class="img-fluid img-thumbnail">
+                            </div>
+                        </div>
+                                             
+                        <ul class="list-group list-group__mattach list-group-flush mt-4 text-center">
+                            <a href="#" class="list-group-item text--azul text--md">Attach File or Image</a>
+                            <a href="#" class="list-group-item text--azul text--md">Diagram</a>
+                            <a href="#" class="list-group-item text--azul text--md">3D Scan</a>
+                            <a href="#" class="list-group-item text--azul text--md">Add Notes</a>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <script src="libs/jQuery/jquery-3.3.1.slim.min.js"></script>
         <script>window.jQuery || document.write('<script src="libs/jQuery/jquery-3.3.1.slim.min.js"><\/script>')</script>

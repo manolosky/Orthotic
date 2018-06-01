@@ -68,66 +68,364 @@
         
         <div class="container my-3 pb-5">
             <div class="col py-3 my-3">
-                <h4 class="text-primary">
-                    Technology <span>please select a technology</span>
-                </h4>
-            
-                <div class="form-row px-4">                
-                    <div class="form-check col-6 my-2">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                        <label class="form-check-label ml-2 mt-1" for="exampleRadios1">
-                        Foot Pads
-                        </label>
-                    </div>
-                    <div class="form-check col-6 my-2">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                        <label class="form-check-label ml-2 mt-1" for="exampleRadios2">
-                        Foot & Ankle Brace
-                        </label>
-                    </div>              
-                    <div class="form-check col-6 my-2">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                        <label class="form-check-label ml-2 mt-1" for="exampleRadios1">
-                        Simple Insoles
-                        </label>
-                    </div>
-                    <div class="form-check col-6 my-2">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                        <label class="form-check-label ml-2 mt-1" for="exampleRadios2">
-                        AFO
-                        </label>
-                    </div>              
-                    <div class="form-check col-6 my-2">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                        <label class="form-check-label ml-2 mt-1" for="exampleRadios1">
-                        Custom Library
-                        </label>
-                    </div>
-                    <div class="form-check col-6 my-2">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                        <label class="form-check-label ml-2 mt-1" for="exampleRadios2">
-                        Orthopaedic Footwear
-                        </label>
-                    </div>               
-                    <div class="form-check col-6 my-2">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                        <label class="form-check-label ml-2 mt-1" for="exampleRadios1">
-                        Custom Moulded
-                        </label>
-                    </div>
-                    <div class="form-check col-6 my-2">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                        <label class="form-check-label ml-2 mt-1" for="exampleRadios2">
-                        Custom Footwear
-                        </label>
-                    </div>             
-                    <div class="form-check col-6 my-2">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                        <label class="form-check-label ml-2 mt-1" for="exampleRadios1">
-                        CAD CAM
-                        </label>
+
+
+<div id="accordion">
+  <div class="card card--prescription my-3">
+    <div class="card-header" id="headingSpecialist">
+      <h5 class="mb-0">
+        <button class="btn btn-link btn-block text-left collapsed text--md text-uppercase" data-toggle="collapse" data-target="#collapseSpecialist" aria-expanded="true" aria-controls="collapseSpecialist">
+          Specialist <span class="icon-angle-down float-right text--md"></span>
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseSpecialist" class="collapse" aria-labelledby="headingSpecialist" data-parent="#accordion">
+      <div class="card-body">
+        <form>
+            <div class="row">
+                <div class="form-group col-sm-12 col-md-6">
+                    <label for="specialistName" class="text--azul">Specialist Name<</label>
+                    <select class="form-control" id="specialistName">
+                        <option>Sr. Profile Name Profile Last name</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <label for="clinicLocationSelect" class="text--azul">Clinic Location:</label>
+                </div>
+                <div class="form-group col-lg-2 col-md-3 col-6">
+                    <select class="form-control" id="clinicLocationSelect">
+                        <option>Option 1</option>
+                    </select>
+                </div>
+                <div class="form-group col-lg-10 col-md-9 col-6">
+                    <input type="text" class="form-control" id="clinicLocationResult" placeholder="">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-12">
+                    <label for="shipTo" class="text--azul">Ship to:</label>
+                    <select class="form-control" id="shipTo">
+                        <option>Specialist</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col">
+                    <label for="orderDate" class="text--azul">Order Date:</label>
+                    <input type="text" class="form-control" id="orderDate" placeholder="">
+                </div>
+                <div class="form-group col">
+                    <label for="fittingResult" class="text--azul">Fitting Date:</label>
+                    <input type="text" class="form-control" id="fittingResult" placeholder="">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-12">
+                    <label for="orderType" class="text--azul">Order Type:</label>
+                    <select class="form-control" id="orderType">
+                        <option>New</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-12">
+                    <label for="orderType" class="text--azul"><small>Supplier / Laboratory:</small></label>
+                    <select class="form-control" id="orderType">
+                        <option>Danilab</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="card card--prescription my-3">
+    <div class="card-header" id="headingPatient">
+      <h5 class="mb-0">
+        <button class="btn btn-link btn-block text-left collapsed text--md text-uppercase" data-toggle="collapse" data-target="#collapsePatient" aria-expanded="false" aria-controls="collapsePatient">
+          Patient <span class="icon-angle-down float-right text--md"></span>
+        </button>
+      </h5>
+    </div>
+    <div id="collapsePatient" class="collapse" aria-labelledby="headingPatient" data-parent="#accordion">
+      <div class="card-body">
+            <form>
+                <div class="row">
+                    <div class="form-group col-12">
+                        <label for="genderPatient" class="text--azul">Gender:</label>
+                        <select class="form-control" id="genderPatient">
+                            <option>Female</option>
+                        </select>
                     </div>
                 </div>
+
+                <div class="row">
+                    <div class="form-group col-12">
+                        <label for="titlePatient" class="text--azul">Title:</label>
+                        <select class="form-control" id="titlePatient">
+                            <option>Ms..</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-12">
+                        <label for="namePatient" class="text--azul">Name:</label>
+                        <input type="text" class="form-control" id="namePatient" placeholder="">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-12">
+                        <label for="refPatient" class="text--azul">Ref. No:</label>
+                        <input type="text" class="form-control" id="refPatient" placeholder="">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-12">
+                        <label for="birthdayPatient" class="text--azul">Birthdate:</label>
+                        <input type="text" class="form-control" id="birthdayPatient" placeholder="">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <label for="heightPatient" class="text--azul">Height:</label>
+                    </div>
+                    <div class="form-group col-sm-6 col-md-3">
+                        <select class="form-control" id="heightPatient">
+                            <option>100 Cm</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-sm-6 col-md-3">
+                        <select class="form-control" id="heightPatientUs">
+                            <option>3 ft 3 in</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <label for="weightPatient" class="text--azul">Weight:</label>
+                    </div>
+                    <div class="form-group col-sm-6 col-md-3">
+                        <select class="form-control" id="weightPatient">
+                            <option>10 Kg</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-sm-6 col-md-3">
+                        <select class="form-control" id="weightPatientUs">
+                            <option>22 Lbs (1.57 St)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-sm-6 col-md-3">
+                        <label for="shoeSizePatiente" class="text--azul">Shoe Size:</label>
+                        <select class="form-control" id="shoeSizePatiente">
+                            <option>40</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-12">
+                        <label for="shoeStylePatient" class="text--azul">Shoe Style:</label>
+                        <input type="text" class="form-control" id="shoeStylePatient" placeholder="">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-12">
+                        <label for="presententComplaintPatient" class="text--azul">Presenting Complaint:</label>
+                        <input type="text" class="form-control" id="presententComplaintPatient" placeholder="">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-12">
+                        <label for="measurementsSupplied" class="text--azul">Measurements Supplied:</label>
+                        <div class="clearfix"></div>
+                        <button type="button" class="btn btn-outline-primary btn-sm my-1">3D Scann</button>
+                        <button type="button" class="btn btn-outline-primary btn-sm my-1">Photo(s)</button>
+                        <button type="button" class="btn btn-outline-primary btn-sm my-1">Video(s)</button>
+                        <button type="button" class="btn btn-primary btn-sm my-1">POP cast</button>
+                        <button type="button" class="btn btn-primary btn-sm my-1">Foam cast</button>
+                        <button type="button" class="btn btn-primary btn-sm my-1">Foot print</button>
+                        <button type="button" class="btn btn-outline-primary btn-sm my-1">Shoe template</button>
+                        <button type="button" class="btn btn-outline-primary btn-sm my-1">Orthoses</button>
+                        <button type="button" class="btn btn-outline-primary btn-sm my-1">Shoes</button>
+                    </div>
+                </div>
+
+                <p class="text--azul mt-4">
+                    <strong>Design both feet (Applies to both feet)</strong>
+                </p>
+                <hr>
+
+                <div class="row">
+                    <div class="form-group col-12">
+                        <label for="measurementsSupplied" class="text--azul">Technology:</label>
+                        <div class="clearfix"></div>
+                        <button type="button" class="btn btn-outline-primary btn-sm my-1">3D Scann</button>
+                        <button type="button" class="btn btn-outline-primary btn-sm my-1">Photo(s)</button>
+                        <button type="button" class="btn btn-outline-primary btn-sm my-1">Video(s)</button>
+                        <button type="button" class="btn btn-primary btn-sm my-1">POP cast</button>
+                        <button type="button" class="btn btn-primary btn-sm my-1">Foam cast</button>
+                        <button type="button" class="btn btn-primary btn-sm my-1">Foot print</button>
+                        <button type="button" class="btn btn-outline-primary btn-sm my-1">Shoe template</button>
+                        <button type="button" class="btn btn-outline-primary btn-sm my-1">Orthoses</button>
+                        <button type="button" class="btn btn-outline-primary btn-sm my-1">Shoes</button>
+                    </div>
+                </div>
+            </form>
+      </div>
+    </div>
+  </div>
+  <div class="card card--prescription my-3">
+    <div class="card-header" id="headingBothFeetD">
+      <h5 class="mb-0">
+        <button class="btn btn-link btn-block text-left collapsed text--md text-uppercase" data-toggle="collapse" data-target="#collapseBothFeetD" aria-expanded="false" aria-controls="collapseBothFeetD">
+          Both Feet - Design <span class="icon-angle-down float-right text--md"></span>
+        </button>
+      </h5>
+    </div>
+    <div id="collapseBothFeetD" class="collapse" aria-labelledby="headingBothFeetD" data-parent="#accordion">
+      <div class="card-body">
+
+        <h4 class="text--azul">
+            Technology <span>please select a technology</span>
+        </h4>
+    
+        <div class="form-row px-4">                
+            <div class="form-check col-6 my-2">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                <label class="form-check-label ml-2 mt-1" for="exampleRadios1">
+                Foot Pads
+                </label>
+            </div>
+            <div class="form-check col-6 my-2">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                <label class="form-check-label ml-2 mt-1" for="exampleRadios2">
+                Foot & Ankle Brace
+                </label>
+            </div>              
+            <div class="form-check col-6 my-2">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                <label class="form-check-label ml-2 mt-1" for="exampleRadios1">
+                Simple Insoles
+                </label>
+            </div>
+            <div class="form-check col-6 my-2">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                <label class="form-check-label ml-2 mt-1" for="exampleRadios2">
+                AFO
+                </label>
+            </div>              
+            <div class="form-check col-6 my-2">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                <label class="form-check-label ml-2 mt-1" for="exampleRadios1">
+                Custom Library
+                </label>
+            </div>
+            <div class="form-check col-6 my-2">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                <label class="form-check-label ml-2 mt-1" for="exampleRadios2">
+                Orthopaedic Footwear
+                </label>
+            </div>               
+            <div class="form-check col-6 my-2">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                <label class="form-check-label ml-2 mt-1" for="exampleRadios1">
+                Custom Moulded
+                </label>
+            </div>
+            <div class="form-check col-6 my-2">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                <label class="form-check-label ml-2 mt-1" for="exampleRadios2">
+                Custom Footwear
+                </label>
+            </div>             
+            <div class="form-check col-6 my-2">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                <label class="form-check-label ml-2 mt-1" for="exampleRadios1">
+                CAD CAM
+                </label>
+            </div>
+        </div>
+            
+      </div>
+    </div>
+  </div>
+  <div class="card card--prescription my-3">
+    <div class="card-header" id="headingLeftFootD">
+      <h5 class="mb-0">
+        <button class="btn btn-link btn-block text-left collapsed text--md text-uppercase" data-toggle="collapse" data-target="#collapseLeftFootD" aria-expanded="false" aria-controls="collapseLeftFootD">
+          Left Foot - Design <span class="icon-angle-down float-right text--md"></span>
+        </button>
+      </h5>
+    </div>
+    <div id="collapseLeftFootD" class="collapse" aria-labelledby="headingLeftFootD" data-parent="#accordion">
+      <div class="card-body">
+            
+      </div>
+    </div>
+  </div>
+  <div class="card card--prescription my-3">
+    <div class="card-header" id="headingRightFootD">
+      <h5 class="mb-0">
+        <button class="btn btn-link btn-block text-left collapsed text--md text-uppercase" data-toggle="collapse" data-target="#collapseRightFootD" aria-expanded="false" aria-controls="collapseRightFootD">
+          Right Foot - Design <span class="icon-angle-down float-right text--md"></span>
+        </button>
+      </h5>
+    </div>
+    <div id="collapseRightFootD" class="collapse" aria-labelledby="headingRightFootD" data-parent="#accordion">
+      <div class="card-body">
+            
+      </div>
+    </div>
+  </div>
+  <div class="card card--prescription my-3">
+    <div class="card-header" id="headingPhotosFiles">
+      <h5 class="mb-0">
+        <button class="btn btn-link btn-block text-left collapsed text--md text-uppercase" data-toggle="collapse" data-target="#collapsePhotosFiles" aria-expanded="false" aria-controls="collapsePhotosFiles">
+          Diagrams Photos And Files <span class="icon-angle-down float-right text--md"></span>
+        </button>
+      </h5>
+    </div>
+    <div id="collapsePhotosFiles" class="collapse" aria-labelledby="headingPhotosFiles" data-parent="#accordion">
+      <div class="card-body">
+            
+      </div>
+    </div>
+  </div>
+  <div class="card card--prescription my-3">
+    <div class="card-header" id="headinglabNotes">
+      <h5 class="mb-0">
+        <button class="btn btn-link btn-block text-left collapsed text--md text-uppercase" data-toggle="collapse" data-target="#collapselabNotes" aria-expanded="false" aria-controls="collapselabNotes">
+          Lab Notes <span class="icon-angle-down float-right text--md"></span>
+        </button>
+      </h5>
+    </div>
+    <div id="collapselabNotes" class="collapse" aria-labelledby="headinglabNotes" data-parent="#accordion">
+      <div class="card-body">
+            
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
             </div>
         </div>
@@ -135,39 +433,27 @@
         <footer class="fixed-bottom">
             <ul class="nav nav-pills nav--footer nav-fill">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">
-                        <span class="icon-user text--xlg"></span><br>
-                        Profile
+                    <a class="nav-link text--azul" href="#">
+                        <span class="icon-search text--xlg"></span><br>
+                        Search
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <span class="icon-paperclip text--xlg"></span><br>
-                        Attach
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <span class="icon-edit text--xlg"></span><br>
-                        Edit
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <span class="icon-save text--xlg"></span><br>
-                        Save
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link text--azul" href="#">
                         <span class="icon-file-o text--xlg"></span><br>
                         New
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <span class="icon-search text--xlg"></span><br>
-                        Search
+                    <a class="nav-link text--azul" href="#" data-toggle="modal" data-target="#modalAttachments">
+                        <span class="icon-paperclip text--xlg"></span><br>
+                        Attach
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text--azul" href="#">
+                        <span class="icon-save text--xlg"></span><br>
+                        Save
                     </a>
                 </li>
             </ul>
@@ -197,11 +483,11 @@
                             </div>
                         </div>
                                              
-                        <ul class="list-group list-group-flush mt-4 text-center">
-                            <a href="#" class="list-group-item">Attach File or Image</a>
-                            <a href="#" class="list-group-item">Diagram</a>
-                            <a href="#" class="list-group-item">3D Scan</a>
-                            <a href="#" class="list-group-item">Add Notes</a>
+                        <ul class="list-group list-group__mattach list-group-flush mt-4 text-center">
+                            <a href="#" class="list-group-item text--azul text--md">Attach File or Image</a>
+                            <a href="#" class="list-group-item text--azul text--md">Diagram</a>
+                            <a href="#" class="list-group-item text--azul text--md">3D Scan</a>
+                            <a href="#" class="list-group-item text--azul text--md">Add Notes</a>
                         </ul>
 
                     </div>
