@@ -37,17 +37,20 @@
                 <a class="navbar-brand" href="#">
                     <img src="images/logo.png" class="d-inline-block align-top img-fluid" alt="">
                 </a>
-
+                
+                <a class="text--azul text--lg ml-3" href="#">
+                    <i class="fa fa-user-o" aria-hidden="true"></i> <span class="text--bold">AJ</span>
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarPrimary" aria-controls="navBarPrimary" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <i class="fa fa-bars text--azul mt-1 text--xlg" aria-hidden="true"></i>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navBarPrimary">
+                <div class="collapse navbar-collapse navbar-collapse__primary" id="navBarPrimary">
                     <div class="navbar-nav">
-                        <a class="nav-item nav-link active" href="#">Create New Preinscripción</a>
-                        <a class="nav-item nav-link" href="#">User</a>
-                        <a class="nav-item nav-link" href="#">View Your Profile</a>
-                        <a class="nav-item nav-link" href="#">Log Out (perfilregistrado@gmail.com)</a>
+                        <a class="nav-item nav-link active" href="#">Create New Preinscripción <i class="fa fa-angle-right float-right" aria-hidden="true"></i></a>
+                        <a class="nav-item nav-link" href="#">User <i class="fa fa-angle-right float-right" aria-hidden="true"></i></a>
+                        <a class="nav-item nav-link" href="#">View Your Profile <i class="fa fa-angle-right float-right" aria-hidden="true"></i></a>
+                        <a class="nav-item nav-link" href="#">Log Out (perfilregistrado@gmail.com) <i class="fa fa-angle-right float-right" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </nav>
@@ -66,870 +69,867 @@
         <div class="container my-3 pb-5">
             <div class="col py-3 my-3">
 
-
-<div id="accordion">
-  <div class="card card--prescription my-3">
-    <div class="card-header" id="headingSpecialist">
-      <h5 class="mb-0">
-        <button class="btn btn-link btn-block text-left collapsed text--md text-uppercase" data-toggle="collapse" data-target="#collapseSpecialist" aria-expanded="true" aria-controls="collapseSpecialist">
-          Specialist <i class="fa fa-angle-down float-right text--md" aria-hidden="true"></i>
-        </button>
-      </h5>
-    </div>
-
-    <div id="collapseSpecialist" class="collapse" aria-labelledby="headingSpecialist" data-parent="#accordion">
-      <div class="card-body">
-        <form>
-
-            <div class="row">
-                <div class="form-group col">
-                    <label for="specialistName" class="text--azul">Specialist Name</label>
-                    <select class="form-control" id="specialistName">
-                        <option>Sr. Profile Name Profile Last name</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-12">
-                    <label for="clinicLocationSelect" class="text--azul">Clinic Location:</label>
-                </div>
-                <div class="form-group col">
-                    <select class="form-control" id="clinicLocationSelect">
-                        <option>Option 1</option>
-                    </select>
-                </div>
-                <div class="form-group col">
-                    <input type="text" class="form-control" id="clinicLocationResult" placeholder="">
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="form-group col">
-                    <label for="shipTo" class="text--azul">Ship to:</label>
-                    <select class="form-control" id="shipTo">
-                        <option>Specialist</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="form-group col">
-                    <label for="orderDate" class="text--azul">Order Date:</label>
-                    <input type="text" class="form-control" id="orderDate" placeholder="">
-                </div>
-                <div class="form-group col">
-                    <label for="fittingResult" class="text--azul">Fitting Date:</label>
-                    <input type="text" class="form-control" id="fittingResult" placeholder="">
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="form-group col">
-                    <label for="orderType" class="text--azul">Order Type:</label>
-                    <select class="form-control" id="orderType">
-                        <option>New</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="form-group col">
-                    <label for="orderType" class="text--azul"><small>Supplier / Laboratory:</small></label>
-                    <select class="form-control" id="orderType">
-                        <option>Danilab</option>
-                    </select>
-                </div>
-            </div>
-        </form>
-      </div>
-    </div>
-  </div>
-  <div class="card card--prescription my-3">
-    <div class="card-header" id="headingPatient">
-      <h5 class="mb-0">
-        <button class="btn btn-link btn-block text-left collapsed text--md text-uppercase" data-toggle="collapse" data-target="#collapsePatient" aria-expanded="false" aria-controls="collapsePatient">
-          Patient <i class="fa fa-angle-down float-right text--md" aria-hidden="true"></i>
-        </button>
-      </h5>
-    </div>
-    <div id="collapsePatient" class="collapse" aria-labelledby="headingPatient" data-parent="#accordion">
-      <div class="card-body">
-            <form>
-                <div class="row">
-                    <div class="form-group col-12">
-                        <label for="genderPatient" class="text--azul">Gender:</label>
-                        <select class="form-control" id="genderPatient">
-                            <option>Female</option>
-                        </select>
+                <div id="accordion">
+                  <div class="card card--prescription my-3">
+                    <div class="card-header" id="headingSpecialist">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed text--md text-uppercase" data-toggle="collapse" data-target="#collapseSpecialist" aria-expanded="true" aria-controls="collapseSpecialist">
+                          Specialist <i class="fa fa-angle-down float-right text--md" aria-hidden="true"></i>
+                        </button>
+                      </h5>
                     </div>
-                </div>
 
-                <div class="row">
-                    <div class="form-group col-12">
-                        <label for="titlePatient" class="text--azul">Title:</label>
-                        <select class="form-control" id="titlePatient">
-                            <option>Ms..</option>
-                        </select>
+                    <div id="collapseSpecialist" class="collapse" aria-labelledby="headingSpecialist" data-parent="#accordion">
+                      <div class="card-body">
+                        <form>
+
+                            <div class="row">
+                                <div class="form-group col">
+                                    <label for="specialistName" class="text--azul">Specialist Name</label>
+                                    <select class="form-control" id="specialistName">
+                                        <option>Sr. Profile Name Profile Last name</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <label for="clinicLocationSelect" class="text--azul">Clinic Location:</label>
+                                </div>
+                                <div class="form-group col">
+                                    <select class="form-control" id="clinicLocationSelect">
+                                        <option>Option 1</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col">
+                                    <input type="text" class="form-control" id="clinicLocationResult" placeholder="">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group col">
+                                    <label for="shipTo" class="text--azul">Ship to:</label>
+                                    <select class="form-control" id="shipTo">
+                                        <option>Specialist</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group col">
+                                    <label for="orderDate" class="text--azul">Order Date:</label>
+                                    <input type="text" class="form-control" id="orderDate" placeholder="">
+                                </div>
+                                <div class="form-group col">
+                                    <label for="fittingResult" class="text--azul">Fitting Date:</label>
+                                    <input type="text" class="form-control" id="fittingResult" placeholder="">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group col">
+                                    <label for="orderType" class="text--azul">Order Type:</label>
+                                    <select class="form-control" id="orderType">
+                                        <option>New</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group col">
+                                    <label for="orderType" class="text--azul"><small>Supplier / Laboratory:</small></label>
+                                    <select class="form-control" id="orderType">
+                                        <option>Danilab</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                      </div>
                     </div>
-                </div>
-
-                <div class="row">
-                    <div class="form-group col-12">
-                        <label for="namePatient" class="text--azul">Name:</label>
-                        <input type="text" class="form-control" id="namePatient" placeholder="">
+                  </div>
+                  <div class="card card--prescription my-3">
+                    <div class="card-header" id="headingPatient">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed text--md text-uppercase" data-toggle="collapse" data-target="#collapsePatient" aria-expanded="false" aria-controls="collapsePatient">
+                          Patient <i class="fa fa-angle-down float-right text--md" aria-hidden="true"></i>
+                        </button>
+                      </h5>
                     </div>
-                </div>
+                    <div id="collapsePatient" class="collapse" aria-labelledby="headingPatient" data-parent="#accordion">
+                      <div class="card-body">
+                            <form>
+                                <div class="row">
+                                    <div class="form-group col-12">
+                                        <label for="genderPatient" class="text--azul">Gender:</label>
+                                        <select class="form-control" id="genderPatient">
+                                            <option>Female</option>
+                                        </select>
+                                    </div>
+                                </div>
 
-                <div class="row">
-                    <div class="form-group col-12">
-                        <label for="refPatient" class="text--azul">Ref. No:</label>
-                        <input type="text" class="form-control" id="refPatient" placeholder="">
+                                <div class="row">
+                                    <div class="form-group col-12">
+                                        <label for="titlePatient" class="text--azul">Title:</label>
+                                        <select class="form-control" id="titlePatient">
+                                            <option>Ms..</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="form-group col-12">
+                                        <label for="namePatient" class="text--azul">Name:</label>
+                                        <input type="text" class="form-control" id="namePatient" placeholder="">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="form-group col-12">
+                                        <label for="refPatient" class="text--azul">Ref. No:</label>
+                                        <input type="text" class="form-control" id="refPatient" placeholder="">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="form-group col-12">
+                                        <label for="birthdayPatient" class="text--azul">Birthdate:</label>
+                                        <input type="text" class="form-control" id="birthdayPatient" placeholder="">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-12">
+                                        <label for="heightPatient" class="text--azul">Height:</label>
+                                    </div>
+                                    <div class="form-group col">
+                                        <select class="form-control" id="heightPatient">
+                                            <option>100 Cm</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col">
+                                        <select class="form-control" id="heightPatientUs">
+                                            <option>3 ft 3 in</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-12">
+                                        <label for="weightPatient" class="text--azul">Weight:</label>
+                                    </div>
+                                    <div class="form-group col">
+                                        <select class="form-control" id="weightPatient">
+                                            <option>10 Kg</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col">
+                                        <select class="form-control" id="weightPatientUs">
+                                            <option>22 Lbs (1.57 St)</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="form-group col">
+                                        <label for="shoeSizePatiente" class="text--azul">Shoe Size:</label>
+                                        <select class="form-control" id="shoeSizePatiente">
+                                            <option>40</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="form-group col">
+                                        <label for="shoeStylePatient" class="text--azul">Shoe Style:</label>
+                                        <input type="text" class="form-control" id="shoeStylePatient" placeholder="">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="form-group col-12">
+                                        <label for="presententComplaintPatient" class="text--azul">Presenting Complaint:</label>
+                                        <input type="text" class="form-control" id="presententComplaintPatient" placeholder="">
+                                    </div>
+                                </div>
+
+                            </form>
+                      </div>
                     </div>
-                </div>
-
-                <div class="row">
-                    <div class="form-group col-12">
-                        <label for="birthdayPatient" class="text--azul">Birthdate:</label>
-                        <input type="text" class="form-control" id="birthdayPatient" placeholder="">
+                  </div>
+                  <div class="card card--prescription my-3">
+                    <div class="card-header" id="headingBothFeetD">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed text--md text-uppercase" data-toggle="collapse" data-target="#collapseBothFeetD" aria-expanded="false" aria-controls="collapseBothFeetD">
+                          Both Feet - Design <i class="fa fa-angle-down float-right text--md" aria-hidden="true"></i>
+                        </button>
+                      </h5>
                     </div>
-                </div>
+                    <div id="collapseBothFeetD" class="collapse" aria-labelledby="headingBothFeetD" data-parent="#accordion">
+                      <div class="card-body">
 
-                <div class="row">
-                    <div class="col-12">
-                        <label for="heightPatient" class="text--azul">Height:</label>
+                        <h4 class="text--azul my-3">
+                            Technology
+                        </h4>
+                    
+                        <div class="form-row px-2">
+                            <div class="form-check col-6 my-1">
+                                <input type="radio" name="technologyValue" id="optionVal1" value="option1">
+                                <label class="label-text" for="optionVal1">
+                                Foot Pads
+                                </label>
+                            </div>
+                            <div class="form-check col-6 my-1">
+                                <input type="radio" name="technologyValue" id="optionVal2" value="option2">
+                                <label class="label-text" for="optionVal2">
+                                Foot & Ankle Brace
+                                </label>
+                            </div>              
+                            <div class="form-check col-6 my-1">
+                                <input type="radio" name="technologyValue" id="optionVal3" value="option1">
+                                <label class="label-text" for="optionVal3">
+                                Simple Insoles
+                                </label>
+                            </div>
+                            <div class="form-check col-6 my-1">
+                                <input type="radio" name="technologyValue" id="optionVal4" value="option2">
+                                <label class="label-text" for="optionVal4">
+                                AFO
+                                </label>
+                            </div>              
+                            <div class="form-check col-6 my-1">
+                                <input type="radio" name="technologyValue" id="optionVal5" value="option1">
+                                <label class="label-text" for="optionVal5">
+                                Custom Library
+                                </label>
+                            </div>
+                            <div class="form-check col-6 my-1">
+                                <input type="radio" name="technologyValue" id="optionVal6" value="customOption">
+                                <label class="label-text" for="optionVal6">
+                                Orthopaedic Footwear
+                                </label>
+                            </div>               
+                            <div class="form-check col-6 my-1">
+                                <input type="radio" name="technologyValue" id="optionVal7" value="option1">
+                                <label class="label-text" for="optionVal7">
+                                Custom Moulded
+                                </label>
+                            </div>
+                            <div class="form-check col-6 my-1">
+                                <input type="radio" name="technologyValue" id="optionVal8" value="customOption">
+                                <label class="label-text" for="optionVal8">
+                                Custom Footwear
+                                </label>
+                            </div>             
+                            <div class="form-check col-6 my-1">
+                                <input type="radio" name="technologyValue" id="optionVal9" value="cadCam">
+                                <label class="label-text" for="optionVal9">
+                                CAD CAM
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- If CAD CAM -->
+
+                        <div class="form-row px-2 d-none" data-parent="cadCam" data-complement="true">
+                            <hr class="w-100">
+                            <div class="form-check col-6 my-1">
+                                <input type="radio" name="technologyCadCam" id="technologyCadCam1" value="option1">
+                                <label class="label-text" for="technologyCadCam1">
+                                Library Milled
+                                </label>
+                            </div>
+                            <div class="form-check col-6 my-1">
+                                <input type="radio" name="technologyCadCam" id="technologyCadCam2" value="option2">
+                                <label class="label-text" for="technologyCadCam2">
+                                Custom Milled
+                                </label>
+                            </div>              
+                            <div class="form-check col-6 my-1">
+                                <input type="radio" name="technologyCadCam" id="technologyCadCam3" value="option1">
+                                <label class="label-text" for="technologyCadCam3">
+                                3D Printed
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- If ORTHOPAEDIC FOOTWEAR -->
+
+                        <div class="form-row px-2 d-none" data-parent="customOption"  data-complement="true">
+                            
+                            <hr class="w-100">
+
+                            <div class="form-check col-6 my-1">
+                                <input type="radio" name="orthopedicFootwear" id="orthopedicFootwear1" value="option1">
+                                <label class="label-text" for="orthopedicFootwear1">
+                                Sandals
+                                </label>
+                            </div>
+                            <div class="form-check col-6 my-1">
+                                <input type="radio" name="orthopedicFootwear" id="orthopedicFootwear2" value="option2">
+                                <label class="label-text" for="orthopedicFootwear2">
+                                Shoes
+                                </label>
+                            </div>              
+                            <div class="form-check col-6 my-1">
+                                <input type="radio" name="orthopedicFootwear" id="orthopedicFootwear3" value="option3">
+                                <label class="label-text" for="orthopedicFootwear3">
+                                Boots
+                                </label>
+                            </div>
+                            <div class="form-check col-6 my-1">
+                                <input type="radio" name="orthopedicFootwear" id="orthopedicFootwear4" value="option4">
+                                <label class="label-text" for="orthopedicFootwear4">
+                                Trainers
+                                </label>
+                            </div>
+                            <div class="form-check col-6 my-1">
+                                <input type="radio" name="orthopedicFootwear" id="orthopedicFootwear5" value="option5">
+                                <label class="label-text" for="orthopedicFootwear5">
+                                Slippers
+                                </label>
+                            </div>
+                            <div class="form-check col-6 my-1">
+                                <input type="radio" name="orthopedicFootwear" id="orthopedicFootwear6" value="option6">
+                                <label class="label-text" for="orthopedicFootwear6">
+                                Bootees
+                                </label>
+                            </div>
+                        </div>
+
+
+                        <!-- MATERIAL -->
+                        <h4 class="text--azul my-3">
+                            Material
+                        </h4>
+
+                        <div class="form-row px-2">
+                            <div class="form-check col-6 my-1">
+                                <input type="radio" name="materialDesignBF" id="materialDesignBF1" value="option1">
+                                <label class="label-text" for="materialDesignBF1">
+                                Thermoplastic
+                                </label>
+                            </div>
+                            <div class="form-check col-6 my-1">
+                                <input type="radio" name="materialDesignBF" id="materialDesignBF2" value="option2">
+                                <label class="label-text" for="materialDesignBF2">
+                                Thermofoam
+                                </label>
+                            </div>              
+                            <div class="form-check col-6 my-1">
+                                <input type="radio" name="materialDesignBF" id="materialDesignBF3" value="option1">
+                                <label class="label-text" for="materialDesignBF3">
+                                Composite
+                                </label>
+                            </div>
+                            <div class="form-check col-6 my-1">
+                                <input type="radio" name="materialDesignBF" id="materialDesignBF4" value="option1">
+                                <label class="label-text" for="materialDesignBF4">
+                                Carbon Fib
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <hr class="w-100">
+                            <div class="form-group col">
+                                <select class="form-control" id="shoeSizePatiente">
+                                    <option>--</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- DEPTH -->
+                        <h4 class="text--azul my-3">
+                            Depth
+                        </h4>
+
+                        <div class="form-row px-2">
+                            <div class="form-check col-6 my-1">
+                                <input type="radio" name="depthDesignBF" id="depthDesignBF1" value="option1">
+                                <label class="label-text" for="depthDesignBF1">
+                                FHC
+                                </label>
+                            </div>
+                            <div class="form-check col-6 my-1">
+                                <input type="radio" name="depthDesignBF" id="depthDesignBF2" value="option2">
+                                <label class="label-text" for="depthDesignBF2">
+                                SHC
+                                </label>
+                            </div>              
+                            <div class="form-check col-6 my-1">
+                                <input type="radio" name="depthDesignBF" id="depthDesignBF3" value="option1">
+                                <label class="label-text" for="depthDesignBF3">
+                                DHC
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- DEPTH -->
+                        <h4 class="text--azul my-3">
+                            LENGTH
+                        </h4>
+
+                        <div class="form-row px-2">
+                            <div class="form-check col-6 my-1">
+                                <input type="radio" name="lendthDesignBF" id="lendthDesignBF1" value="option1">
+                                <label class="label-text" for="lendthDesignBF1">
+                                To Mets
+                                </label>
+                            </div>
+                            <div class="form-check col-6 my-1">
+                                <input type="radio" name="lendthDesignBF" id="lendthDesignBF2" value="option2">
+                                <label class="label-text" for="lendthDesignBF2">
+                                To Sulcus
+                                </label>
+                            </div>              
+                            <div class="form-check col-6 my-1">
+                                <input type="radio" name="lendthDesignBF" id="lendthDesignBF3" value="option1">
+                                <label class="label-text" for="lendthDesignBF3">
+                                Full Length
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- DEPTH -->
+                        <h4 class="text--azul my-3">
+                            Style
+                        </h4>
+
+                        <div class="form-row px-2">
+                            <div class="form-check col-6 my-1">
+                                <input type="radio" name="styleDesignBF" id="styleDesignBF1" value="option1">
+                                <label class="label-text" for="styleDesignBF1">
+                                Custom Freestyle
+                                </label>
+                            </div>
+                            <div class="form-check col-6 my-1">
+                                <input type="radio" name="styleDesignBF" id="styleDesignBF2" value="option2">
+                                <label class="label-text" for="styleDesignBF2">
+                                Custom Selective
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- IF SELECT CUSTOM STYLE -->
+                        <div class="form-row">
+                            <hr class="w-100">
+                            <div class="form-group">
+                                <label for="customStyle1">Free Text Field:</label>
+                                <textarea class="form-control" id="customStyle1" rows="3"></textarea>
+                                <small>Attention: This field will be copied on the right and left foot. The contents of the other fields will be lost.</small>
+                            </div>
+                        </div>
+
+                        <!-- IF SELECT CUSTOM SELECTIVE -->
+                        <div class="form-row px-2">
+                            <hr class="w-100">
+                            <div class="form-check col-6 my-1">
+                                <input type="radio" name="styleCustomSelectiveBF" id="styleCustomSelectiveBF1" value="option1">
+                                <label class="label-text" for="styleCustomSelectiveBF1">
+                                Dress
+                                </label>
+                            </div>
+                            <div class="form-check col-6 my-1">
+                                <input type="radio" name="styleCustomSelectiveBF" id="styleCustomSelectiveBF2" value="option2">
+                                <label class="label-text" for="styleCustomSelectiveBF2">
+                                Casual
+                                </label>
+                            </div>
+                            <div class="form-check col-6 my-1">
+                                <input type="radio" name="styleCustomSelectiveBF" id="styleCustomSelectiveBF2" value="option2">
+                                <label class="label-text" for="styleCustomSelectiveBF2">
+                                Sport
+                                </label>
+                            </div>
+                            <div class="form-check col-6 my-1">
+                                <input type="radio" name="styleCustomSelectiveBF" id="styleCustomSelectiveBF2" value="option2">
+                                <label class="label-text" for="styleCustomSelectiveBF2">
+                                Supinator
+                                </label>
+                            </div>
+                            <div class="form-check col-6 my-1">
+                                <input type="radio" name="styleCustomSelectiveBF" id="styleCustomSelectiveBF2" value="option2">
+                                <label class="label-text" for="styleCustomSelectiveBF2">
+                                Pronator
+                                </label>
+                            </div>
+                            <div class="form-check col-6 my-1">
+                                <input type="radio" name="styleCustomSelectiveBF" id="styleCustomSelectiveBF2" value="option2">
+                                <label class="label-text" for="styleCustomSelectiveBF2">
+                                Gait Plates
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- DEPTH -->
+                        <h4 class="text--azul my-3">
+                            Shape
+                        </h4>
+
+                        <div class="form-row px-2">
+                            <div class="form-check col-6 my-1">
+                                <input type="radio" name="shapeDesignBF" id="shapeDesignBF1" value="option1">
+                                <label class="label-text" for="shapeDesignBF1">
+                                Slim
+                                </label>
+                            </div>
+                            <div class="form-check col-6 my-1">
+                                <input type="radio" name="shapeDesignBF" id="shapeDesignBF2" value="option2">
+                                <label class="label-text" for="shapeDesignBF2">
+                                Regular
+                                </label>
+                            </div>
+                            <div class="form-check col-6 my-1">
+                                <input type="radio" name="shapeDesignBF" id="shapeDesignBF3" value="option2">
+                                <label class="label-text" for="shapeDesignBF3">
+                                Wide
+                                </label>
+                            </div>
+                            <div class="form-check col-6 my-1">
+                                <input type="radio" name="shapeDesignBF" id="shapeDesignBF4" value="option2">
+                                <label class="label-text" for="shapeDesignBF4">
+                                Cobra
+                                </label>
+                            </div>
+                            <div class="form-check col-6 my-1">
+                                <input type="radio" name="shapeDesignBF" id="shapeDesignBF5" value="option2">
+                                <label class="label-text" for="shapeDesignBF5">
+                                Morton´s Shell
+                                </label>
+                            </div>
+                            <div class="form-check col-6 my-1">
+                                <input type="radio" name="shapeDesignBF" id="shapeDesignBF6" value="option2">
+                                <label class="label-text" for="shapeDesignBF6">
+                                Pronator Plate
+                                </label>
+                            </div>
+                            <div class="form-check col-6 my-1">
+                                <input type="radio" name="shapeDesignBF" id="shapeDesignBF7" value="option2">
+                                <label class="label-text" for="shapeDesignBF7">
+                                Supinator Plate
+                                </label>
+                            </div>
+                            <div class="form-check col-6 my-1">
+                                <input type="radio" name="shapeDesignBF" id="shapeDesignBF8" value="option2">
+                                <label class="label-text" for="shapeDesignBF8">
+                                Gait Plate
+                                </label>
+                            </div>
+                        </div>
+                            
+                        <!-- DEPTH -->
+                        <h4 class="text--azul my-3">
+                            Cut Outs
+                        </h4>
+
+                        <div class="form-row px-2">
+                            <div class="form-check col-6 my-1">
+                                <input type="checkbox" name="cutOutsDesignBF" id="cutOutsDesignBF1" value="option1">
+                                <label class="label-text" for="cutOutsDesignBF1">
+                                Met Parabola
+                                </label>
+                            </div>
+                            <div class="form-check col-6 my-1">
+                                <input type="checkbox" name="cutOutsDesignBF" id="cutOutsDesignBF2" value="option2">
+                                <label class="label-text" for="cutOutsDesignBF2">
+                                1st Met
+                                </label>
+                            </div>
+                            <div class="form-check col-6 my-1">
+                                <input type="checkbox" name="cutOutsDesignBF" id="cutOutsDesignBF3" value="option2">
+                                <label class="label-text" for="cutOutsDesignBF3">
+                                1st Ray
+                                </label>
+                            </div>
+                            <div class="form-check col-6 my-1">
+                                <input type="checkbox" name="cutOutsDesignBF" id="cutOutsDesignBF4" value="option2">
+                                <label class="label-text" for="cutOutsDesignBF4">
+                                2nd Met
+                                </label>
+                            </div>
+                            <div class="form-check col-6 my-1">
+                                <input type="checkbox" name="cutOutsDesignBF" id="cutOutsDesignBF5" value="option2">
+                                <label class="label-text" for="cutOutsDesignBF5">
+                                2nd Met
+                                </label>
+                            </div>
+                            <div class="form-check col-6 my-1">
+                                <input type="checkbox" name="cutOutsDesignBF" id="cutOutsDesignBF6" value="option2">
+                                <label class="label-text" for="cutOutsDesignBF6">
+                                2nd Ray
+                                </label>
+                            </div>
+                            <div class="form-check col-6 my-1">
+                                <input type="checkbox" name="cutOutsDesignBF" id="cutOutsDesignBF7" value="option2">
+                                <label class="label-text" for="cutOutsDesignBF7">
+                                3rd Met
+                                </label>
+                            </div>
+                            <div class="form-check col-6 my-1">
+                                <input type="checkbox" name="cutOutsDesignBF" id="cutOutsDesignBF8" value="option2">
+                                <label class="label-text" for="cutOutsDesignBF8">
+                                3rd Ray
+                                </label>
+                            </div>
+                            <div class="form-check col-6 my-1">
+                                <input type="checkbox" name="cutOutsDesignBF" id="cutOutsDesignBF9" value="option2">
+                                <label class="label-text" for="cutOutsDesignBF9">
+                                4th Met
+                                </label>
+                            </div>
+                            <div class="form-check col-6 my-1">
+                                <input type="checkbox" name="cutOutsDesignBF" id="cutOutsDesignBF10" value="option2">
+                                <label class="label-text" for="cutOutsDesignBF10">
+                                4th Ray
+                                </label>
+                            </div>
+                            <div class="form-check col-6 my-1">
+                                <input type="checkbox" name="cutOutsDesignBF" id="cutOutsDesignBF11" value="option2">
+                                <label class="label-text" for="cutOutsDesignBF11">
+                                5th Met
+                                </label>
+                            </div>
+                            <div class="form-check col-6 my-1">
+                                <input type="checkbox" name="cutOutsDesignBF" id="cutOutsDesignBF12" value="option2">
+                                <label class="label-text" for="cutOutsDesignBF12">
+                                5th Ray
+                                </label>
+                            </div>
+                            <div class="form-check col-6 my-1">
+                                <input type="checkbox" name="cutOutsDesignBF" id="cutOutsDesignBF13" value="option2">
+                                <label class="label-text" for="cutOutsDesignBF13">
+                                Base of 5th
+                                </label>
+                            </div>
+                            <div class="form-check col-6 my-1">
+                                <input type="checkbox" name="cutOutsDesignBF" id="cutOutsDesignBF14" value="option2">
+                                <label class="label-text" for="cutOutsDesignBF14">
+                                Plantar Fascial
+                                </label>
+                            </div>
+                            <div class="form-check col-6 my-1">
+                                <input type="checkbox" name="cutOutsDesignBF" id="cutOutsDesignBF15" value="option2">
+                                <label class="label-text" for="cutOutsDesignBF15">
+                                Navicular
+                                </label>
+                            </div>
+                            <div class="form-check col-6 my-1">
+                                <input type="checkbox" name="cutOutsDesignBF" id="cutOutsDesignBF16" value="option2">
+                                <label class="label-text" for="cutOutsDesignBF16">
+                                Cuboid
+                                </label>
+                            </div>
+                            <div class="form-check col-6 my-1">
+                                <input type="checkbox" name="cutOutsDesignBF" id="cutOutsDesignBF17" value="option2">
+                                <label class="label-text" for="cutOutsDesignBF17">
+                                Hell
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- POSTING -->
+                        <h4 class="text--azul my-3">
+                            Posting
+                        </h4>
+
+                        <div class="form-row px-2">
+                            <div class="form-check col-6 my-1">
+                                <input type="checkbox" name="postingDesignBF" id="postingDesignBF1" value="option1">
+                                <label class="label-text" for="postingDesignBF1">
+                                Rearfoot
+                                </label>
+                            </div>
+                            <div class="form-check col-6 my-1">
+                                <input type="checkbox" name="postingDesignBF" id="postingDesignBF2" value="option2">
+                                <label class="label-text" for="postingDesignBF2">
+                                Forefoot
+                                </label>
+                            </div>
+                            <div class="form-check col-6 my-1">
+                                <input type="checkbox" name="postingDesignBF" id="postingDesignBF3" value="option2">
+                                <label class="label-text" for="postingDesignBF3">
+                                Heel Lift
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- PADDING -->
+                        <h4 class="text--azul my-3">
+                            Padding
+                        </h4>
+
+                        <div class="form-row px-2">
+                            <div class="form-check col-6 my-1">
+                                <input type="checkbox" name="paddingDesignBF" id="paddingDesignBF1" value="option1">
+                                <label class="label-text" for="paddingDesignBF1">
+                                Metatarsal Pad
+                                </label>
+                            </div>
+                            <div class="form-check col-6 my-1">
+                                <input type="checkbox" name="paddingDesignBF" id="paddingDesignBF2" value="option2">
+                                <label class="label-text" for="paddingDesignBF2">
+                                Metatarsal Bar
+                                </label>
+                            </div>
+                            <div class="form-check col-6 my-1">
+                                <input type="checkbox" name="paddingDesignBF" id="paddingDesignBF3" value="option2">
+                                <label class="label-text" for="paddingDesignBF3">
+                                Metatarsal Prop
+                                </label>
+                            </div>
+                            <div class="form-check col-6 my-1">
+                                <input type="checkbox" name="paddingDesignBF" id="paddingDesignBF1" value="option1">
+                                <label class="label-text" for="paddingDesignBF1">
+                                Morton`s Prop
+                                </label>
+                            </div>
+                            <div class="form-check col-6 my-1">
+                                <input type="checkbox" name="paddingDesignBF" id="paddingDesignBF2" value="option2">
+                                <label class="label-text" for="paddingDesignBF2">
+                                Reverse Morton`s Prop
+                                </label>
+                            </div>
+                            <div class="form-check col-6 my-1">
+                                <input type="checkbox" name="paddingDesignBF" id="paddingDesignBF3" value="option2">
+                                <label class="label-text" for="paddingDesignBF3">
+                                PMP Pad
+                                </label>
+                            </div>
+                            <div class="form-check col-6 my-1">
+                                <input type="checkbox" name="paddingDesignBF" id="paddingDesignBF1" value="option1">
+                                <label class="label-text" for="paddingDesignBF1">
+                                Arch Pad
+                                </label>
+                            </div>
+                            <div class="form-check col-6 my-1">
+                                <input type="checkbox" name="paddingDesignBF" id="paddingDesignBF2" value="option2">
+                                <label class="label-text" for="paddingDesignBF2">
+                                Cuboid Pad
+                                </label>
+                            </div>
+                            <div class="form-check col-6 my-1">
+                                <input type="checkbox" name="paddingDesignBF" id="paddingDesignBF3" value="option2">
+                                <label class="label-text" for="paddingDesignBF3">
+                                Heel Cushion
+                                </label>
+                            </div>
+                            <div class="form-check col-6 my-1">
+                                <input type="checkbox" name="paddingDesignBF" id="paddingDesignBF1" value="option1">
+                                <label class="label-text" for="paddingDesignBF1">
+                                Horse Shoe / Heel Spur Pad
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- COVER -->
+                        <h4 class="text--azul my-3">
+                            Cover
+                        </h4>
+
+                        <div class="form-row px-2">
+                            <div class="form-check col-6 my-1">
+                                <input type="checkbox" name="coverDesignBF" id="coverDesignBF1" value="option1">
+                                <label class="label-text" for="coverDesignBF1">
+                                Heel Post Cover
+                                </label>
+                            </div>
+                            <div class="form-check col-6 my-1">
+                                <input type="checkbox" name="coverDesignBF" id="coverDesignBF2" value="option2">
+                                <label class="label-text" for="coverDesignBF2">
+                                MID Layer
+                                </label>
+                            </div>
+                            <div class="form-check col-6 my-1">
+                                <input type="checkbox" name="coverDesignBF" id="coverDesignBF3" value="option2">
+                                <label class="label-text" for="coverDesignBF3">
+                                Top Cover & Colour
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- COVER -->
+                        <h4 class="text--azul my-3">
+                            Additional Information:
+                        </h4>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="aditionalInformation1">Additional Information:</label>
+                                <textarea class="form-control" id="aditionalInformation1" rows="3"></textarea>
+                                <small>Be careful: This field will be copied on the right and left foot. The contents of the other fields will be lost.</small>
+                            </div>
+                        </div>
+
+                      </div>
                     </div>
-                    <div class="form-group col">
-                        <select class="form-control" id="heightPatient">
-                            <option>100 Cm</option>
-                        </select>
+                  </div>
+                  <div class="card card--prescription my-3">
+                    <div class="card-header" id="headingLeftFootD">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed text--md text-uppercase" data-toggle="collapse" data-target="#collapseLeftFootD" aria-expanded="false" aria-controls="collapseLeftFootD">
+                          Left Foot - Design <i class="fa fa-angle-down float-right text--md" aria-hidden="true"></i>
+                        </button>
+                      </h5>
                     </div>
-                    <div class="form-group col">
-                        <select class="form-control" id="heightPatientUs">
-                            <option>3 ft 3 in</option>
-                        </select>
+                    <div id="collapseLeftFootD" class="collapse" aria-labelledby="headingLeftFootD" data-parent="#accordion">
+                      <div class="card-body">
+                            
+                      </div>
                     </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-12">
-                        <label for="weightPatient" class="text--azul">Weight:</label>
+                  </div>
+                  <div class="card card--prescription my-3">
+                    <div class="card-header" id="headingRightFootD">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed text--md text-uppercase" data-toggle="collapse" data-target="#collapseRightFootD" aria-expanded="false" aria-controls="collapseRightFootD">
+                          Right Foot - Design <i class="fa fa-angle-down float-right text--md" aria-hidden="true"></i>
+                        </button>
+                      </h5>
                     </div>
-                    <div class="form-group col">
-                        <select class="form-control" id="weightPatient">
-                            <option>10 Kg</option>
-                        </select>
+                    <div id="collapseRightFootD" class="collapse" aria-labelledby="headingRightFootD" data-parent="#accordion">
+                      <div class="card-body">
+                            
+                      </div>
                     </div>
-                    <div class="form-group col">
-                        <select class="form-control" id="weightPatientUs">
-                            <option>22 Lbs (1.57 St)</option>
-                        </select>
+                  </div>
+                  <div class="card card--prescription my-3">
+                    <div class="card-header" id="headingPhotosFiles">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed text--md text-uppercase" data-toggle="collapse" data-target="#collapsePhotosFiles" aria-expanded="false" aria-controls="collapsePhotosFiles">
+                          Diagrams Photos And Files <i class="fa fa-angle-down float-right text--md" aria-hidden="true"></i>
+                        </button>
+                      </h5>
                     </div>
-                </div>
-
-                <div class="row">
-                    <div class="form-group col">
-                        <label for="shoeSizePatiente" class="text--azul">Shoe Size:</label>
-                        <select class="form-control" id="shoeSizePatiente">
-                            <option>40</option>
-                        </select>
+                    <div id="collapsePhotosFiles" class="collapse" aria-labelledby="headingPhotosFiles" data-parent="#accordion">
+                      <div class="card-body">
+                            <div class="slider-nav">
+                                <div>
+                                    <img src="images/camera.png" alt="" class="img-fluid img-thumbnail">
+                                </div>
+                                <div>
+                                    <img src="images/camera.png" alt="" class="img-fluid img-thumbnail">
+                                </div>
+                                <div>
+                                    <img src="images/camera.png" alt="" class="img-fluid img-thumbnail">
+                                </div>
+                            </div>
+                      </div>
                     </div>
-                </div>
-
-                <div class="row">
-                    <div class="form-group col">
-                        <label for="shoeStylePatient" class="text--azul">Shoe Style:</label>
-                        <input type="text" class="form-control" id="shoeStylePatient" placeholder="">
+                  </div>
+                  <div class="card card--prescription my-3">
+                    <div class="card-header" id="headinglabNotes">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed text--md text-uppercase" data-toggle="collapse" data-target="#collapselabNotes" aria-expanded="false" aria-controls="collapselabNotes">
+                          Lab Notes <i class="fa fa-angle-down float-right text--md" aria-hidden="true"></i>
+                        </button>
+                      </h5>
                     </div>
-                </div>
-
-                <div class="row">
-                    <div class="form-group col-12">
-                        <label for="presententComplaintPatient" class="text--azul">Presenting Complaint:</label>
-                        <input type="text" class="form-control" id="presententComplaintPatient" placeholder="">
+                    <div id="collapselabNotes" class="collapse" aria-labelledby="headinglabNotes" data-parent="#accordion">
+                      <div class="card-body">
+                            
+                      </div>
                     </div>
+                  </div>
                 </div>
-
-            </form>
-      </div>
-    </div>
-  </div>
-  <div class="card card--prescription my-3">
-    <div class="card-header" id="headingBothFeetD">
-      <h5 class="mb-0">
-        <button class="btn btn-link btn-block text-left collapsed text--md text-uppercase" data-toggle="collapse" data-target="#collapseBothFeetD" aria-expanded="false" aria-controls="collapseBothFeetD">
-          Both Feet - Design <i class="fa fa-angle-down float-right text--md" aria-hidden="true"></i>
-        </button>
-      </h5>
-    </div>
-    <div id="collapseBothFeetD" class="collapse" aria-labelledby="headingBothFeetD" data-parent="#accordion">
-      <div class="card-body">
-
-        <h4 class="text--azul my-3">
-            Technology
-        </h4>
-    
-        <div class="form-row px-2">
-            <div class="form-check col-6 my-1">
-                <input type="radio" name="technologyValue" id="optionVal1" value="option1">
-                <label class="label-text text--md" for="optionVal1">
-                Foot Pads
-                </label>
-            </div>
-            <div class="form-check col-6 my-1">
-                <input type="radio" name="technologyValue" id="optionVal2" value="option2">
-                <label class="label-text text--md" for="optionVal2">
-                Foot & Ankle Brace
-                </label>
-            </div>              
-            <div class="form-check col-6 my-1">
-                <input type="radio" name="technologyValue" id="optionVal3" value="option1">
-                <label class="label-text text--md" for="optionVal3">
-                Simple Insoles
-                </label>
-            </div>
-            <div class="form-check col-6 my-1">
-                <input type="radio" name="technologyValue" id="optionVal4" value="option2">
-                <label class="label-text text--md" for="optionVal4">
-                AFO
-                </label>
-            </div>              
-            <div class="form-check col-6 my-1">
-                <input type="radio" name="technologyValue" id="optionVal5" value="option1">
-                <label class="label-text text--md" for="optionVal5">
-                Custom Library
-                </label>
-            </div>
-            <div class="form-check col-6 my-1">
-                <input type="radio" name="technologyValue" id="optionVal6" value="customOption">
-                <label class="label-text text--md" for="optionVal6">
-                Orthopaedic Footwear
-                </label>
-            </div>               
-            <div class="form-check col-6 my-1">
-                <input type="radio" name="technologyValue" id="optionVal7" value="option1">
-                <label class="label-text text--md" for="optionVal7">
-                Custom Moulded
-                </label>
-            </div>
-            <div class="form-check col-6 my-1">
-                <input type="radio" name="technologyValue" id="optionVal8" value="customOption">
-                <label class="label-text text--md" for="optionVal8">
-                Custom Footwear
-                </label>
-            </div>             
-            <div class="form-check col-6 my-1">
-                <input type="radio" name="technologyValue" id="optionVal9" value="cadCam">
-                <label class="label-text text--md" for="optionVal9">
-                CAD CAM
-                </label>
-            </div>
-        </div>
-
-        <!-- If CAD CAM -->
-
-        <div class="form-row px-2 d-none" data-parent="cadCam" data-complement="true">
-            <hr class="w-100">
-            <div class="form-check col-6 my-1">
-                <input type="radio" name="technologyCadCam" id="technologyCadCam1" value="option1">
-                <label class="label-text text--md" for="technologyCadCam1">
-                Library Milled
-                </label>
-            </div>
-            <div class="form-check col-6 my-1">
-                <input type="radio" name="technologyCadCam" id="technologyCadCam2" value="option2">
-                <label class="label-text text--md" for="technologyCadCam2">
-                Custom Milled
-                </label>
-            </div>              
-            <div class="form-check col-6 my-1">
-                <input type="radio" name="technologyCadCam" id="technologyCadCam3" value="option1">
-                <label class="label-text text--md" for="technologyCadCam3">
-                3D Printed
-                </label>
-            </div>
-        </div>
-
-        <!-- If ORTHOPAEDIC FOOTWEAR -->
-
-        <div class="form-row px-2 d-none" data-parent="customOption"  data-complement="true">
-            
-            <hr class="w-100">
-
-            <div class="form-check col-6 my-1">
-                <input type="radio" name="orthopedicFootwear" id="orthopedicFootwear1" value="option1">
-                <label class="label-text text--md" for="orthopedicFootwear1">
-                Sandals
-                </label>
-            </div>
-            <div class="form-check col-6 my-1">
-                <input type="radio" name="orthopedicFootwear" id="orthopedicFootwear2" value="option2">
-                <label class="label-text text--md" for="orthopedicFootwear2">
-                Shoes
-                </label>
-            </div>              
-            <div class="form-check col-6 my-1">
-                <input type="radio" name="orthopedicFootwear" id="orthopedicFootwear3" value="option3">
-                <label class="label-text text--md" for="orthopedicFootwear3">
-                Boots
-                </label>
-            </div>
-            <div class="form-check col-6 my-1">
-                <input type="radio" name="orthopedicFootwear" id="orthopedicFootwear4" value="option4">
-                <label class="label-text text--md" for="orthopedicFootwear4">
-                Trainers
-                </label>
-            </div>
-            <div class="form-check col-6 my-1">
-                <input type="radio" name="orthopedicFootwear" id="orthopedicFootwear5" value="option5">
-                <label class="label-text text--md" for="orthopedicFootwear5">
-                Slippers
-                </label>
-            </div>
-            <div class="form-check col-6 my-1">
-                <input type="radio" name="orthopedicFootwear" id="orthopedicFootwear6" value="option6">
-                <label class="label-text text--md" for="orthopedicFootwear6">
-                Bootees
-                </label>
-            </div>
-        </div>
-
-
-        <!-- MATERIAL -->
-        <h4 class="text--azul my-3">
-            Material
-        </h4>
-
-        <div class="form-row px-2">
-            <div class="form-check col-6 my-1">
-                <input type="radio" name="materialDesignBF" id="materialDesignBF1" value="option1">
-                <label class="label-text text--md" for="materialDesignBF1">
-                Thermoplastic
-                </label>
-            </div>
-            <div class="form-check col-6 my-1">
-                <input type="radio" name="materialDesignBF" id="materialDesignBF2" value="option2">
-                <label class="label-text text--md" for="materialDesignBF2">
-                Thermofoam
-                </label>
-            </div>              
-            <div class="form-check col-6 my-1">
-                <input type="radio" name="materialDesignBF" id="materialDesignBF3" value="option1">
-                <label class="label-text text--md" for="materialDesignBF3">
-                Composite
-                </label>
-            </div>
-            <div class="form-check col-6 my-1">
-                <input type="radio" name="materialDesignBF" id="materialDesignBF4" value="option1">
-                <label class="label-text text--md" for="materialDesignBF4">
-                Carbon Fib
-                </label>
-            </div>
-        </div>
-
-        <div class="form-row">
-            <hr class="w-100">
-            <div class="form-group col">
-                <select class="form-control" id="shoeSizePatiente">
-                    <option>--</option>
-                </select>
-            </div>
-        </div>
-
-        <!-- DEPTH -->
-        <h4 class="text--azul my-3">
-            Depth
-        </h4>
-
-        <div class="form-row px-2">
-            <div class="form-check col-6 my-1">
-                <input type="radio" name="depthDesignBF" id="depthDesignBF1" value="option1">
-                <label class="label-text text--md" for="depthDesignBF1">
-                FHC
-                </label>
-            </div>
-            <div class="form-check col-6 my-1">
-                <input type="radio" name="depthDesignBF" id="depthDesignBF2" value="option2">
-                <label class="label-text text--md" for="depthDesignBF2">
-                SHC
-                </label>
-            </div>              
-            <div class="form-check col-6 my-1">
-                <input type="radio" name="depthDesignBF" id="depthDesignBF3" value="option1">
-                <label class="label-text text--md" for="depthDesignBF3">
-                DHC
-                </label>
-            </div>
-        </div>
-
-        <!-- DEPTH -->
-        <h4 class="text--azul my-3">
-            LENGTH
-        </h4>
-
-        <div class="form-row px-2">
-            <div class="form-check col-6 my-1">
-                <input type="radio" name="lendthDesignBF" id="lendthDesignBF1" value="option1">
-                <label class="label-text text--md" for="lendthDesignBF1">
-                To Mets
-                </label>
-            </div>
-            <div class="form-check col-6 my-1">
-                <input type="radio" name="lendthDesignBF" id="lendthDesignBF2" value="option2">
-                <label class="label-text text--md" for="lendthDesignBF2">
-                To Sulcus
-                </label>
-            </div>              
-            <div class="form-check col-6 my-1">
-                <input type="radio" name="lendthDesignBF" id="lendthDesignBF3" value="option1">
-                <label class="label-text text--md" for="lendthDesignBF3">
-                Full Length
-                </label>
-            </div>
-        </div>
-
-        <!-- DEPTH -->
-        <h4 class="text--azul my-3">
-            Style
-        </h4>
-
-        <div class="form-row px-2">
-            <div class="form-check col-6 my-1">
-                <input type="radio" name="styleDesignBF" id="styleDesignBF1" value="option1">
-                <label class="label-text text--md" for="styleDesignBF1">
-                Custom Freestyle
-                </label>
-            </div>
-            <div class="form-check col-6 my-1">
-                <input type="radio" name="styleDesignBF" id="styleDesignBF2" value="option2">
-                <label class="label-text text--md" for="styleDesignBF2">
-                Custom Selective
-                </label>
-            </div>
-        </div>
-
-        <!-- IF SELECT CUSTOM STYLE -->
-        <div class="form-row">
-            <hr class="w-100">
-            <div class="form-group">
-                <label for="customStyle1">Free Text Field:</label>
-                <textarea class="form-control" id="customStyle1" rows="3"></textarea>
-                <small>Attention: This field will be copied on the right and left foot. The contents of the other fields will be lost.</small>
-            </div>
-        </div>
-
-        <!-- IF SELECT CUSTOM SELECTIVE -->
-        <div class="form-row px-2">
-            <hr class="w-100">
-            <div class="form-check col-6 my-1">
-                <input type="radio" name="styleCustomSelectiveBF" id="styleCustomSelectiveBF1" value="option1">
-                <label class="label-text text--md" for="styleCustomSelectiveBF1">
-                Dress
-                </label>
-            </div>
-            <div class="form-check col-6 my-1">
-                <input type="radio" name="styleCustomSelectiveBF" id="styleCustomSelectiveBF2" value="option2">
-                <label class="label-text text--md" for="styleCustomSelectiveBF2">
-                Casual
-                </label>
-            </div>
-            <div class="form-check col-6 my-1">
-                <input type="radio" name="styleCustomSelectiveBF" id="styleCustomSelectiveBF2" value="option2">
-                <label class="label-text text--md" for="styleCustomSelectiveBF2">
-                Sport
-                </label>
-            </div>
-            <div class="form-check col-6 my-1">
-                <input type="radio" name="styleCustomSelectiveBF" id="styleCustomSelectiveBF2" value="option2">
-                <label class="label-text text--md" for="styleCustomSelectiveBF2">
-                Supinator
-                </label>
-            </div>
-            <div class="form-check col-6 my-1">
-                <input type="radio" name="styleCustomSelectiveBF" id="styleCustomSelectiveBF2" value="option2">
-                <label class="label-text text--md" for="styleCustomSelectiveBF2">
-                Pronator
-                </label>
-            </div>
-            <div class="form-check col-6 my-1">
-                <input type="radio" name="styleCustomSelectiveBF" id="styleCustomSelectiveBF2" value="option2">
-                <label class="label-text text--md" for="styleCustomSelectiveBF2">
-                Gait Plates
-                </label>
-            </div>
-        </div>
-
-        <!-- DEPTH -->
-        <h4 class="text--azul my-3">
-            Shape
-        </h4>
-
-        <div class="form-row px-2">
-            <div class="form-check col-6 my-1">
-                <input type="radio" name="shapeDesignBF" id="shapeDesignBF1" value="option1">
-                <label class="label-text text--md" for="shapeDesignBF1">
-                Slim
-                </label>
-            </div>
-            <div class="form-check col-6 my-1">
-                <input type="radio" name="shapeDesignBF" id="shapeDesignBF2" value="option2">
-                <label class="label-text text--md" for="shapeDesignBF2">
-                Regular
-                </label>
-            </div>
-            <div class="form-check col-6 my-1">
-                <input type="radio" name="shapeDesignBF" id="shapeDesignBF3" value="option2">
-                <label class="label-text text--md" for="shapeDesignBF3">
-                Wide
-                </label>
-            </div>
-            <div class="form-check col-6 my-1">
-                <input type="radio" name="shapeDesignBF" id="shapeDesignBF4" value="option2">
-                <label class="label-text text--md" for="shapeDesignBF4">
-                Cobra
-                </label>
-            </div>
-            <div class="form-check col-6 my-1">
-                <input type="radio" name="shapeDesignBF" id="shapeDesignBF5" value="option2">
-                <label class="label-text text--md" for="shapeDesignBF5">
-                Morton´s Shell
-                </label>
-            </div>
-            <div class="form-check col-6 my-1">
-                <input type="radio" name="shapeDesignBF" id="shapeDesignBF6" value="option2">
-                <label class="label-text text--md" for="shapeDesignBF6">
-                Pronator Plate
-                </label>
-            </div>
-            <div class="form-check col-6 my-1">
-                <input type="radio" name="shapeDesignBF" id="shapeDesignBF7" value="option2">
-                <label class="label-text text--md" for="shapeDesignBF7">
-                Supinator Plate
-                </label>
-            </div>
-            <div class="form-check col-6 my-1">
-                <input type="radio" name="shapeDesignBF" id="shapeDesignBF8" value="option2">
-                <label class="label-text text--md" for="shapeDesignBF8">
-                Gait Plate
-                </label>
-            </div>
-        </div>
-            
-        <!-- DEPTH -->
-        <h4 class="text--azul my-3">
-            Cut Outs
-        </h4>
-
-        <div class="form-row px-2">
-            <div class="form-check col-6 my-1">
-                <input type="checkbox" name="cutOutsDesignBF" id="cutOutsDesignBF1" value="option1">
-                <label class="label-text text--md" for="cutOutsDesignBF1">
-                Met Parabola
-                </label>
-            </div>
-            <div class="form-check col-6 my-1">
-                <input type="checkbox" name="cutOutsDesignBF" id="cutOutsDesignBF2" value="option2">
-                <label class="label-text text--md" for="cutOutsDesignBF2">
-                1st Met
-                </label>
-            </div>
-            <div class="form-check col-6 my-1">
-                <input type="checkbox" name="cutOutsDesignBF" id="cutOutsDesignBF3" value="option2">
-                <label class="label-text text--md" for="cutOutsDesignBF3">
-                1st Ray
-                </label>
-            </div>
-            <div class="form-check col-6 my-1">
-                <input type="checkbox" name="cutOutsDesignBF" id="cutOutsDesignBF4" value="option2">
-                <label class="label-text text--md" for="cutOutsDesignBF4">
-                2nd Met
-                </label>
-            </div>
-            <div class="form-check col-6 my-1">
-                <input type="checkbox" name="cutOutsDesignBF" id="cutOutsDesignBF5" value="option2">
-                <label class="label-text text--md" for="cutOutsDesignBF5">
-                2nd Met
-                </label>
-            </div>
-            <div class="form-check col-6 my-1">
-                <input type="checkbox" name="cutOutsDesignBF" id="cutOutsDesignBF6" value="option2">
-                <label class="label-text text--md" for="cutOutsDesignBF6">
-                2nd Ray
-                </label>
-            </div>
-            <div class="form-check col-6 my-1">
-                <input type="checkbox" name="cutOutsDesignBF" id="cutOutsDesignBF7" value="option2">
-                <label class="label-text text--md" for="cutOutsDesignBF7">
-                3rd Met
-                </label>
-            </div>
-            <div class="form-check col-6 my-1">
-                <input type="checkbox" name="cutOutsDesignBF" id="cutOutsDesignBF8" value="option2">
-                <label class="label-text text--md" for="cutOutsDesignBF8">
-                3rd Ray
-                </label>
-            </div>
-            <div class="form-check col-6 my-1">
-                <input type="checkbox" name="cutOutsDesignBF" id="cutOutsDesignBF9" value="option2">
-                <label class="label-text text--md" for="cutOutsDesignBF9">
-                4th Met
-                </label>
-            </div>
-            <div class="form-check col-6 my-1">
-                <input type="checkbox" name="cutOutsDesignBF" id="cutOutsDesignBF10" value="option2">
-                <label class="label-text text--md" for="cutOutsDesignBF10">
-                4th Ray
-                </label>
-            </div>
-            <div class="form-check col-6 my-1">
-                <input type="checkbox" name="cutOutsDesignBF" id="cutOutsDesignBF11" value="option2">
-                <label class="label-text text--md" for="cutOutsDesignBF11">
-                5th Met
-                </label>
-            </div>
-            <div class="form-check col-6 my-1">
-                <input type="checkbox" name="cutOutsDesignBF" id="cutOutsDesignBF12" value="option2">
-                <label class="label-text text--md" for="cutOutsDesignBF12">
-                5th Ray
-                </label>
-            </div>
-            <div class="form-check col-6 my-1">
-                <input type="checkbox" name="cutOutsDesignBF" id="cutOutsDesignBF13" value="option2">
-                <label class="label-text text--md" for="cutOutsDesignBF13">
-                Base of 5th
-                </label>
-            </div>
-            <div class="form-check col-6 my-1">
-                <input type="checkbox" name="cutOutsDesignBF" id="cutOutsDesignBF14" value="option2">
-                <label class="label-text text--md" for="cutOutsDesignBF14">
-                Plantar Fascial
-                </label>
-            </div>
-            <div class="form-check col-6 my-1">
-                <input type="checkbox" name="cutOutsDesignBF" id="cutOutsDesignBF15" value="option2">
-                <label class="label-text text--md" for="cutOutsDesignBF15">
-                Navicular
-                </label>
-            </div>
-            <div class="form-check col-6 my-1">
-                <input type="checkbox" name="cutOutsDesignBF" id="cutOutsDesignBF16" value="option2">
-                <label class="label-text text--md" for="cutOutsDesignBF16">
-                Cuboid
-                </label>
-            </div>
-            <div class="form-check col-6 my-1">
-                <input type="checkbox" name="cutOutsDesignBF" id="cutOutsDesignBF17" value="option2">
-                <label class="label-text text--md" for="cutOutsDesignBF17">
-                Hell
-                </label>
-            </div>
-        </div>
-
-        <!-- POSTING -->
-        <h4 class="text--azul my-3">
-            Posting
-        </h4>
-
-        <div class="form-row px-2">
-            <div class="form-check col-6 my-1">
-                <input type="checkbox" name="postingDesignBF" id="postingDesignBF1" value="option1">
-                <label class="label-text text--md" for="postingDesignBF1">
-                Rearfoot
-                </label>
-            </div>
-            <div class="form-check col-6 my-1">
-                <input type="checkbox" name="postingDesignBF" id="postingDesignBF2" value="option2">
-                <label class="label-text text--md" for="postingDesignBF2">
-                Forefoot
-                </label>
-            </div>
-            <div class="form-check col-6 my-1">
-                <input type="checkbox" name="postingDesignBF" id="postingDesignBF3" value="option2">
-                <label class="label-text text--md" for="postingDesignBF3">
-                Heel Lift
-                </label>
-            </div>
-        </div>
-
-        <!-- PADDING -->
-        <h4 class="text--azul my-3">
-            Padding
-        </h4>
-
-        <div class="form-row px-2">
-            <div class="form-check col-6 my-1">
-                <input type="checkbox" name="paddingDesignBF" id="paddingDesignBF1" value="option1">
-                <label class="label-text text--md" for="paddingDesignBF1">
-                Metatarsal Pad
-                </label>
-            </div>
-            <div class="form-check col-6 my-1">
-                <input type="checkbox" name="paddingDesignBF" id="paddingDesignBF2" value="option2">
-                <label class="label-text text--md" for="paddingDesignBF2">
-                Metatarsal Bar
-                </label>
-            </div>
-            <div class="form-check col-6 my-1">
-                <input type="checkbox" name="paddingDesignBF" id="paddingDesignBF3" value="option2">
-                <label class="label-text text--md" for="paddingDesignBF3">
-                Metatarsal Prop
-                </label>
-            </div>
-            <div class="form-check col-6 my-1">
-                <input type="checkbox" name="paddingDesignBF" id="paddingDesignBF1" value="option1">
-                <label class="label-text text--md" for="paddingDesignBF1">
-                Morton`s Prop
-                </label>
-            </div>
-            <div class="form-check col-6 my-1">
-                <input type="checkbox" name="paddingDesignBF" id="paddingDesignBF2" value="option2">
-                <label class="label-text text--md" for="paddingDesignBF2">
-                Reverse Morton`s Prop
-                </label>
-            </div>
-            <div class="form-check col-6 my-1">
-                <input type="checkbox" name="paddingDesignBF" id="paddingDesignBF3" value="option2">
-                <label class="label-text text--md" for="paddingDesignBF3">
-                PMP Pad
-                </label>
-            </div>
-            <div class="form-check col-6 my-1">
-                <input type="checkbox" name="paddingDesignBF" id="paddingDesignBF1" value="option1">
-                <label class="label-text text--md" for="paddingDesignBF1">
-                Arch Pad
-                </label>
-            </div>
-            <div class="form-check col-6 my-1">
-                <input type="checkbox" name="paddingDesignBF" id="paddingDesignBF2" value="option2">
-                <label class="label-text text--md" for="paddingDesignBF2">
-                Cuboid Pad
-                </label>
-            </div>
-            <div class="form-check col-6 my-1">
-                <input type="checkbox" name="paddingDesignBF" id="paddingDesignBF3" value="option2">
-                <label class="label-text text--md" for="paddingDesignBF3">
-                Heel Cushion
-                </label>
-            </div>
-            <div class="form-check col-6 my-1">
-                <input type="checkbox" name="paddingDesignBF" id="paddingDesignBF1" value="option1">
-                <label class="label-text text--md" for="paddingDesignBF1">
-                Horse Shoe / Heel Spur Pad
-                </label>
-            </div>
-        </div>
-
-        <!-- COVER -->
-        <h4 class="text--azul my-3">
-            Cover
-        </h4>
-
-        <div class="form-row px-2">
-            <div class="form-check col-6 my-1">
-                <input type="checkbox" name="coverDesignBF" id="coverDesignBF1" value="option1">
-                <label class="label-text text--md" for="coverDesignBF1">
-                Heel Post Cover
-                </label>
-            </div>
-            <div class="form-check col-6 my-1">
-                <input type="checkbox" name="coverDesignBF" id="coverDesignBF2" value="option2">
-                <label class="label-text text--md" for="coverDesignBF2">
-                MID Layer
-                </label>
-            </div>
-            <div class="form-check col-6 my-1">
-                <input type="checkbox" name="coverDesignBF" id="coverDesignBF3" value="option2">
-                <label class="label-text text--md" for="coverDesignBF3">
-                Top Cover & Colour
-                </label>
-            </div>
-        </div>
-
-        <!-- COVER -->
-        <h4 class="text--azul my-3">
-            Additional Information:
-        </h4>
-
-        <div class="form-row">
-            <div class="form-group">
-                <label for="aditionalInformation1">Additional Information:</label>
-                <textarea class="form-control" id="aditionalInformation1" rows="3"></textarea>
-                <small>Be careful: This field will be copied on the right and left foot. The contents of the other fields will be lost.</small>
-            </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-  <div class="card card--prescription my-3">
-    <div class="card-header" id="headingLeftFootD">
-      <h5 class="mb-0">
-        <button class="btn btn-link btn-block text-left collapsed text--md text-uppercase" data-toggle="collapse" data-target="#collapseLeftFootD" aria-expanded="false" aria-controls="collapseLeftFootD">
-          Left Foot - Design <i class="fa fa-angle-down float-right text--md" aria-hidden="true"></i>
-        </button>
-      </h5>
-    </div>
-    <div id="collapseLeftFootD" class="collapse" aria-labelledby="headingLeftFootD" data-parent="#accordion">
-      <div class="card-body">
-            
-      </div>
-    </div>
-  </div>
-  <div class="card card--prescription my-3">
-    <div class="card-header" id="headingRightFootD">
-      <h5 class="mb-0">
-        <button class="btn btn-link btn-block text-left collapsed text--md text-uppercase" data-toggle="collapse" data-target="#collapseRightFootD" aria-expanded="false" aria-controls="collapseRightFootD">
-          Right Foot - Design <i class="fa fa-angle-down float-right text--md" aria-hidden="true"></i>
-        </button>
-      </h5>
-    </div>
-    <div id="collapseRightFootD" class="collapse" aria-labelledby="headingRightFootD" data-parent="#accordion">
-      <div class="card-body">
-            
-      </div>
-    </div>
-  </div>
-  <div class="card card--prescription my-3">
-    <div class="card-header" id="headingPhotosFiles">
-      <h5 class="mb-0">
-        <button class="btn btn-link btn-block text-left collapsed text--md text-uppercase" data-toggle="collapse" data-target="#collapsePhotosFiles" aria-expanded="false" aria-controls="collapsePhotosFiles">
-          Diagrams Photos And Files <i class="fa fa-angle-down float-right text--md" aria-hidden="true"></i>
-        </button>
-      </h5>
-    </div>
-    <div id="collapsePhotosFiles" class="collapse" aria-labelledby="headingPhotosFiles" data-parent="#accordion">
-      <div class="card-body">
-            <div class="slider-nav">
-                <div>
-                    <img src="images/camera.png" alt="" class="img-fluid img-thumbnail">
-                </div>
-                <div>
-                    <img src="images/camera.png" alt="" class="img-fluid img-thumbnail">
-                </div>
-                <div>
-                    <img src="images/camera.png" alt="" class="img-fluid img-thumbnail">
-                </div>
-            </div>
-      </div>
-    </div>
-  </div>
-  <div class="card card--prescription my-3">
-    <div class="card-header" id="headinglabNotes">
-      <h5 class="mb-0">
-        <button class="btn btn-link btn-block text-left collapsed text--md text-uppercase" data-toggle="collapse" data-target="#collapselabNotes" aria-expanded="false" aria-controls="collapselabNotes">
-          Lab Notes <i class="fa fa-angle-down float-right text--md" aria-hidden="true"></i>
-        </button>
-      </h5>
-    </div>
-    <div id="collapselabNotes" class="collapse" aria-labelledby="headinglabNotes" data-parent="#accordion">
-      <div class="card-body">
-            
-      </div>
-    </div>
-  </div>
-</div>
-
-
 
             </div>
         </div>

@@ -37,17 +37,20 @@
                 <a class="navbar-brand" href="#">
                     <img src="images/logo.png" class="d-inline-block align-top img-fluid" alt="">
                 </a>
-
+                
+                <a class="text--azul text--lg ml-3" href="#">
+                    <i class="fa fa-user-o" aria-hidden="true"></i> <span class="text--bold">AJ</span>
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarPrimary" aria-controls="navBarPrimary" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <i class="fa fa-bars text--azul mt-1 text--xlg" aria-hidden="true"></i>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navBarPrimary">
+                <div class="collapse navbar-collapse navbar-collapse__primary" id="navBarPrimary">
                     <div class="navbar-nav">
-                        <a class="nav-item nav-link active" href="#">Create New Preinscripción</a>
-                        <a class="nav-item nav-link" href="#">User</a>
-                        <a class="nav-item nav-link" href="#">View Your Profile</a>
-                        <a class="nav-item nav-link" href="#">Log Out (perfilregistrado@gmail.com)</a>
+                        <a class="nav-item nav-link active" href="#">Create New Preinscripción <i class="fa fa-angle-right float-right" aria-hidden="true"></i></a>
+                        <a class="nav-item nav-link" href="#">User <i class="fa fa-angle-right float-right" aria-hidden="true"></i></a>
+                        <a class="nav-item nav-link" href="#">View Your Profile <i class="fa fa-angle-right float-right" aria-hidden="true"></i></a>
+                        <a class="nav-item nav-link" href="#">Log Out (perfilregistrado@gmail.com) <i class="fa fa-angle-right float-right" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </nav>
@@ -65,346 +68,343 @@
         <div class="container my-3 pb-5">
             <div class="col py-3 my-3">
 
+                <div id="accordion">
+                  <div class="card card--prescription my-3">
+                    <div class="card-header" id="headingSpecialist">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed text--md text-uppercase" data-toggle="collapse" data-target="#collapseSpecialist" aria-expanded="true" aria-controls="collapseSpecialist">
+                          Specialist <i class="fa fa-angle-down float-right text--md" aria-hidden="true"></i>
+                        </button>
+                      </h5>
+                    </div>
 
-<div id="accordion">
-  <div class="card card--prescription my-3">
-    <div class="card-header" id="headingSpecialist">
-      <h5 class="mb-0">
-        <button class="btn btn-link btn-block text-left collapsed text--md text-uppercase" data-toggle="collapse" data-target="#collapseSpecialist" aria-expanded="true" aria-controls="collapseSpecialist">
-          Specialist <i class="fa fa-angle-down float-right text--md" aria-hidden="true"></i>
-        </button>
-      </h5>
-    </div>
+                    <div id="collapseSpecialist" class="collapse" aria-labelledby="headingSpecialist" data-parent="#accordion">
+                      <div class="card-body">
 
-    <div id="collapseSpecialist" class="collapse" aria-labelledby="headingSpecialist" data-parent="#accordion">
-      <div class="card-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <table class="table table-borderless">
+                                    <tbody>
+                                        <tr>
+                                            <td class="text--azul text--bold">Prescription</td>
+                                            <td class="text-dark">New Order</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text--azul text--bold">Order Date</td>
+                                            <td class="text-dark">01-01-2018</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text--azul text--bold">Measurements</td>
+                                            <td class="text-dark">3D Scan, Photo(s), Video(s), Pop Cast, Foam Cast, Foot Print, Shoe Template, Orthoses, Shoes</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text--azul text--bold">ID Number</td>
+                                            <td class="text-dark">5A3814E765JH33C</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text--azul text--bold">Fitting Date</td>
+                                            <td class="text-dark">15-01-2018</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text--azul text--bold">Status</td>
+                                            <td class="text-dark">Submitted</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text--azul text--bold">Ship to</td>
+                                            <td class="text-dark">Patient</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card card--prescription my-3">
+                    <div class="card-header" id="headingPatient">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed text--md text-uppercase" data-toggle="collapse" data-target="#collapsePatient" aria-expanded="false" aria-controls="collapsePatient">
+                          Patient <i class="fa fa-angle-down float-right text--md" aria-hidden="true"></i>
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapsePatient" class="collapse" aria-labelledby="headingPatient" data-parent="#accordion">
+                      <div class="card-body">
 
-        <div class="row">
-            <div class="col-12">
-                <table class="table table-borderless">
-                    <tbody>
-                        <tr>
-                            <td class="text--azul text--bold">Prescription</td>
-                            <td class="text-dark">New Order</td>
-                        </tr>
-                        <tr>
-                            <td class="text--azul text--bold">Order Date</td>
-                            <td class="text-dark">01-01-2018</td>
-                        </tr>
-                        <tr>
-                            <td class="text--azul text--bold">Measurements</td>
-                            <td class="text-dark">3D Scan, Photo(s), Video(s), Pop Cast, Foam Cast, Foot Print, Shoe Template, Orthoses, Shoes</td>
-                        </tr>
-                        <tr>
-                            <td class="text--azul text--bold">ID Number</td>
-                            <td class="text-dark">5A3814E765JH33C</td>
-                        </tr>
-                        <tr>
-                            <td class="text--azul text--bold">Fitting Date</td>
-                            <td class="text-dark">15-01-2018</td>
-                        </tr>
-                        <tr>
-                            <td class="text--azul text--bold">Status</td>
-                            <td class="text-dark">Submitted</td>
-                        </tr>
-                        <tr>
-                            <td class="text--azul text--bold">Ship to</td>
-                            <td class="text-dark">Patient</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        
-      </div>
-    </div>
-  </div>
-  <div class="card card--prescription my-3">
-    <div class="card-header" id="headingPatient">
-      <h5 class="mb-0">
-        <button class="btn btn-link btn-block text-left collapsed text--md text-uppercase" data-toggle="collapse" data-target="#collapsePatient" aria-expanded="false" aria-controls="collapsePatient">
-          Patient <i class="fa fa-angle-down float-right text--md" aria-hidden="true"></i>
-        </button>
-      </h5>
-    </div>
-    <div id="collapsePatient" class="collapse" aria-labelledby="headingPatient" data-parent="#accordion">
-      <div class="card-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <table class="table table-borderless">
+                                    <tbody>
+                                        <tr>
+                                            <td class="text--azul text--bold w-25">Name</td>
+                                            <td class="text-dark w-75">register Profile Clinica 1</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text--azul text--bold w-25">Ref. No</td>
+                                            <td class="text-dark w-75">ABC123</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text--azul text--bold w-25">Address</td>
+                                            <td class="text-dark w-75">Aaaaa</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text--azul text--bold w-25">Mobile</td>
+                                            <td class="text-dark w-75">123456789</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text--azul text--bold w-25">Email</td>
+                                            <td class="text-dark w-75">eeeee</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text--azul text--bold w-25">Birthday</td>
+                                            <td class="text-dark w-75">05-03-1992</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text--azul text--bold w-25">Age</td>
+                                            <td class="text-dark w-75">26</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text--azul text--bold w-25">Height</td>
+                                            <td class="text-dark w-75">139cm / 4ft / 7in</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text--azul text--bold w-25">Weight</td>
+                                            <td class="text-dark w-75">74Kg Lb163.1 Lbs (11.65 St)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text--azul text--bold w-25">Shoe Size</td>
+                                            <td class="text-dark w-75">Men 260mm 5 1/2UK - 42EU </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text--azul text--bold w-25">Shoe Style</td>
+                                            <td class="text-dark w-75">GUAY</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text--azul text--bold w-25">Presenting Complaint</td>
+                                            <td class="text-dark w-75">PC text</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
 
-        <div class="row">
-            <div class="col-12">
-                <table class="table table-borderless">
-                    <tbody>
-                        <tr>
-                            <td class="text--azul text--bold w-25">Name</td>
-                            <td class="text-dark w-75">register Profile Clinica 1</td>
-                        </tr>
-                        <tr>
-                            <td class="text--azul text--bold w-25">Ref. No</td>
-                            <td class="text-dark w-75">ABC123</td>
-                        </tr>
-                        <tr>
-                            <td class="text--azul text--bold w-25">Address</td>
-                            <td class="text-dark w-75">Aaaaa</td>
-                        </tr>
-                        <tr>
-                            <td class="text--azul text--bold w-25">Mobile</td>
-                            <td class="text-dark w-75">123456789</td>
-                        </tr>
-                        <tr>
-                            <td class="text--azul text--bold w-25">Email</td>
-                            <td class="text-dark w-75">eeeee</td>
-                        </tr>
-                        <tr>
-                            <td class="text--azul text--bold w-25">Birthday</td>
-                            <td class="text-dark w-75">05-03-1992</td>
-                        </tr>
-                        <tr>
-                            <td class="text--azul text--bold w-25">Age</td>
-                            <td class="text-dark w-75">26</td>
-                        </tr>
-                        <tr>
-                            <td class="text--azul text--bold w-25">Height</td>
-                            <td class="text-dark w-75">139cm / 4ft / 7in</td>
-                        </tr>
-                        <tr>
-                            <td class="text--azul text--bold w-25">Weight</td>
-                            <td class="text-dark w-75">74Kg Lb163.1 Lbs (11.65 St)</td>
-                        </tr>
-                        <tr>
-                            <td class="text--azul text--bold w-25">Shoe Size</td>
-                            <td class="text-dark w-75">Men 260mm 5 1/2UK - 42EU </td>
-                        </tr>
-                        <tr>
-                            <td class="text--azul text--bold w-25">Shoe Style</td>
-                            <td class="text-dark w-75">GUAY</td>
-                        </tr>
-                        <tr>
-                            <td class="text--azul text--bold w-25">Presenting Complaint</td>
-                            <td class="text-dark w-75">PC text</td>
-                        </tr>
-                    </tbody>
-                </table>
+                            </div>
+                        </div>
 
-            </div>
-        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card card--prescription my-3">
+                    <div class="card-header" id="headingBothFeetD">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed text--md text-uppercase" data-toggle="collapse" data-target="#collapseBothFeetD" aria-expanded="false" aria-controls="collapseBothFeetD">
+                          Both Feet - Design <i class="fa fa-angle-down float-right text--md" aria-hidden="true"></i>
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseBothFeetD" class="collapse" aria-labelledby="headingBothFeetD" data-parent="#accordion">
+                      <div class="card-body">
 
-      </div>
-    </div>
-  </div>
-  <div class="card card--prescription my-3">
-    <div class="card-header" id="headingBothFeetD">
-      <h5 class="mb-0">
-        <button class="btn btn-link btn-block text-left collapsed text--md text-uppercase" data-toggle="collapse" data-target="#collapseBothFeetD" aria-expanded="false" aria-controls="collapseBothFeetD">
-          Both Feet - Design <i class="fa fa-angle-down float-right text--md" aria-hidden="true"></i>
-        </button>
-      </h5>
-    </div>
-    <div id="collapseBothFeetD" class="collapse" aria-labelledby="headingBothFeetD" data-parent="#accordion">
-      <div class="card-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <table class="table table-borderless">
+                                    <tbody>
+                                        <tr>
+                                            <td class="text--azul text--bold w-25">Technology</td>
+                                            <td class="text-dark w-75">Foot Pads Simple Insoles Custom Library Custom Moulded (Library Cast POP Cast CAD Cast) CAD CAM (Library Mille Custom Milled 3D printed)< Foot & Ankie Brace AFO Orthopaedic Footwear< (Sandals Shoe Boots Trainers Slippers Bootees)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text--azul text--bold w-25">Material</td>
+                                            <td class="text-dark w-75">Thermoplastic Thermoplast</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text--azul text--bold w-25">Depth</td>
+                                            <td class="text-dark w-75">SHC</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text--azul text--bold w-25">Length</td>
+                                            <td class="text-dark w-75">Top Mets</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text--azul text--bold w-25">Shape</td>
+                                            <td class="text-dark w-75">Regular</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text--azul text--bold w-25">Cut Outs</td>
+                                            <td class="text-dark w-75">Met Parabola</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text--azul text--bold w-25">Posting</td>
+                                            <td class="text-dark w-75">Rearfoot Lateral 1 Degrees Midfoot Length</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text--azul text--bold w-25">Padding</td>
+                                            <td class="text-dark w-75">Metatarsal Pad M</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text--azul text--bold w-25">Cover</td>
+                                            <td class="text-dark w-75">Heel Post Cover</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
 
-        <div class="row">
-            <div class="col-12">
-                <table class="table table-borderless">
-                    <tbody>
-                        <tr>
-                            <td class="text--azul text--bold w-25">Technology</td>
-                            <td class="text-dark w-75">Foot Pads Simple Insoles Custom Library Custom Moulded (Library Cast POP Cast CAD Cast) CAD CAM (Library Mille Custom Milled 3D printed)< Foot & Ankie Brace AFO Orthopaedic Footwear< (Sandals Shoe Boots Trainers Slippers Bootees)</td>
-                        </tr>
-                        <tr>
-                            <td class="text--azul text--bold w-25">Material</td>
-                            <td class="text-dark w-75">Thermoplastic Thermoplast</td>
-                        </tr>
-                        <tr>
-                            <td class="text--azul text--bold w-25">Depth</td>
-                            <td class="text-dark w-75">SHC</td>
-                        </tr>
-                        <tr>
-                            <td class="text--azul text--bold w-25">Length</td>
-                            <td class="text-dark w-75">Top Mets</td>
-                        </tr>
-                        <tr>
-                            <td class="text--azul text--bold w-25">Shape</td>
-                            <td class="text-dark w-75">Regular</td>
-                        </tr>
-                        <tr>
-                            <td class="text--azul text--bold w-25">Cut Outs</td>
-                            <td class="text-dark w-75">Met Parabola</td>
-                        </tr>
-                        <tr>
-                            <td class="text--azul text--bold w-25">Posting</td>
-                            <td class="text-dark w-75">Rearfoot Lateral 1 Degrees Midfoot Length</td>
-                        </tr>
-                        <tr>
-                            <td class="text--azul text--bold w-25">Padding</td>
-                            <td class="text-dark w-75">Metatarsal Pad M</td>
-                        </tr>
-                        <tr>
-                            <td class="text--azul text--bold w-25">Cover</td>
-                            <td class="text-dark w-75">Heel Post Cover</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-  <div class="card card--prescription my-3">
-    <div class="card-header" id="headingLeftFootD">
-      <h5 class="mb-0">
-        <button class="btn btn-link btn-block text-left collapsed text--md text-uppercase" data-toggle="collapse" data-target="#collapseLeftFootD" aria-expanded="false" aria-controls="collapseLeftFootD">
-          Left Foot - Design <i class="fa fa-angle-down float-right text--md" aria-hidden="true"></i>
-        </button>
-      </h5>
-    </div>
-    <div id="collapseLeftFootD" class="collapse" aria-labelledby="headingLeftFootD" data-parent="#accordion">
-      <div class="card-body">
-        <div class="row">
-            <div class="col-12">
-                <table class="table table-borderless">
-                    <tbody>
-                        <tr>
-                            <td class="text--azul text--bold w-25">Technology</td>
-                            <td class="text-dark w-75">Foot Pads Simple Insoles Custom Library Custom Moulded (Library Cast POP Cast CAD Cast) CAD CAM (Library Mille Custom Milled 3D printed)< Foot & Ankie Brace AFO Orthopaedic Footwear< (Sandals Shoe Boots Trainers Slippers Bootees)</td>
-                        </tr>
-                        <tr>
-                            <td class="text--azul text--bold w-25">Material</td>
-                            <td class="text-dark w-75">Thermoplastic Thermoplast</td>
-                        </tr>
-                        <tr>
-                            <td class="text--azul text--bold w-25">Depth</td>
-                            <td class="text-dark w-75">SHC</td>
-                        </tr>
-                        <tr>
-                            <td class="text--azul text--bold w-25">Length</td>
-                            <td class="text-dark w-75">Top Mets</td>
-                        </tr>
-                        <tr>
-                            <td class="text--azul text--bold w-25">Shape</td>
-                            <td class="text-dark w-75">Regular</td>
-                        </tr>
-                        <tr>
-                            <td class="text--azul text--bold w-25">Cut Outs</td>
-                            <td class="text-dark w-75">Met Parabola</td>
-                        </tr>
-                        <tr>
-                            <td class="text--azul text--bold w-25">Posting</td>
-                            <td class="text-dark w-75">Rearfoot Lateral 1 Degrees Midfoot Length</td>
-                        </tr>
-                        <tr>
-                            <td class="text--azul text--bold w-25">Padding</td>
-                            <td class="text-dark w-75">Metatarsal Pad M</td>
-                        </tr>
-                        <tr>
-                            <td class="text--azul text--bold w-25">Cover</td>
-                            <td class="text-dark w-75">Heel Post Cover</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="card card--prescription my-3">
-    <div class="card-header" id="headingRightFootD">
-      <h5 class="mb-0">
-        <button class="btn btn-link btn-block text-left collapsed text--md text-uppercase" data-toggle="collapse" data-target="#collapseRightFootD" aria-expanded="false" aria-controls="collapseRightFootD">
-          Right Foot - Design <i class="fa fa-angle-down float-right text--md" aria-hidden="true"></i>
-        </button>
-      </h5>
-    </div>
-    <div id="collapseRightFootD" class="collapse" aria-labelledby="headingRightFootD" data-parent="#accordion">
-      <div class="card-body">
-        <div class="row">
-            <div class="col-12">
-                <table class="table table-borderless">
-                    <tbody>
-                        <tr>
-                            <td class="text--azul text--bold w-25">Technology</td>
-                            <td class="text-dark w-75">Foot Pads Simple Insoles Custom Library Custom Moulded (Library Cast POP Cast CAD Cast) CAD CAM (Library Mille Custom Milled 3D printed)< Foot & Ankie Brace AFO Orthopaedic Footwear< (Sandals Shoe Boots Trainers Slippers Bootees)</td>
-                        </tr>
-                        <tr>
-                            <td class="text--azul text--bold w-25">Material</td>
-                            <td class="text-dark w-75">Thermoplastic Thermoplast</td>
-                        </tr>
-                        <tr>
-                            <td class="text--azul text--bold w-25">Depth</td>
-                            <td class="text-dark w-75">SHC</td>
-                        </tr>
-                        <tr>
-                            <td class="text--azul text--bold w-25">Length</td>
-                            <td class="text-dark w-75">Top Mets</td>
-                        </tr>
-                        <tr>
-                            <td class="text--azul text--bold w-25">Shape</td>
-                            <td class="text-dark w-75">Regular</td>
-                        </tr>
-                        <tr>
-                            <td class="text--azul text--bold w-25">Cut Outs</td>
-                            <td class="text-dark w-75">Met Parabola</td>
-                        </tr>
-                        <tr>
-                            <td class="text--azul text--bold w-25">Posting</td>
-                            <td class="text-dark w-75">Rearfoot Lateral 1 Degrees Midfoot Length</td>
-                        </tr>
-                        <tr>
-                            <td class="text--azul text--bold w-25">Padding</td>
-                            <td class="text-dark w-75">Metatarsal Pad M</td>
-                        </tr>
-                        <tr>
-                            <td class="text--azul text--bold w-25">Cover</td>
-                            <td class="text-dark w-75">Heel Post Cover</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="card card--prescription my-3">
-    <div class="card-header" id="headingPhotosFiles">
-      <h5 class="mb-0">
-        <button class="btn btn-link btn-block text-left collapsed text--md text-uppercase" data-toggle="collapse" data-target="#collapsePhotosFiles" aria-expanded="false" aria-controls="collapsePhotosFiles">
-          Diagrams Photos And Files <i class="fa fa-angle-down float-right text--md" aria-hidden="true"></i>
-        </button>
-      </h5>
-    </div>
-    <div id="collapsePhotosFiles" class="collapse" aria-labelledby="headingPhotosFiles" data-parent="#accordion">
-      <div class="card-body">
-            <div class="slider-nav">
-                <div>
-                    <img src="images/camera.png" alt="" class="img-fluid img-thumbnail">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card card--prescription my-3">
+                    <div class="card-header" id="headingLeftFootD">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed text--md text-uppercase" data-toggle="collapse" data-target="#collapseLeftFootD" aria-expanded="false" aria-controls="collapseLeftFootD">
+                          Left Foot - Design <i class="fa fa-angle-down float-right text--md" aria-hidden="true"></i>
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseLeftFootD" class="collapse" aria-labelledby="headingLeftFootD" data-parent="#accordion">
+                      <div class="card-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <table class="table table-borderless">
+                                    <tbody>
+                                        <tr>
+                                            <td class="text--azul text--bold w-25">Technology</td>
+                                            <td class="text-dark w-75">Foot Pads Simple Insoles Custom Library Custom Moulded (Library Cast POP Cast CAD Cast) CAD CAM (Library Mille Custom Milled 3D printed)< Foot & Ankie Brace AFO Orthopaedic Footwear< (Sandals Shoe Boots Trainers Slippers Bootees)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text--azul text--bold w-25">Material</td>
+                                            <td class="text-dark w-75">Thermoplastic Thermoplast</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text--azul text--bold w-25">Depth</td>
+                                            <td class="text-dark w-75">SHC</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text--azul text--bold w-25">Length</td>
+                                            <td class="text-dark w-75">Top Mets</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text--azul text--bold w-25">Shape</td>
+                                            <td class="text-dark w-75">Regular</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text--azul text--bold w-25">Cut Outs</td>
+                                            <td class="text-dark w-75">Met Parabola</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text--azul text--bold w-25">Posting</td>
+                                            <td class="text-dark w-75">Rearfoot Lateral 1 Degrees Midfoot Length</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text--azul text--bold w-25">Padding</td>
+                                            <td class="text-dark w-75">Metatarsal Pad M</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text--azul text--bold w-25">Cover</td>
+                                            <td class="text-dark w-75">Heel Post Cover</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card card--prescription my-3">
+                    <div class="card-header" id="headingRightFootD">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed text--md text-uppercase" data-toggle="collapse" data-target="#collapseRightFootD" aria-expanded="false" aria-controls="collapseRightFootD">
+                          Right Foot - Design <i class="fa fa-angle-down float-right text--md" aria-hidden="true"></i>
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseRightFootD" class="collapse" aria-labelledby="headingRightFootD" data-parent="#accordion">
+                      <div class="card-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <table class="table table-borderless">
+                                    <tbody>
+                                        <tr>
+                                            <td class="text--azul text--bold w-25">Technology</td>
+                                            <td class="text-dark w-75">Foot Pads Simple Insoles Custom Library Custom Moulded (Library Cast POP Cast CAD Cast) CAD CAM (Library Mille Custom Milled 3D printed)< Foot & Ankie Brace AFO Orthopaedic Footwear< (Sandals Shoe Boots Trainers Slippers Bootees)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text--azul text--bold w-25">Material</td>
+                                            <td class="text-dark w-75">Thermoplastic Thermoplast</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text--azul text--bold w-25">Depth</td>
+                                            <td class="text-dark w-75">SHC</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text--azul text--bold w-25">Length</td>
+                                            <td class="text-dark w-75">Top Mets</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text--azul text--bold w-25">Shape</td>
+                                            <td class="text-dark w-75">Regular</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text--azul text--bold w-25">Cut Outs</td>
+                                            <td class="text-dark w-75">Met Parabola</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text--azul text--bold w-25">Posting</td>
+                                            <td class="text-dark w-75">Rearfoot Lateral 1 Degrees Midfoot Length</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text--azul text--bold w-25">Padding</td>
+                                            <td class="text-dark w-75">Metatarsal Pad M</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text--azul text--bold w-25">Cover</td>
+                                            <td class="text-dark w-75">Heel Post Cover</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card card--prescription my-3">
+                    <div class="card-header" id="headingPhotosFiles">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed text--md text-uppercase" data-toggle="collapse" data-target="#collapsePhotosFiles" aria-expanded="false" aria-controls="collapsePhotosFiles">
+                          Diagrams Photos And Files <i class="fa fa-angle-down float-right text--md" aria-hidden="true"></i>
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapsePhotosFiles" class="collapse" aria-labelledby="headingPhotosFiles" data-parent="#accordion">
+                      <div class="card-body">
+                            <div class="slider-nav">
+                                <div>
+                                    <img src="images/camera.png" alt="" class="img-fluid img-thumbnail">
+                                </div>
+                                <div>
+                                    <img src="images/camera.png" alt="" class="img-fluid img-thumbnail">
+                                </div>
+                                <div>
+                                    <img src="images/camera.png" alt="" class="img-fluid img-thumbnail">
+                                </div>
+                            </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card card--prescription my-3">
+                    <div class="card-header" id="headinglabNotes">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed text--md text-uppercase" data-toggle="collapse" data-target="#collapselabNotes" aria-expanded="false" aria-controls="collapselabNotes">
+                          Lab Notes <i class="fa fa-angle-down float-right text--md" aria-hidden="true"></i>
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapselabNotes" class="collapse" aria-labelledby="headinglabNotes" data-parent="#accordion">
+                      <div class="card-body">
+                            
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div>
-                    <img src="images/camera.png" alt="" class="img-fluid img-thumbnail">
-                </div>
-                <div>
-                    <img src="images/camera.png" alt="" class="img-fluid img-thumbnail">
-                </div>
-            </div>
-      </div>
-    </div>
-  </div>
-  <div class="card card--prescription my-3">
-    <div class="card-header" id="headinglabNotes">
-      <h5 class="mb-0">
-        <button class="btn btn-link btn-block text-left collapsed text--md text-uppercase" data-toggle="collapse" data-target="#collapselabNotes" aria-expanded="false" aria-controls="collapselabNotes">
-          Lab Notes <i class="fa fa-angle-down float-right text--md" aria-hidden="true"></i>
-        </button>
-      </h5>
-    </div>
-    <div id="collapselabNotes" class="collapse" aria-labelledby="headinglabNotes" data-parent="#accordion">
-      <div class="card-body">
-            
-      </div>
-    </div>
-  </div>
-</div>
-
-
 
             </div>
         </div>
