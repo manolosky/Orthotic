@@ -1,4 +1,4 @@
-setTimeout(function()
-{
-	document.getElementById('preloader').style.display = 'none';
-}, 2000);
+// setTimeout(function()
+// {
+// 	document.getElementById('preloader').style.display = 'none';
+// }, 2000);
