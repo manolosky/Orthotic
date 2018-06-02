@@ -23,9 +23,14 @@ body
 	padding 0
 	
 
-@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+// @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
 /*Check box*/
+
+input[type="checkbox"]{
+	display: none;
+}
+
 input[type="checkbox"] + .label-text:before{
 	content: "\f096";
 	font-family: "FontAwesome";
@@ -38,13 +43,17 @@ input[type="checkbox"] + .label-text:before{
 	-webkit-font-smoothing:antialiased;
 	width: 1em;
 	display: inline-block;
-	margin-right: 5px;
+	margin-right: .25em;
 }
 
 input[type="checkbox"]:checked + .label-text:before{
 	content: "\f14a";
 	color: #2980b9;
 	animation: effect 250ms ease-in;
+}
+
+input[type="checkbox"]:checked + .label-text{
+	color: #010D85;
 }
 
 input[type="checkbox"]:disabled + .label-text{
@@ -81,6 +90,10 @@ input[type="radio"]:checked + .label-text:before{
 	content: "\f192";
 	color: #8e44ad;
 	animation: effect 250ms ease-in;
+}
+
+input[type="radio"]:checked + .label-text{
+	color: #010D85;
 }
 
 input[type="radio"]:disabled + .label-text{

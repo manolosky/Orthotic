@@ -17,7 +17,7 @@
 
 
         <link rel="stylesheet" type="text/css" href="css/main.css">
-        <link rel="stylesheet" type="text/css" href="css/icomoon/style.css"/>
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
 
         <!-- media-queries.js (fallback) -->
         <!--[if lt IE 9]>
@@ -32,7 +32,7 @@
     <body>
 
         <div class="container">
-            <nav class="navbar navbar-light bg-light bg-transparent">
+            <nav class="navbar navbar-light nav-bar__primary bg-light bg-transparent">
                 <a class="navbar-brand" href="#">
                     <img src="images/logo.png" class="d-inline-block align-top img-fluid" alt="">
                 </a>
@@ -41,12 +41,12 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navBarPrimary">
+                <div class="collapse navbar-collapse navbar-collapse__primary" id="navBarPrimary">
                     <div class="navbar-nav">
-                        <a class="nav-item nav-link active" href="#">Create New Preinscripción</a>
-                        <a class="nav-item nav-link" href="#">User</a>
-                        <a class="nav-item nav-link" href="#">View Your Profile</a>
-                        <a class="nav-item nav-link" href="#">Log Out (perfilregistrado@gmail.com)</a>
+                        <a class="nav-item nav-link active" href="#">Create New Preinscripción <i class="fa fa-angle-right float-right" aria-hidden="true"></i></a>
+                        <a class="nav-item nav-link" href="#">User <i class="fa fa-angle-right float-right" aria-hidden="true"></i></a>
+                        <a class="nav-item nav-link" href="#">View Your Profile <i class="fa fa-angle-right float-right" aria-hidden="true"></i></a>
+                        <a class="nav-item nav-link" href="#">Log Out (perfilregistrado@gmail.com) <i class="fa fa-angle-right float-right" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </nav>
@@ -139,37 +139,37 @@
             <ul class="nav nav-pills nav--footer nav-fill">
                 <li class="nav-item">
                     <a class="nav-link text--azul active" href="#">
-                        <span class="icon-user text--xlg"></span><br>
+                        <i class="fa fa-user-o text--xlg mb-1" aria-hidden="true"></i><br>
                         Profile
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text--azul" href="#" data-toggle="modal" data-target="#modalAttachments">
-                        <span class="icon-paperclip text--xlg"></span><br>
+                        <i class="fa fa-paperclip text--xlg mb-1" aria-hidden="true"></i><br>
                         Attach
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text--azul" href="#">
-                        <span class="icon-edit text--xlg"></span><br>
+                        <i class="fa fa-pencil-square-o text--xlg mb-1" aria-hidden="true"></i><br>
                         Edit
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text--azul" href="#">
-                        <span class="icon-save text--xlg"></span><br>
+                        <i class="fa fa-floppy-o text--xlg mb-1" aria-hidden="true"></i><br>
                         Save
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text--azul" href="#">
-                        <span class="icon-file-o text--xlg"></span><br>
+                        <i class="fa fa-file-o text--xlg mb-1" aria-hidden="true"></i><br>
                         New
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text--azul" href="#">
-                        <span class="icon-search text--xlg"></span><br>
+                        <i class="fa fa-search text--xlg mb-1" aria-hidden="true"></i><br>
                         Search
                     </a>
                 </li>
@@ -212,18 +212,12 @@
             </div>
         </div>
 
-        <script src="libs/jQuery/jquery-3.3.1.slim.min.js"></script>
-        <script>window.jQuery || document.write('<script src="libs/jQuery/jquery-3.3.1.slim.min.js"><\/script>')</script>
-
-        <script src="libs/popper/popper.min.js"></script>
-        <script>window.jQuery || document.write('<script src="libs/popper/popper.min.js"><\/script>')</script>
-
-        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 
         <script src="libs/slick/slick.min.js"></script>
-        <script>window.jQuery || document.write('<script src="libs/slick/slick.min.js"><\/script>')</script>
 
         <script src="js/main.js"></script>
-
     </body>
 </html>
