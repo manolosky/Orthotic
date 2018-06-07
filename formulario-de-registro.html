@@ -30,16 +30,21 @@
     </head>
     <body>
 
+        <div class="container">
+            <nav class="navbar navbar-light nav-bar__primary bg-light bg-transparent">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" class="d-inline-block align-top img-fluid" alt="">
+                </a>
+            </nav>
+
+            <hr class="mt-0">
+
+        </div>
         
         <div class="container mb-5">
-            <div class="col-12">            
+            <div class="col-12">
                 <div class="row justify-content-md-center">
-                    <div class="col-12 col-md-6 col-xl-4 mt-3">
-                        <img src="images/logo.png" alt="" class="">
-                    </div>
-                </div>
-                <div class="row justify-content-md-center">
-                    <form class="col-12 col-md-6 col-xl-4">
+                    <form class="col-12 col-md-6 col-xl-4 mb-3">
                         <hr>
                         <div class="row">
                             <div class="form-group col-12">
@@ -384,15 +389,28 @@
                         </div>
 
                         <hr>
-                        
-                        <button type="submit" class="btn btn-primary btn-block mb-2">Register as New Lab</button>
 
-                        <small class="text-dark">If you have an account, please <strong>Log In</strong></small>
+                        <div class="row">
+                            <div class="col">
+                                <p class="text-dark">If you have an account, please <a href="#"><strong>Log In</strong></a></p>
+                            </div>
+                        </div>
 
                     </form>
                 </div>
             </div>
         </div>
+
+        <footer class="fixed-bottom">
+            <ul class="nav nav-pills nav--footer nav-fill">
+                <li class="nav-item">
+                    <a class="nav-link text--azul" href="#">
+                        <i class="fa fa-floppy-o text--xlg mb-1" aria-hidden="true"></i><br>
+                        Register as New Lab
+                    </a>
+                </li>
+            </ul>
+        </footer>
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
