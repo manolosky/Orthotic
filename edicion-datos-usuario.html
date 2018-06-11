@@ -59,7 +59,7 @@
 
         </div>
         
-        <div class="container mb-5">
+        <div class="container mb-5 pb-5">
             <form class="col-12 mb-3">
                 <div class="row">
                     <div class="form-group col-12">
@@ -111,21 +111,151 @@
 
                         <div class="form-row px-2">
                             <div class="form-check col-6 col-sm-4 col-md-3 col-lg-2 my-1">
-                                <input type="checkbox" name="technology" id="technology1" value="option1">
-                                <label class="label-text" for="technology1">
-                                3D Scann
+                                <input type="radio" name="technologyValue" id="optionVal1" value="option1">
+                                <label class="label-text" for="optionVal1">
+                                Foot Pads
                                 </label>
                             </div>
                             <div class="form-check col-6 col-sm-4 col-md-3 col-lg-2 my-1">
-                                <input type="checkbox" name="technology" id="technology2" value="option2">
-                                <label class="label-text" for="technology2">
-                                Photo(s)
+                                <input type="radio" name="technologyValue" id="optionVal2" value="option2">
+                                <label class="label-text" for="optionVal2">
+                                Foot & Ankle Brace
+                                </label>
+                            </div>              
+                            <div class="form-check col-6 col-sm-4 col-md-3 col-lg-2 my-1">
+                                <input type="radio" name="technologyValue" id="optionVal3" value="option1">
+                                <label class="label-text" for="optionVal3">
+                                Simple Insoles
                                 </label>
                             </div>
                             <div class="form-check col-6 col-sm-4 col-md-3 col-lg-2 my-1">
-                                <input type="checkbox" name="technology" id="technology3" value="option2">
-                                <label class="label-text" for="technology3">
-                                Video(s)
+                                <input type="radio" name="technologyValue" id="optionVal4" value="option2">
+                                <label class="label-text" for="optionVal4">
+                                AFO
+                                </label>
+                            </div>              
+                            <div class="form-check col-6 col-sm-4 col-md-3 col-lg-2 my-1">
+                                <input type="radio" name="technologyValue" id="optionVal5" value="option1">
+                                <label class="label-text" for="optionVal5">
+                                Custom Library
+                                </label>
+                            </div>
+                            <div class="form-check col-6 col-sm-4 col-md-3 col-lg-2 my-1">
+                                <input type="radio" name="technologyValue" id="optionVal6" value="customOption">
+                                <label class="label-text" for="optionVal6">
+                                Orthopaedic Footwear
+                                </label>
+                            </div>               
+                            <div class="form-check col-6 col-sm-4 col-md-3 col-lg-2 my-1">
+                                <input type="radio" name="technologyValue" id="optionVal7" value="option1">
+                                <label class="label-text" for="optionVal7">
+                                Custom Moulded
+                                </label>
+                            </div>
+                            <div class="form-check col-6 col-sm-4 col-md-3 col-lg-2 my-1">
+                                <input type="radio" name="technologyValue" id="optionVal8" value="customOption">
+                                <label class="label-text" for="optionVal8">
+                                Custom Footwear
+                                </label>
+                            </div>             
+                            <div class="form-check col-6 col-sm-4 col-md-3 col-lg-2 my-1">
+                                <input type="radio" name="technologyValue" id="optionVal9" value="cadCam">
+                                <label class="label-text" for="optionVal9">
+                                CAD CAM
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- If CUSTOM MOULDED -->
+
+                        <div class="form-row px-2 " >
+                            <hr class="w-100">
+
+                            <div class="form-check col-6 col-sm-4 col-md-3 col-lg-2 my-1">
+                                <input type="radio" name="technologyCustomMoulded" id="technologyCustomMoulded1" value="option1">
+                                <label class="label-text" for="technologyCustomMoulded1">
+                                Library Cast
+                                </label>
+                            </div>
+                            <div class="form-check col-6 col-sm-4 col-md-3 col-lg-2 my-1">
+                                <input type="radio" name="technologyCustomMoulded" id="technologyCustomMoulded2" value="option2">
+                                <label class="label-text" for="technologyCustomMoulded2">
+                                POP cast
+                                </label>
+                            </div>              
+                            <div class="form-check col-6 col-sm-4 col-md-3 col-lg-2 my-1">
+                                <input type="radio" name="technologyCustomMoulded" id="technologyCustomMoulded3" value="option1">
+                                <label class="label-text" for="technologyCustomMoulded3">
+                                CAD cast
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- If CAD CAM -->
+
+                        <div class="form-row px-2 " >
+                            <hr class="w-100">
+
+                            <div class="form-check col-6 col-sm-4 col-md-3 col-lg-2 my-1">
+                                <input type="radio" name="technologyCadCam" id="technologyCadCam1" value="option1">
+                                <label class="label-text" for="technologyCadCam1">
+                                Library Milled
+                                </label>
+                            </div>
+                            <div class="form-check col-6 col-sm-4 col-md-3 col-lg-2 my-1">
+                                <input type="radio" name="technologyCadCam" id="technologyCadCam2" value="option2">
+                                <label class="label-text" for="technologyCadCam2">
+                                Custom Milled
+                                </label>
+                            </div>              
+                            <div class="form-check col-6 col-sm-4 col-md-3 col-lg-2 my-1">
+                                <input type="radio" name="technologyCadCam" id="technologyCadCam3" value="option1">
+                                <label class="label-text" for="technologyCadCam3">
+                                3D Printed
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- If ORTHOPAEDIC FOOTWEAR -->
+
+                        <div class="form-row px-2 " >
+                            
+                            <hr class="w-100">
+
+                            <div class="form-check col-6 col-sm-4 col-md-3 col-lg-2 my-1">
+                                <input type="radio" name="orthopedicFootwear" id="orthopedicFootwear1" value="option1">
+                                <label class="label-text" for="orthopedicFootwear1">
+                                Sandals
+                                </label>
+                            </div>
+                            <div class="form-check col-6 col-sm-4 col-md-3 col-lg-2 my-1">
+                                <input type="radio" name="orthopedicFootwear" id="orthopedicFootwear2" value="option2">
+                                <label class="label-text" for="orthopedicFootwear2">
+                                Shoes
+                                </label>
+                            </div>              
+                            <div class="form-check col-6 col-sm-4 col-md-3 col-lg-2 my-1">
+                                <input type="radio" name="orthopedicFootwear" id="orthopedicFootwear3" value="option3">
+                                <label class="label-text" for="orthopedicFootwear3">
+                                Boots
+                                </label>
+                            </div>
+                            <div class="form-check col-6 col-sm-4 col-md-3 col-lg-2 my-1">
+                                <input type="radio" name="orthopedicFootwear" id="orthopedicFootwear4" value="option4">
+                                <label class="label-text" for="orthopedicFootwear4">
+                                Trainers
+                                </label>
+                            </div>
+                            <div class="form-check col-6 col-sm-4 col-md-3 col-lg-2 my-1">
+                                <input type="radio" name="orthopedicFootwear" id="orthopedicFootwear5" value="option5">
+                                <label class="label-text" for="orthopedicFootwear5">
+                                Slippers
+                                </label>
+                            </div>
+                            <div class="form-check col-6 col-sm-4 col-md-3 col-lg-2 my-1">
+                                <input type="radio" name="orthopedicFootwear" id="orthopedicFootwear6" value="option6">
+                                <label class="label-text" for="orthopedicFootwear6">
+                                Bootees
                                 </label>
                             </div>
                         </div>
@@ -143,22 +273,52 @@
 
                         <div class="form-row px-2">
                             <div class="form-check col-6 col-sm-4 col-md-3 col-lg-2 my-1">
-                                <input type="checkbox" name="Material" id="Material1" value="option1">
-                                <label class="label-text" for="Material1">
-                                3D Scann
+                                <input type="radio" name="materialDesignBF" id="materialDesignBF1" value="option1">
+                                <label class="label-text" for="materialDesignBF1">
+                                Thermoplastic
                                 </label>
                             </div>
                             <div class="form-check col-6 col-sm-4 col-md-3 col-lg-2 my-1">
-                                <input type="checkbox" name="Material" id="Material2" value="option2">
-                                <label class="label-text" for="Material2">
-                                Photo(s)
+                                <input type="radio" name="materialDesignBF" id="materialDesignBF2" value="option2">
+                                <label class="label-text" for="materialDesignBF2">
+                                Thermofoam
+                                </label>
+                            </div>              
+                            <div class="form-check col-6 col-sm-4 col-md-3 col-lg-2 my-1">
+                                <input type="radio" name="materialDesignBF" id="materialDesignBF3" value="option1">
+                                <label class="label-text" for="materialDesignBF3">
+                                Composite
                                 </label>
                             </div>
                             <div class="form-check col-6 col-sm-4 col-md-3 col-lg-2 my-1">
-                                <input type="checkbox" name="Material" id="Material3" value="option2">
-                                <label class="label-text" for="Material3">
-                                Video(s)
+                                <input type="radio" name="materialDesignBF" id="materialDesignBF4" value="option1">
+                                <label class="label-text" for="materialDesignBF4">
+                                Carbon Fib
                                 </label>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <hr class="w-100">
+                            <div class="form-group col">
+                                <select class="form-control" id="shoeSizePatiente">
+                                    <option>Select</option>
+                                    <option value="">Thermoplastic</option>
+                                    <option value="">Polypropylene</option>
+                                    <option value="">Subortholene</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <hr class="w-100">
+                            <div class="form-group col">
+                                <select class="form-control" id="shoeSizePatiente">
+                                    <option>Select</option>
+                                    <option value="">Soft</option>
+                                    <option value="">Medium</option>
+                                    <option value="">Hard</option>
+                                </select>
                             </div>
                         </div>
 
@@ -175,24 +335,25 @@
 
                         <div class="form-row px-2">
                             <div class="form-check col-6 col-sm-4 col-md-3 col-lg-2 my-1">
-                                <input type="checkbox" name="depth" id="depth1" value="option1">
-                                <label class="label-text" for="depth1">
-                                3D Scann
+                                <input type="radio" name="depthDesignBF" id="depthDesignBF1" value="option1">
+                                <label class="label-text" for="depthDesignBF1">
+                                FHC
                                 </label>
                             </div>
                             <div class="form-check col-6 col-sm-4 col-md-3 col-lg-2 my-1">
-                                <input type="checkbox" name="depth" id="depth2" value="option2">
-                                <label class="label-text" for="depth2">
-                                Photo(s)
+                                <input type="radio" name="depthDesignBF" id="depthDesignBF2" value="option2">
+                                <label class="label-text" for="depthDesignBF2">
+                                SHC
                                 </label>
-                            </div>
+                            </div>              
                             <div class="form-check col-6 col-sm-4 col-md-3 col-lg-2 my-1">
-                                <input type="checkbox" name="depth" id="depth3" value="option2">
-                                <label class="label-text" for="depth3">
-                                Video(s)
+                                <input type="radio" name="depthDesignBF" id="depthDesignBF3" value="option1">
+                                <label class="label-text" for="depthDesignBF3">
+                                DHC
                                 </label>
                             </div>
                         </div>
+
                     </div>
                 </div>
 
@@ -206,24 +367,25 @@
 
                         <div class="form-row px-2">
                             <div class="form-check col-6 col-sm-4 col-md-3 col-lg-2 my-1">
-                                <input type="checkbox" name="length" id="length1" value="option1">
-                                <label class="label-text" for="length1">
-                                3D Scann
+                                <input type="radio" name="lendthDesignBF" id="lendthDesignBF1" value="option1">
+                                <label class="label-text" for="lendthDesignBF1">
+                                To Mets
                                 </label>
                             </div>
                             <div class="form-check col-6 col-sm-4 col-md-3 col-lg-2 my-1">
-                                <input type="checkbox" name="length" id="length2" value="option2">
-                                <label class="label-text" for="length2">
-                                Photo(s)
+                                <input type="radio" name="lendthDesignBF" id="lendthDesignBF2" value="option2">
+                                <label class="label-text" for="lendthDesignBF2">
+                                To Sulcus
                                 </label>
-                            </div>
+                            </div>              
                             <div class="form-check col-6 col-sm-4 col-md-3 col-lg-2 my-1">
-                                <input type="checkbox" name="length" id="length3" value="option2">
-                                <label class="label-text" for="length3">
-                                Video(s)
+                                <input type="radio" name="lendthDesignBF" id="lendthDesignBF3" value="option1">
+                                <label class="label-text" for="lendthDesignBF3">
+                                Full Length
                                 </label>
                             </div>
                         </div>
+
                     </div>
                 </div>
 
@@ -236,31 +398,102 @@
                         <div class="clearfix"></div>
 
                         <div class="form-row px-2">
+                            <hr class="w-100">
                             <div class="form-check col-6 col-sm-4 col-md-3 col-lg-2 my-1">
-                                <input type="checkbox" name="style" id="style1" value="option1">
-                                <label class="label-text" for="style1">
-                                3D Scann
+                                <input type="radio" name="styleCustomSelectiveBF" id="styleCustomSelectiveBF1" value="option1">
+                                <label class="label-text" for="styleCustomSelectiveBF1">
+                                Dress
                                 </label>
                             </div>
                             <div class="form-check col-6 col-sm-4 col-md-3 col-lg-2 my-1">
-                                <input type="checkbox" name="style" id="style2" value="option2">
-                                <label class="label-text" for="style2">
-                                Photo(s)
+                                <input type="radio" name="styleCustomSelectiveBF" id="styleCustomSelectiveBF2" value="option2">
+                                <label class="label-text" for="styleCustomSelectiveBF2">
+                                Casual
                                 </label>
                             </div>
                             <div class="form-check col-6 col-sm-4 col-md-3 col-lg-2 my-1">
-                                <input type="checkbox" name="style" id="style3" value="option2">
-                                <label class="label-text" for="style3">
-                                Video(s)
+                                <input type="radio" name="styleCustomSelectiveBF" id="styleCustomSelectiveBF2" value="option2">
+                                <label class="label-text" for="styleCustomSelectiveBF2">
+                                Sport
+                                </label>
+                            </div>
+                            <div class="form-check col-6 col-sm-4 col-md-3 col-lg-2 my-1">
+                                <input type="radio" name="styleCustomSelectiveBF" id="styleCustomSelectiveBF2" value="option2">
+                                <label class="label-text" for="styleCustomSelectiveBF2">
+                                Supinator
+                                </label>
+                            </div>
+                            <div class="form-check col-6 col-sm-4 col-md-3 col-lg-2 my-1">
+                                <input type="radio" name="styleCustomSelectiveBF" id="styleCustomSelectiveBF2" value="option2">
+                                <label class="label-text" for="styleCustomSelectiveBF2">
+                                Pronator
+                                </label>
+                            </div>
+                            <div class="form-check col-6 col-sm-4 col-md-3 col-lg-2 my-1">
+                                <input type="radio" name="styleCustomSelectiveBF" id="styleCustomSelectiveBF2" value="option2">
+                                <label class="label-text" for="styleCustomSelectiveBF2">
+                                Gait Plates
                                 </label>
                             </div>
                         </div>
+
                     </div>
                 </div>
+
+                <div class="row">
+                    <div class="form-group col-12">
+                        <label for="LandlineNumber" class="text--azul">Landline number:</label>
+                        <input type="text" class="form-control" id="LandlineNumber" placeholder="">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-12">
+                        <label for="mobileNumber" class="text--azul">Mobile number:</label>
+                        <input type="text" class="form-control" id="mobileNumber" placeholder="">
+                        <p><strong>Important:</strong> Mobile wout spaces or plus signs or leading zeros. eg. 441632960937</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-12">
+                        <label for="address" class="text--azul">Address</label>
+                        <input type="text" class="form-control" id="address" placeholder="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-12">
+                        <label for="townCity" class="text--azul">Town/City:</label>
+                        <input type="text" class="form-control" id="townCity" placeholder="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-12">
+                        <label for="country" class="text--azul">Country:</label>
+                        <input type="text" class="form-control" id="country" placeholder="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-12">
+                        <label for="postCode" class="text--azul">Postcode:</label>
+                        <input type="text" class="form-control" id="postCode" placeholder="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-12">
+                        <label for="country" class="text--azul">Country:</label>
+                        <input type="text" class="form-control" id="country" placeholder="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-12">
+                        <label for="webUser" class="text--azul">Web:</label>
+                        <input type="text" class="form-control" id="webUser" placeholder="">
+                    </div>
+                </div>
+
             </form>
         </div>
-
-        <hr>
 
         <footer class="fixed-bottom">
             <ul class="nav nav-pills nav--footer nav-fill">
