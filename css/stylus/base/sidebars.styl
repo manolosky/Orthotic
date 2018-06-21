@@ -43,4 +43,65 @@
 				font-size 1.2em
 				&:last-child
 					border-bottom none
+					
+/* cuando vayamos a imprimir ... */
+@media print{
+	/* indicamos el salto de pagina */
+	.saltoDePagina{
+		display:block;
+		page-break-before:always;
+	}
+}
+					
+.panel-heading-title{ color:#ffffff !important; }
+.label35x20, 
+.label35x20last,
+.label80x35,
+.label70x35,
+.label90x45,
+.label70x45 { 
+	overflow: hidden; 
+	border: 1px solid #f0f0f0; 
+	border-radius: 10px;
+}
+
+.label35x20{ width: 35mm; height: 21mm; float: left; margin-right: 6mm; font-size: 10px; padding: 3px 0px 0px 4px; line-height: 15px;}
+.label35x20last{ width: 35mm; height: 21mm; float: left; font-size: 10px; padding: 3px 0px 0px 4px; line-height: 15px;}
+.label35x20 span.title, .label35x20last span.title{font-weight: bold; line-height: 13px;}
+
+.label80x35{ width: 80mm; height: 35mm; float: left; margin-right: 8mm; font-size: 13px; padding: 0px 0px 0px 10px;}
+.label80x35 span.title{font-weight: bold; font-size: 21px; margin-bottom: 2px; }
+.label80x35 p{line-height: 18px; margin:0px;}
+
+.label70x35{ width: 70mm; height: 35mm; float: left;  font-size: 13px; padding: 3px 0px 0px 10px;}
+.label70x35 span.title{font-weight: bold; font-size: 21px; margin-bottom: 2px; }
+.label70x35 p{line-height: 20px; margin:0px;}
+
+
+
+.label90x45{ width: 88mm; height: 45mm; float: left; margin-right: 2mm; font-size: 13px; padding: 3px 0px 0px 10px;}
+.label90x45 span.title{font-weight: bold; font-size: 21px; margin-bottom: 2px; }
+.label90x45 p{line-height: 11px;}
+
+.label70x45{ width: 68mm; height: 45mm; float: left;  font-size: 13px; padding: 3px 0px 0px 10px; }
+.label70x45 span.title{font-weight: bold; font-size: 21px; margin-bottom: 2px; }
+.label70x45 p{line-height: 20px; margin:0px;}
+
+
+.clear{ clear:both;}	
+
+/*p{ margin: 0px; padding: 0px; line-height: 14px;}*/
+
+.space{ height: 5px;}
+
+/*label{font-weight: bold;}*/
+
+.sameheight {
+display: flex;
+}
+
+.add_info_txtarea{background-color:#ffffff; border-style:none; padding-left:0px; padding-top:0px;
+word-wrap: normal;  
+word-break: normal;
+}
 						
