@@ -1,6 +1,7 @@
 var funciones = {
 
-	stateSlider : false,
+	stateSlider_1 : false,
+	stateSlider_2 : false,
 
 	chagueRadioAction : function ()
 	{
@@ -22,9 +23,9 @@ var funciones = {
 	{
 		$('#accordion').on('shown.bs.collapse', function (e)
 		{
-			if (e.target.id == 'collapsePhotosFiles' && funciones.stateSlider == false)
+			if ( (e.target.id == 'collapsePhotosFiles' && funciones.stateSlider_1 == false) )
 			{				
-				$('.slider-nav').slick({
+				$('#carouselPhotosFile').slick({
 					slidesToShow: 1,
 					slidesToScroll: 1,
 					dots: true,
@@ -32,7 +33,20 @@ var funciones = {
 					responsive: true
 				});
 
-				funciones.stateSlider = true
+				funciones.stateSlider_1 = true
+			};
+
+			if ( (e.target.id == 'collapseAtachments' && funciones.stateSlider_2 == false) )
+			{				
+				$('#carouselAtachments').slick({
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					dots: true,
+					centerMode: true,
+					responsive: true
+				});
+
+				funciones.stateSlider_2 = true
 			};
 
 		})

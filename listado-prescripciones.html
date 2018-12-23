@@ -38,9 +38,26 @@
                 </a>
                 
                 <ul class="nav justify-content-end align-items-center">
-                    <a class="text--azul text--lg mx-3 align-middle" href="#">
-                        <i class="fa fa-user-o" aria-hidden="true"></i> <span class="text--bold">AJ</span>
-                    </a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text--azul text--lg mx-3 align-middle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-user-o" aria-hidden="true"></i> <span class="text--bold">AJ</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu--top">
+                            <a class="dropdown-item" href="#">
+                                <i class="fa fa-newspaper-o" aria-hidden="true"></i> Prescription
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="fa fa-users" aria-hidden="true"></i> Clients
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">
+                                <i class="fa fa-user" aria-hidden="true"></i> My Profile
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="fa fa-close" aria-hidden="true"></i> Log Out
+                            </a>
+                        </div>
+                    </li>
                     <button class="navbar-toggler align-middle" type="button" data-toggle="collapse" data-target="#navBarPrimary" aria-controls="navBarPrimary" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fa fa-bars text--azul mt-1 text--xlg" aria-hidden="true"></i>
                     </button>
@@ -59,6 +76,14 @@
 
             <hr class="mt-0">
 
+            <div class="col input-group mb-3">
+                <input type="text" class="form-control form-control-lg" id="validationTooltipSearch" placeholder="name" aria-describedby="validationTooltipSearch" required>
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="validationTooltipSearch">X</span>
+                </div>
+                <div class="invalid-tooltip"></div>
+            </div>
+
             <div class="col">
                 <div class="btn-group btn-group--special" role="group" aria-label="Basic example">
                     <button type="button" class="btn btn-h100 btn-dark text-uppercase">All</button>
@@ -69,67 +94,100 @@
                     <button type="button" class="btn btn-h100 btn-primary text-uppercase">Fit</button>
                 </div>
             </div>
-
         </div>
         
         <div class="container my-3 pb-5">
             <div class="col">
 
-                <a href="#" class="alert alert-site alert-success row mx-0 p-0">                        
-                    <div class="col-4 bg-success py-3 text--white">
-                        <h5>21.04.18</h5>
+                <div class="card card-warning mb-3">
+                    <div class="card-header">
+                        <div class="row justify-content-between align-items-center">
+                            <div class="col-6">
+                                <h5 class="mb-0">PATIENTE NAME #00000</h5>
+                            </div>
+                            <div class="col-6 text-right">
+                                <p class="mb-0"><strong>APPROVED</strong></p>
+                                <p class="mb-0">21.04.18</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-8 py-3">
-                        <h5 class="mb-0">PATIENTE NAME #00000</h5>
+                    <div class="card-body">
                         <p class="mb-0">Carbon fiber custom</p>
                         <p class="mb-0">Freestyle Full</p>
                     </div>
-                </a>
+                </div>
 
-                <a href="#" class="alert alert-site alert-danger row mx-0 p-0">                        
-                    <div class="col-4 bg-danger py-3 text--white">
-                        <h5>21.04.18</h5>
+                <div class="card card-success mb-3">
+                    <div class="card-header">
+                        <div class="row justify-content-between align-items-center">
+                            <div class="col-6">
+                                <h5 class="mb-0">PATIENTE NAME #00000</h5>
+                            </div>
+                            <div class="col-6 text-right">
+                                <p class="mb-0"><strong>SUBMITTED</strong></p>
+                                <p class="mb-0">21.04.18</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-8 py-3">
-                        <h5 class="mb-0">PATIENTE NAME #00000</h5>
+                    <div class="card-body">
                         <p class="mb-0">Carbon fiber custom</p>
                         <p class="mb-0">Freestyle Full</p>
                     </div>
-                </a>
+                </div>
 
-                <a href="#" class="alert alert-site alert-primary row mx-0 p-0">                        
-                    <div class="col-4 bg-primary py-3 text--white">
-                        <h5>21.04.18</h5>
+                <div class="card card-danger mb-3">
+                    <div class="card-header">
+                        <div class="row justify-content-between align-items-center">
+                            <div class="col-6">
+                                <h5 class="mb-0">PATIENTE NAME #00000</h5>
+                            </div>
+                            <div class="col-6 text-right">
+                                <p class="mb-0"><strong>COMPLETE</strong></p>
+                                <p class="mb-0">21.04.18</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-8 py-3">
-                        <h5 class="mb-0">PATIENTE NAME #00000</h5>
+                    <div class="card-body">
                         <p class="mb-0">Carbon fiber custom</p>
                         <p class="mb-0">Freestyle Full</p>
                     </div>
-                </a>
+                </div>
 
-                <a href="#" class="alert alert-site alert-warning row mx-0 p-0">                        
-                    <div class="col-4 bg-warning py-3 text--white">
-                        <h5>21.04.18</h5>
+                <div class="card card-primary mb-3">
+                    <div class="card-header">
+                        <div class="row justify-content-between align-items-center">
+                            <div class="col-6">
+                                <h5 class="mb-0">PATIENTE NAME #00000</h5>
+                            </div>
+                            <div class="col-6 text-right">
+                                <p class="mb-0"><strong>FIT</strong></p>
+                                <p class="mb-0">21.04.18</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-8 py-3">
-                        <h5 class="mb-0">PATIENTE NAME #00000</h5>
+                    <div class="card-body">
                         <p class="mb-0">Carbon fiber custom</p>
                         <p class="mb-0">Freestyle Full</p>
                     </div>
-                </a>
+                </div>
 
-                <a href="#" class="alert alert-site alert-secondary row mx-0 p-0">                        
-                    <div class="col-4 bg-secondary py-3 text--white">
-                        <h5>21.04.18</h5>
+                <div class="card card-secondary mb-3">
+                    <div class="card-header">
+                        <div class="row justify-content-between align-items-center">
+                            <div class="col-6">
+                                <h5 class="mb-0">PATIENTE NAME #00000</h5>
+                            </div>
+                            <div class="col-6 text-right">
+                                <p class="mb-0"><strong>DRAFT</strong></p>
+                                <p class="mb-0">21.04.18</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-8 py-3">
-                        <h5 class="mb-0">PATIENTE NAME #00000</h5>
+                    <div class="card-body">
                         <p class="mb-0">Carbon fiber custom</p>
                         <p class="mb-0">Freestyle Full</p>
                     </div>
-                </a>
-
+                </div>
             </div>
 
             <div class="col my-4">

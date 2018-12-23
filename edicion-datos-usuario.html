@@ -37,13 +37,31 @@
                 </a>
                 
                 <ul class="nav justify-content-end align-items-center">
-                    <a class="text--azul text--lg mx-3 align-middle" href="#">
-                        <i class="fa fa-user-o" aria-hidden="true"></i> <span class="text--bold">AJ</span>
-                    </a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text--azul text--lg mx-3 align-middle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-user-o" aria-hidden="true"></i> <span class="text--bold">AJ</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu--top">
+                            <a class="dropdown-item" href="#">
+                                <i class="fa fa-newspaper-o" aria-hidden="true"></i> Prescription
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="fa fa-users" aria-hidden="true"></i> Clients
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">
+                                <i class="fa fa-user" aria-hidden="true"></i> My Profile
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="fa fa-close" aria-hidden="true"></i> Log Out
+                            </a>
+                        </div>
+                    </li>
                     <button class="navbar-toggler align-middle" type="button" data-toggle="collapse" data-target="#navBarPrimary" aria-controls="navBarPrimary" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fa fa-bars text--azul mt-1 text--xlg" aria-hidden="true"></i>
                     </button>
                 </ul>
+
 
                 <div class="collapse navbar-collapse navbar-collapse__primary" id="navBarPrimary">
                     <div class="navbar-nav">
