@@ -15,10 +15,12 @@
 			border-color #283371
 	&-primary--claro
 		background #007bff
-		border-color #035FC1
+		border-color #007bff
+		color white
 		&:hover
 			background #035FC1
-			border-color #007bff
+			border-color #035FC1
+			color white
 	&-outline
 		&-primary
 			border-color #283371
@@ -27,6 +29,16 @@
 				background #0C1545
 				border-color #0C1545
 				color white
+	&-checkbox, &-radios
+		background #283371
+		border-color #0C1545
+		border-radius 6px
+		color white
+		text-align left
+		&.active
+			background #0C1545
+			border-color #283371
+			color white
 	&-group
 		&--special
 			display flex

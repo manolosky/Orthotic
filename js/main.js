@@ -45,6 +45,33 @@ var funciones = {
 				funciones.stateSlider_2 = true;
 			};
 		});
+	},
+
+	tooltip: function () {
+		$(".tooltip-orthotic").focusin(function () {
+			$(this).parent().find(".tooltip-orthoticText").css("display", "block"); //EJECUTAR PARA ABRIR TOOLTIP
+		});
+
+		$(".tooltip-orthotic").focusout(function () {
+			$(this).parent().find(".tooltip-orthoticText").css("display", "none"); //EJECUTAR PARA CERRAR TOOLTIP
+		});
+	},
+
+	checkboxRadios: function () {
+		$('.btn-checkbox').on('click', function () {
+			if ($(this).hasClass("active")) {
+				$(this).find('span').removeClass('fa-check-square-o').addClass('fa-square-o');
+			} else {
+				$(this).find('span').removeClass('fa-square-o').addClass('fa-check-square-o');
+			}
+		});
+
+		$('.btn-radios').on('click', function () {
+			if (!$(this).hasClass("active")) {
+				$(this).parent().parent().find('div.form-group').find('label').find('span').removeClass('fa-dot-circle-o').addClass('fa-circle-o');
+				$(this).find('span').removeClass('fa-circle-o').addClass('fa-dot-circle-o');
+			}
+		});
 	}
 
 };

@@ -1,4 +1,45 @@
 .form
 	&-control
+		position relative
+		&.blue
+			border-color #010D85
+		&.red
+			border-color red
+		&.gray
+			border-color #B3B2B2
 		&--noBorder
-			border-radius 0px
+			border-radius
+		&--edited
+			position relative
+			& > span.edit
+				&:after
+					content '<i class="fa fa-pencil" aria-hidden="true"></i>'
+					position absolute
+					right .25em
+					top 50%
+					font-size 1em
+					width 1em
+					height 1em
+			
+.input-group
+	&--orthotic
+		border none
+		.form-control
+			border none
+		.input-group-prepend
+			& > span
+				background white
+				border none
+
+.tooltip-orthoticText
+	position absolute
+	display none
+	border-bottom none
+	border-radius 2px
+	height 2em
+	background #B3B2B2
+	color white
+	top 100%
+	left 15px
+	right 15px
+	padding .2em

@@ -1,6 +1,6 @@
 {
-  "name": "plantilla-nombrecliente",
-  "version": "1.0.0",
+  "name": "Orthotic",
+  "version": "2.0.0",
   "description": "Plantilla front",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://mbolanos@bitbucket.org/mbolanos/plantilla-2.0.git"
+    "url": "git+https://github.com/manolosky/Orthotic/"
   },
   "keywords": [
     "Plantilla",
@@ -18,7 +18,7 @@
   ],
   "author": "Manuel Bolaños",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/mbolanos/plantilla-2.0#readme",
+  "homepage": "https://github.com/manolosky/Orthotic/",
   "dependencies": {
     "@angular/cli": "^6.0.8",
     "autoprefixer": "^6.4.1",
