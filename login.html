@@ -17,6 +17,7 @@
 
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/icomoon/style.css">
 
         <!-- media-queries.js (fallback) -->
         <!--[if lt IE 9]>
@@ -35,21 +36,6 @@
                 <a class="navbar-brand" href="#">
                     <img src="images/logo.png" class="d-inline-block align-top img-fluid" alt="">
                 </a>
-                
-                <ul class="nav justify-content-end align-items-center">
-                    <button class="navbar-toggler align-middle" type="button" data-toggle="collapse" data-target="#navBarPrimary" aria-controls="navBarPrimary" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fa fa-bars text--azul mt-1 text--xlg" aria-hidden="true"></i>
-                    </button>
-                </ul>
-
-                <div class="collapse navbar-collapse navbar-collapse__primary" id="navBarPrimary">
-                    <div class="navbar-nav">
-                        <a class="nav-item nav-link active" href="#">Create New Preinscripción <i class="fa fa-angle-right float-right" aria-hidden="true"></i></a>
-                        <a class="nav-item nav-link" href="#">User <i class="fa fa-angle-right float-right" aria-hidden="true"></i></a>
-                        <a class="nav-item nav-link" href="#">View Your Profile <i class="fa fa-angle-right float-right" aria-hidden="true"></i></a>
-                        <a class="nav-item nav-link" href="#">Log Out (perfilregistrado@gmail.com) <i class="fa fa-angle-right float-right" aria-hidden="true"></i></a>
-                    </div>
-                </div>
             </nav>
 
             <hr class="mt-0">
@@ -59,20 +45,32 @@
             <div class="col-12">
                 <div class="row justify-content-md-center">
                     <form class="col-12 col-md-6 col-xl-4 align-self-center">
-                        <p class="text text--azul">Authentication Required</p>
+                        <h1 class="text text--azul text--xxlg mb-5">User Login</h1>
                         <div class="form-group">
-                            <label for="userName" class="text-dark">Username</label>
-                            <input type="email" class="form-control" id="userName" aria-describedby="emailHelp" placeholder="Username">
+                            <div class="input-group input-group-lg mb-3">
+                                <input type="text" class="form-control border-right-0" placeholder="Username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                <div class="input-group-append bg-white">
+                                    <span class="input-group-text bg-white" id="username">
+                                        <i class="icon icon-ORx-Icons-03"></i>
+                                    </span>
+                                </div>
+                            </div>
                         </div>
                         <div class="form-group">
-                            <label for="userPassword" class="text-dark">Password</label>
-                            <input type="password" class="form-control" id="userPassword" placeholder="Password">
+                            <div class="input-group input-group-lg mb-3">
+                                <input type="password" class="form-control border-right-0" placeholder="Password" aria-label="Recipient's password" aria-describedby="basic-addon2">
+                                <div class="input-group-append bg-white">
+                                    <span class="input-group-text bg-white" id="userPassword">
+                                        <i class="icon icon-ORx-Icons-03"></i>
+                                    </span>
+                                </div>
+                            </div>
                         </div>
                         
-                        <p class="text-dark">Forgot Password</p>
+                        <p class="text-dark">Forgot Password?</p>
 
                         <button type="submit" class="btn btn-primary btn-block btn-lg mb-3 mt-4">Log In</button>
-                        <button type="button" class="btn btn-outline-primary btn-block btn-lg mt-2">Register as New User</button>
+                        <button type="button" class="btn btn-outline-primary btn-block btn-lg mt-2">Register as a <strong>New User</strong></button>
                     </form>
 
                     <div class="w-100"></div>
