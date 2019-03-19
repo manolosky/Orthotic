@@ -15,9 +15,13 @@
         <link rel="stylesheet" type="text/css" href="libs/slick/slick.css"/>
         <link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css"/>
 
+
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
         <link rel="stylesheet" type="text/css" href="css/icomoon/style.css">
+
+        <!-- <link rel="stylesheet" type="text/css" href="css/icomoon/style.css"/> -->
 
         <!-- media-queries.js (fallback) -->
         <!--[if lt IE 9]>
@@ -32,6 +36,7 @@
     <body>
 
         <div class="container">
+            
             <nav class="navbar navbar-light nav-bar__primary bg-light bg-transparent">
                 <a class="navbar-brand" href="#">
                     <img src="images/logo.png" class="d-inline-block align-top img-fluid" alt="">
@@ -76,52 +81,85 @@
                 </div>
             </nav>
 
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb breadcrumb--custom">
+            <nav aria-label="breadcrumb mb-0">
+                <ol class="breadcrumb breadcrumb--custom mb-0">
                     <li class="breadcrumb-item align-middle"><a href="#">Welcome</a></li>
                     <li class="breadcrumb-item-arrow"></li>
-                    <li class="breadcrumb-item align-middle active"><a href="#">How To Use the App</a></li>
+                    <li class="breadcrumb-item align-middle"><a href="#">Selec Lab</a></li>
+                    <li class="breadcrumb-item-arrow"></li>
+                    <li class="breadcrumb-item align-middle active"><a href="#">Orthotics</a>
                 </ol>
             </nav>
 
         </div>
+        
+        <div class="container my-3 pb-5">
 
-        <div class="container pb-4">
-            <div class="col-12">
-                <div class="row justify-content-md-center">
+            <div class="col pt-4">
+                <h1 class="text text--azul text--xxlg mb-3">Orthotics</h1>
+                
 
-                    <div class="col-12 col-md-6 col-xl-4 my-3">
+                <div class="row">
+                    
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary btn-block btn-rounded btn-lg mb-2">Build Custom Orthotic</button>
+                    </div>
+                        
 
-                        <h1 class="text text--azul text--xxlg mb-2">How to use the App</h1>
-                        <p class="text text--azul mb-5">Watch the videos below for more info.</p>
+                    <div class="form-group col-6 mt-2">
+                        <label for="" class="text-dark">Depth</label>
+                        <select name="" class="form-control">
+                            <option value="Select"></option>
+                        </select>
+                    </div>
+                    <div class="form-group col-6 mt-2">
+                        <label for="" class="text-dark">Length</label>
+                        <select name="" class="form-control">
+                            <option value="Select"></option>
+                        </select>
+                    </div>
+                </div>
 
-                        <div class="row">
-                            <div class="col-6 my-2">
-                                <p class="text text--azul mb-2 text-center">Getting Started</p>
-                                <figure class="text-center">
-                                    <img src="images/video.jpg" class="img-fluid img-thumbnail" alt="">
-                                </figure>
-                            </div>
-                            <div class="col-6 my-2">
-                                <p class="text text--azul mb-2 text-center">New Prescription</p>
-                                <figure class="text-center">
-                                    <img src="images/video.jpg" class="img-fluid img-thumbnail" alt="">
-                                </figure>
-                            </div>
-                            <div class="col-6 my-2">
-                                <p class="text text--azul mb-2 text-center">Repeat Prescription</p>
-                                <figure class="text-center">
-                                    <img src="images/video.jpg" class="img-fluid img-thumbnail" alt="">
-                                </figure>
-                            </div>
-                            <div class="col-6 my-2">
-                                <p class="text text--azul mb-2 text-center">Find a Lab</p>
-                                <figure class="text-center">
-                                    <img src="images/video.jpg" class="img-fluid img-thumbnail" alt="">
-                                </figure>
-                            </div>
-                        </div>
-
+                <div class="row">
+                    <div class="col-12 mt-2">
+                        <p class="text-center text--azul text--lite">
+                            Available Orthotics
+                        </p>
+                    </div>
+                    <div class="col-6">
+                        <button type="submit" class="btn btn-primary btn-block btn-rounded btn-lg mb-3">
+                            <img src="images/icon01_white.svg" alt="" class="img-fluid my-2">
+                            <div class="clearfix"></div>
+                            Orthotic
+                        </button>
+                    </div>
+                    <div class="col-6">
+                        <button type="submit" class="btn btn-primary btn-block btn-rounded btn-lg mb-3">
+                            <img src="images/icon01_white.svg" alt="" class="img-fluid my-2">
+                            <div class="clearfix"></div>
+                            Orthotic
+                        </button>
+                    </div>
+                    <div class="col-6">
+                        <button type="submit" class="btn btn-primary btn-block btn-rounded btn-lg mb-3">
+                            <img src="images/icon01_white.svg" alt="" class="img-fluid my-2">
+                            <div class="clearfix"></div>
+                            Orthotic
+                        </button>
+                    </div>
+                    <div class="col-6">
+                        <button type="submit" class="btn btn-primary btn-block btn-rounded btn-lg mb-3">
+                            <img src="images/icon01_white.svg" alt="" class="img-fluid my-2">
+                            <div class="clearfix"></div>
+                            Orthotic
+                        </button>
+                    </div>
+                    <div class="col-6">
+                        <button type="submit" class="btn btn-primary btn-block btn-rounded btn-lg mb-3">
+                            <img src="images/icon01_white.svg" alt="" class="img-fluid my-2">
+                            <div class="clearfix"></div>
+                            Orthotic
+                        </button>
                     </div>
                 </div>
             </div>
@@ -156,6 +194,42 @@
             </ul>
         </footer>
 
+        <!-- MODAL -->
+
+        <div class="modal fade" tabindex="-1" role="dialog" id="modalAttachments">
+            <div class="modal-dialog  modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header py-2 border-0">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body pt-0">
+
+                        <div class="row px-0 mx-0">                        
+                            <div class="col-4 p-2">
+                                <img src="images/camera.png" alt="" class="img-fluid img-thumbnail">
+                            </div>
+                            <div class="col-4 p-2">
+                                <img src="images/camera.png" alt="" class="img-fluid img-thumbnail">
+                            </div>
+                            <div class="col-4 p-2">
+                                <img src="images/camera.png" alt="" class="img-fluid img-thumbnail">
+                            </div>
+                        </div>
+                                             
+                        <ul class="list-group list-group__mattach list-group-flush mt-4 text-center">
+                            <a href="#" class="list-group-item text--azul text--md">Attach File or Image</a>
+                            <a href="#" class="list-group-item text--azul text--md">Diagram</a>
+                            <a href="#" class="list-group-item text--azul text--md">3D Scan</a>
+                            <a href="#" class="list-group-item text--azul text--md">Add Notes</a>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
@@ -163,6 +237,11 @@
         <script src="libs/slick/slick.min.js"></script>
 
         <script src="js/main.js"></script>
+
+        <script>
+            funciones.chagueRadioAction();
+            funciones.initSliderDiagramsPhotos();
+        </script>
 
     </body>
 </html>

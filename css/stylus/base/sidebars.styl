@@ -4,13 +4,13 @@
 		padding 1em 0
 		
 .card
+	border-radius .8em
+	overflow hidden
 	&--prescription
 		text-align left
 		border-radius .8rem
-		border-color #28a745
 		overflow hidden
 		& > .card-header
-			background-color #28a745 !important
 			border-bottom none !important
 			color white !important
 			padding .25em 1em
@@ -21,30 +21,47 @@
 					&:hover,&:focus,&:active
 						text-decoration none
 	&-success
+		border-color #28a745
 		& > .card-header
 			background-color #28a745
 			border-color #28a745
 			color white
 	&-danger
+		border-color #dc3545
 		& > .card-header
 			background-color #dc3545
 			border-color #dc3545
 			color white
 	&-primary
+		border-color #303c76
 		& > .card-header
-			background-color #007bff
-			border-color #007bff
+			background-color #303c76
+			border-color #303c76
 			color white
 	&-warning
+		border-color #ffc107
 		& > .card-header
 			background-color #ffc107
 			border-color #ffc107
 			color white
 	&-secondary
+		border-color #6c757d
 		& > .card-header
 			background-color #6c757d
 			border-color #6c757d
 			color white
+	&-fit
+		border-color #007bff
+		& > .card-header
+			background-color #007bff
+			border-color #007bff
+			color white
+	&-info
+		border-color #303c76
+		& > .card-header
+			background-color #c0ccff
+			border-color #303c76
+			color azul
 						
 .slick-slide
 	width 100%
@@ -54,10 +71,12 @@
 
 .nav-bar__primary
 	background white !important
-	box-shadow: 1px 10px 60px 0px rgba(29,15,125,0.15)
+	border-bottom 1px solid rgba(0,0,0,.125)
 	.navbar-brand
 		img
 			max-width 200px
+	&--shadow
+		box-shadow: 1px 10px 60px 0px rgba(29,15,125,0.15)
 
 .navbar-collapse
 	&__primary

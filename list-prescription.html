@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Orthotic RX</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0">
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500italic,500,700,900,700italic,900italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="libs/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css"/>
+
+
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+        <link rel="stylesheet" type="text/css" href="css/icomoon/style.css">
+
+        <!-- media-queries.js (fallback) -->
+        <!--[if lt IE 9]>
+            <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <![endif]-->
+
+        <!--[if lt IE 9]>
+            <script src="dist/html5shiv.js"></script>
+        <![endif]-->
+
+    </head>
+    <body>
+
+        <div class="container">
+            <nav class="navbar navbar-light nav-bar__primary bg-light bg-transparent">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" class="d-inline-block align-top img-fluid" alt="">
+                </a>
+                
+                <ul class="nav justify-content-end align-items-center">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text--azul text--lg mx-1 mt-2 align-middle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            <i class="icon icon-person text--md" aria-hidden="true"></i> <span class="text--bold">AJ</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu--top">
+                            <a class="dropdown-item" href="#">
+                                <i class="icon icon-person" aria-hidden="true"></i> My Profile
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="icon icon-people" aria-hidden="true"></i> Users
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="icon icon-close" aria-hidden="true"></i> Log Out <br> <small>(user@gmail.com)</small>
+                            </a>
+                        </div>
+                    </li>
+                    <button class="navbar-toggler align-middle border-0" type="button" data-toggle="collapse" data-target="#navBarPrimary" aria-controls="navBarPrimary" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="icon icon-menu text--azul mt-0 text--xxxlg" aria-hidden="true"></i>
+                    </button>
+                </ul>
+
+
+                <div class="collapse navbar-collapse navbar-collapse__primary" id="navBarPrimary">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link text-center active" href="#">New Preinscripción</a>
+                        <a class="nav-item nav-link text-center" href="#">3D Scan for New Prescription</a>
+                        <a class="nav-item nav-link text-center" href="#">Repeat Prescription</a>
+                        <a class="nav-item nav-link text-center" href="#">View Prescription</a>
+                        <a class="nav-item nav-link text-center" href="#">View Labs</a>
+                        <a class="nav-item nav-link text-center" href="#">How To Use</a>
+                        <a class="nav-item nav-link text-center" href="#">FAQs</a>
+                        <a class="nav-item nav-link text-center" href="#">Welcome Screen</a>
+                        <a class="nav-item nav-link text-center" href="#">Settings</a>
+                        <a class="nav-item nav-link text-center" href="#">Log Out</a>
+                    </div>
+                </div>
+            </nav>
+
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb breadcrumb--custom">
+                    <li class="breadcrumb-item align-middle"><a href="#">Welcome</a></li>
+                    <li class="breadcrumb-item-arrow"></li>
+                    <li class="breadcrumb-item align-middle active"><a href="#">Selec Prescription</a></li>
+                </ol>
+            </nav>
+
+            <div class="col">
+                <div class="btn-group btn-group--special noHidden" role="group" aria-label="Basic example">
+                    
+                    <div class="input-group">
+                        <input type="text" class="form-control form-control-lg" placeholder="Search..." aria-label="Search..." aria-describedby="button-addon2">
+                        <div class="input-group-append">
+                            <button type="button" class="btn btn-h100 btn-primary btn-lg py-3 text-uppercase">
+                                <span class="icon-search text--lg"></span>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="col mt-4">
+                <p class="text-center text--azul text--lite">
+                    Select a Prescription
+                </p>
+            </div>
+
+            <div class="col">
+                <div class="btn-group btn-group--special" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-h100 py-3 btn-primary text-uppercase">All</button>
+                    <button type="button" class="btn btn-h100 py-3 btn-secondary text-uppercase">Draft</button>
+                    <button type="button" class="btn btn-h100 py-3 btn-success text-uppercase">Sent</button>
+                    <button type="button" class="btn btn-h100 py-3 btn-warning text-uppercase">Lab</button>
+                    <button type="button" class="btn btn-h100 py-3 btn-danger text-uppercase">Done</button>
+                    <button type="button" class="btn btn-h100 py-3 btn-primary--claro text-uppercase">Fit</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container my-3 pb-5 mb-5">
+
+            <div class="col">
+                <div class="card card-warning mb-3">
+                    <div class="card-header">
+                        <div class="row justify-content-between align-items-center">
+                            <div class="col-6">
+                                <h5 class="mb-0">Name Cliente</h5>
+                            </div>
+                            <div class="col-6 text-right">
+                                <p class="mb-0 text--lite">APPROVED</p>
+                                <p class="mb-0 text--lite">21.04.18</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row justify-content-between align-items-center">
+                            <div class="col-3 col-md-2  text-center">
+                                <img src="images/icon01.svg" class="img-fluid mb-2" alt="">
+                                <p class="mb-0 text--bold">Suicus</p>
+                            </div>
+                            <div class="col-9 col-sm-10">
+                                <p class="mb-0">TCEA04853589CS1</p>
+                                <p class="mb-0">Carbon Fiber Custom</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card-success mb-3">
+                    <div class="card-header">
+                        <div class="row justify-content-between align-items-center">
+                            <div class="col-6">
+                                <h5 class="mb-0">Name Cliente</h5>
+                            </div>
+                            <div class="col-6 text-right">
+                                <p class="mb-0 text--lite">SENT</p>
+                                <p class="mb-0 text--lite">21.04.18</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row justify-content-between align-items-center">
+                            <div class="col-3 col-md-2  text-center">
+                                <img src="images/icon01.svg" class="img-fluid mb-2" alt="">
+                                <p class="mb-0 text--bold">Suicus</p>
+                            </div>
+                            <div class="col-9 col-sm-10">
+                                <p class="mb-0">TCEA04853589CS1</p>
+                                <p class="mb-0">Thermoplastic Casual</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card-danger mb-3">
+                    <div class="card-header">
+                        <div class="row justify-content-between align-items-center">
+                            <div class="col-6">
+                                <h5 class="mb-0">Name Cliente</h5>
+                            </div>
+                            <div class="col-6 text-right">
+                                <p class="mb-0 text--lite">COMPLETE</p>
+                                <p class="mb-0 text--lite">21.04.18</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row justify-content-between align-items-center">
+                            <div class="col-3 col-md-2  text-center">
+                                <img src="images/icon01.svg" class="img-fluid mb-2" alt="">
+                                <p class="mb-0 text--bold">Suicus</p>
+                            </div>
+                            <div class="col-9 col-sm-10">
+                                <p class="mb-0">TCEA04853589CS1</p>
+                                <p class="mb-0">Freestyle Full</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card-fit mb-3">
+                    <div class="card-header">
+                        <div class="row justify-content-between align-items-center">
+                            <div class="col-6">
+                                <h5 class="mb-0">Name Cliente</h5>
+                            </div>
+                            <div class="col-6 text-right">
+                                <p class="mb-0 text--lite">FITTED</p>
+                                <p class="mb-0 text--lite">21.04.18</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row justify-content-between align-items-center">
+                            <div class="col-3 col-md-2  text-center">
+                                <img src="images/icon01.svg" class="img-fluid mb-2" alt="">
+                                <p class="mb-0 text--bold">Suicus</p>
+                            </div>
+                            <div class="col-9 col-sm-10">
+                                <p class="mb-0">TCEA04853589CS1</p>
+                                <p class="mb-0">Carbon fiber custom</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col my-4">
+                <p class="text-center text--azul">
+                    4 Prescriptions
+                </p>
+            </div>
+
+        </div>
+
+        <footer class="fixed-bottom footer-ortothic">
+            <ul class="nav nav-pills nav--footer nav-fill">
+                <li class="nav-item">
+                    <a class="nav-link text--gray py-3" href="#">
+                        <i class="icon icon-ORx-Icons-10 text--azul text--xxlg mb-1" aria-hidden="true"></i><br>
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text--gray py-3" href="#" data-toggle="modal" data-target="#modalAttachments">
+                        <i class="icon icon-ORx-Icons-11 text--azul text--xxlg mb-1" aria-hidden="true"></i><br>
+                        New
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text--gray py-3" href="#" data-toggle="modal" data-target="#modalAttachments">
+                        <i class="icon icon-ORx-Icons-12 text--azul text--xxlg mb-1" aria-hidden="true"></i><br>
+                        Prescription
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text--gray py-3" href="#" data-toggle="modal" data-target="#modalAttachments">
+                        <i class="icon icon-ORx-Icons-13 text--azul text--xxlg mb-1" aria-hidden="true"></i><br>
+                        Lab
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+        <script src="libs/slick/slick.min.js"></script>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>

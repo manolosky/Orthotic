@@ -29,18 +29,44 @@
 				background #0C1545
 				border-color #0C1545
 				color white
+		&-white
+			border-color #283371
+			background white
+			color #283371
+			&:hover
+				background white
+				border-color #0C1545
+				color #283371
+			&--group
+				border-radius 0 6px 6px 0
+			&.active
+				border-color #007bff
+				color #007bff
+				&:hover
+					border-color #007bff
+					color #007bff
 	&-checkbox, &-radios
-		background #283371
-		border-color #0C1545
+		background white
+		border-color #283371
 		border-radius 6px
-		color white
+		color #283371
 		text-align left
 		&.active
-			background #0C1545
-			border-color #283371
+			background #007bff
+			border-color #007bff
 			color white
+	&-rounded
+		border-radius .8rem
 	&-group
 		&--special
 			display flex
+			border-radius .8em
+			overflow hidden
 			.btn-h100
 				flex 1 !important
+			&.noHidden
+				overflow normal
+			& > .input-group
+				& > input
+					border-radius .8em
+					border-color azul

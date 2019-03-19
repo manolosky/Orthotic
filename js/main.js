@@ -47,6 +47,16 @@ var funciones = {
 		});
 	},
 
+	initSliderDiagramsPhotosOut: function () {
+		$('#carouselAtachments').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			dots: true,
+			centerMode: true,
+			responsive: true
+		});
+	},
+
 	tooltip: function () {
 		$(".tooltip-orthotic").focusin(function () {
 			$(this).parent().find(".tooltip-orthoticText").css("display", "block"); //EJECUTAR PARA ABRIR TOOLTIP

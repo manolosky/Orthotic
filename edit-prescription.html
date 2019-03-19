@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Orthotic RX</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0">
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500italic,500,700,900,700italic,900italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="libs/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css"/>
+
+
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+        <link rel="stylesheet" type="text/css" href="css/icomoon/style.css">
+
+        <!-- <link rel="stylesheet" type="text/css" href="css/icomoon/style.css"/> -->
+
+        <!-- media-queries.js (fallback) -->
+        <!--[if lt IE 9]>
+            <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <![endif]-->
+
+        <!--[if lt IE 9]>
+            <script src="dist/html5shiv.js"></script>
+        <![endif]-->
+
+    </head>
+    <body class="bg-azulMedio">
+
+        <div class="container">
+            
+            <nav class="navbar navbar-light nav-bar__primary bg-light bg-transparent">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" class="d-inline-block align-top img-fluid" alt="">
+                </a>
+                
+                <ul class="nav justify-content-end align-items-center">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text--azul text--lg mx-1 mt-2 align-middle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            <i class="icon icon-person text--md" aria-hidden="true"></i> <span class="text--bold">AJ</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu--top">
+                            <a class="dropdown-item" href="#">
+                                <i class="icon icon-person" aria-hidden="true"></i> My Profile
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="icon icon-people" aria-hidden="true"></i> Users
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="icon icon-close" aria-hidden="true"></i> Log Out <br> <small>(user@gmail.com)</small>
+                            </a>
+                        </div>
+                    </li>
+                    <button class="navbar-toggler align-middle border-0" type="button" data-toggle="collapse" data-target="#navBarPrimary" aria-controls="navBarPrimary" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="icon icon-menu text--azul mt-0 text--xxxlg" aria-hidden="true"></i>
+                    </button>
+                </ul>
+
+
+                <div class="collapse navbar-collapse navbar-collapse__primary" id="navBarPrimary">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link text-center active" href="#">New Preinscripción</a>
+                        <a class="nav-item nav-link text-center" href="#">3D Scan for New Prescription</a>
+                        <a class="nav-item nav-link text-center" href="#">Repeat Prescription</a>
+                        <a class="nav-item nav-link text-center" href="#">View Prescription</a>
+                        <a class="nav-item nav-link text-center" href="#">View Labs</a>
+                        <a class="nav-item nav-link text-center" href="#">How To Use</a>
+                        <a class="nav-item nav-link text-center" href="#">FAQs</a>
+                        <a class="nav-item nav-link text-center" href="#">Welcome Screen</a>
+                        <a class="nav-item nav-link text-center" href="#">Settings</a>
+                        <a class="nav-item nav-link text-center" href="#">Log Out</a>
+                    </div>
+                </div>
+            </nav>
+
+            <nav aria-label="breadcrumb mb-0">
+                <ol class="breadcrumb breadcrumb--custom mb-0">
+                    <li class="breadcrumb-item align-middle"><a href="#">Welcome</a></li>
+                    <li class="breadcrumb-item-arrow"></li>
+                    <li class="breadcrumb-item align-middle"><a href="#">Prescription</a></li>
+                    <li class="breadcrumb-item-arrow"></li>
+                    <li class="breadcrumb-item align-middle active"><a href="#">Edit</a>
+                </ol>
+            </nav>
+
+        </div>
+        
+        <div class="container pb-5 mb-5">
+
+            <div class="col py-5 mb-5 bg-azulClaro">
+                <h1 class="text text--azul text--xxlg mb-0">Edit Prescription</h1>
+            </div>
+
+            <div class="col">
+                <p class="text-center text--azul text--lg">
+                    Design Both Feed
+                </p>
+
+                <p class="text--azul text--md text--lite">
+                    Technology
+                </p>
+
+                <div class="row">
+
+                    <div class="form-group col-6 col-sm-4 col-md-3 col-lg-2">
+                        <label class="btn btn-radios btn-block py-3">
+                            <input type="radio" name="technologyValue" id="option1" autocomplete="off"> <span class="icon icon-radio_button_unchecked text--xlg align-middle"></span> Foot Pads
+                        </label>
+                    </div>
+                    <div class="form-group col-6 col-sm-4 col-md-3 col-lg-2">
+                        <label class="btn btn-radios btn-block py-3">
+                            <input type="radio" name="technologyValue" id="option3" autocomplete="off"> <span class="icon icon-radio_button_unchecked text--xlg align-middle"></span> Simple Insoles
+                        </label>
+                    </div>
+                    <div class="form-group col-6 col-sm-4 col-md-3 col-lg-2">
+                        <label class="btn btn-radios btn-block py-3 active">
+                            <input type="radio" name="technologyValue" id="option5" autocomplete="off"> <span class="icon icon-radio_button_checked text--xlg align-middle"></span> Custom Library
+                        </label>
+                    </div>
+                    <div class="form-group col-6 col-sm-4 col-md-3 col-lg-2">
+                        <label class="btn btn-radios btn-block py-3">
+                            <input type="radio" name="technologyValue" id="option9" autocomplete="off"> <span class="icon icon-radio_button_unchecked text--xlg align-middle"></span> CAD CAM
+                        </label>
+                    </div>
+
+                    <div class="input-group col-12 mb-3">
+                        <label class="btn btn-radios btn-block py-3 form-control">
+                            <input type="radio" name="technologyValue" id="option9" autocomplete="off"> <span class="icon icon-radio_button_unchecked text--xlg align-middle"></span> Custom Moulded
+                        </label>
+                        <button type="button" class="btn btn-outline-white btn-outline-white--group dropdown-toggle border-left-0" data-toggle="dropdown">
+                            Library Cast <span class="icon icon-arrow_drop_down text--xxlg align-middle"></span>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Opcion 1</a>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="text--azul text--md text--lite mt-4">
+                    Material
+                </p>
+                
+                <div class="row">
+
+                    <div class="input-group col-12 mb-3">
+                        <label class="btn btn-radios active btn-block py-3 form-control">
+                            <input type="radio" name="technologyValue" id="option9" autocomplete="off"> <span class="icon icon-radio_button_checked text--xlg align-middle"></span> Thermoplastic
+                        </label>
+                        <button type="button" class="btn btn-outline-white btn-outline-white--group active dropdown-toggle border-left-0" data-toggle="dropdown">
+                            Polypropylene <span class="icon icon-arrow_drop_down text--xxlg align-middle"></span>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Opcion 1</a>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-6 col-sm-4 col-md-3 col-lg-2">
+                        <label class="btn btn-radios btn-block py-3 active">
+                            <input type="radio" name="technologyValue" id="option5" autocomplete="off"> <span class="icon icon-radio_button_checked text--xlg align-middle"></span> Thermofoam
+                        </label>
+                    </div>
+                    <div class="form-group col-6 col-sm-4 col-md-3 col-lg-2">
+                        <label class="btn btn-radios btn-block py-3">
+                            <input type="radio" name="technologyValue" id="option9" autocomplete="off"> <span class="icon icon-radio_button_unchecked text--xlg align-middle"></span> Composite
+                        </label>
+                    </div>
+                </div>
+
+                <!-- DEPTH -->
+
+                <p class="text--azul text--md text--lite mt-4">
+                    Depth
+                </p>
+
+                <div class="row">
+                    <div class="form-group col-4 col-md-3 col-lg-2">
+                        <label class="btn btn-radios btn-block py-3">
+                            <input type="radio" name="technologyValue" id="depthDesignBF1" autocomplete="off"> <span class="icon icon-radio_button_unchecked text--xlg align-middle"></span> FHC
+                        </label>
+                    </div>
+                    <div class="form-group col-4 col-md-3 col-lg-2">
+                        <label class="btn btn-radios btn-block py-3 active">
+                            <input type="radio" name="technologyValue" id="depthDesignBF2" autocomplete="off"> <span class="icon icon-radio_button_checked text--xlg align-middle"></span> SHC
+                        </label>
+                    </div>
+                    <div class="form-group col-4 col-md-3 col-lg-2">
+                        <label class="btn btn-radios btn-block py-3">
+                            <input type="radio" name="technologyValue" id="depthDesignBF3" autocomplete="off"> <span class="icon icon-radio_button_unchecked text--xlg align-middle"></span> DHC
+                        </label>
+                    </div>
+                </div>
+
+                <!-- LENGTH -->
+                <p class="text--azul text--md text--lite mt-4">
+                    Length
+                </p>
+
+                <div class="row">
+
+                    <div class="form-group col-6 col-sm-4 col-md-3 col-lg-2">
+                        <label class="btn btn-radios btn-block py-3">
+                            <input type="radio" name="technologyValue" id="lendthDesignBF1" autocomplete="off"> <span class="icon icon-radio_button_unchecked text--xlg align-middle"></span> To Mets
+                        </label>
+                    </div>
+                    <div class="form-group col-6 col-sm-4 col-md-3 col-lg-2">
+                        <label class="btn btn-radios btn-block py-3 active">
+                            <input type="radio" name="technologyValue" id="lendthDesignBF2" autocomplete="off"> <span class="icon icon-radio_button_checked text--xlg align-middle"></span> To Sulcus
+                        </label>
+                    </div>
+                    <div class="form-group col-6 col-sm-4 col-md-3 col-lg-2">
+                        <label class="btn btn-radios btn-block py-3">
+                            <input type="radio" name="technologyValue" id="lendthDesignBF3" autocomplete="off"> <span class="icon icon-radio_button_unchecked text--xlg align-middle"></span> Full Length
+                        </label>
+                    </div>
+                </div>
+
+                <!-- STYLE -->
+                <p class="text--azul text--md text--lite mt-4">
+                    Style - select custom or preset design
+                </p>
+
+                <div class="row">
+                    
+                    <div class="form-group col-6 col-sm-4 col-md-3 col-lg-2">
+                        <label class="btn btn-radios btn-block py-3">
+                            <input type="radio" name="technologyValue" id="styleDesignBF1" autocomplete="off"> <span class="icon icon-radio_button_unchecked text--xlg align-middle"></span> Custom Freestyle
+                        </label>
+                    </div>
+
+                    <div class="input-group col-12 mb-3">
+                        <label class="btn btn-radios btn-block py-3 form-control">
+                            <input type="radio" name="technologyValue" id="styleDesignBF2" autocomplete="off"> <span class="icon icon-radio_button_unchecked text--xlg align-middle"></span> Custom Selective
+                        </label>
+                        <button type="button" class="btn btn-outline-white btn-outline-white--group dropdown-toggle border-left-0" data-toggle="dropdown">
+                            Pronator <span class="icon icon-arrow_drop_down text--xxlg align-middle"></span>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Opcion 1</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col py-4 my-5 bg-azulClaro">
+                <button type="submit" class="btn btn-primary btn-block btn-rounded btn-lg mb-2">Add Design Right Foot</button>
+            </div>
+
+            <div class="col">
+                <p class="text-center text--azul text--lg">
+                    Design Left Foot
+                </p>
+
+                <p class="text--azul text--md text--lite">
+                    Technology
+                </p>
+
+                <div class="row">
+
+                    <div class="form-group col-6 col-sm-4 col-md-3 col-lg-2">
+                        <label class="btn btn-radios btn-block py-3">
+                            <input type="radio" name="technologyValue" id="option1" autocomplete="off"> <span class="icon icon-radio_button_unchecked text--xlg align-middle"></span> Foot Pads
+                        </label>
+                    </div>
+                    <div class="form-group col-6 col-sm-4 col-md-3 col-lg-2">
+                        <label class="btn btn-radios btn-block py-3">
+                            <input type="radio" name="technologyValue" id="option3" autocomplete="off"> <span class="icon icon-radio_button_unchecked text--xlg align-middle"></span> Simple Insoles
+                        </label>
+                    </div>
+                    <div class="form-group col-6 col-sm-4 col-md-3 col-lg-2">
+                        <label class="btn btn-radios btn-block py-3 active">
+                            <input type="radio" name="technologyValue" id="option5" autocomplete="off"> <span class="icon icon-radio_button_checked text--xlg align-middle"></span> Custom Library
+                        </label>
+                    </div>
+                    <div class="form-group col-6 col-sm-4 col-md-3 col-lg-2">
+                        <label class="btn btn-radios btn-block py-3">
+                            <input type="radio" name="technologyValue" id="option9" autocomplete="off"> <span class="icon icon-radio_button_unchecked text--xlg align-middle"></span> CAD CAM
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col bg-azulClaro py-4 my-5">
+
+                <p class="text--azul text--md text--lite text-center">
+                    Attach Files
+                </p>
+
+                <div class="row">
+                    <div class="col-4">
+                        <button type="button" class="btn btn-primary btn-block btn-rounded btn-lg mb-2"><span class="text--lg">3D SCAN</span></button>
+                    </div>
+                    <div class="col-4">
+                        <button type="button" class="btn btn-primary btn-block btn-rounded btn-lg mb-2"><span class="icon icon-photo_camera text--xlg"></span></button>
+                    </div>
+                    <div class="col-4">
+                        <button type="button" class="btn btn-primary btn-block btn-rounded btn-lg mb-2"><span class="icon icon-videocam text--xlg"></span></button>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-outline-white btn-block btn-rounded btn-lg my-4 py-3">
+                    Use Supplied Image Library
+                </button>
+
+                <div class="card card-info mb-3">
+                    <div class="card-header">
+                        <div class="row justify-content-between align-items-center">
+                            <div class="col-12">
+                                <h5 class="mb-0">Uploaded Attachments</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+
+                        <p class="text--gray text--md text--lite text-center">
+                            Photos
+                        </p>
+
+                        <div class="slider-nav" id="carouselAtachments">
+                            <div>
+                                <img src="images/camera.png" alt="" class="img-fluid img-thumbnail">
+                                <a href="#" class="close"><span class="fa fa-times"></span></a>
+                            </div>
+                            <div>
+                                <img src="images/camera.png" alt="" class="img-fluid img-thumbnail">
+                                <a href="#" class="close"><span class="fa fa-times"></span></a>
+                            </div>
+                            <div>
+                                <img src="images/camera.png" alt="" class="img-fluid img-thumbnail">
+                                <a href="#" class="close"><span class="fa fa-times"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block btn-rounded btn-lg my-4 py-3">
+                    Review Prescription
+                </button>
+
+            </div>
+        </div>
+
+        <footer class="fixed-bottom footer-ortothic">
+            <ul class="nav nav-pills nav--footer nav-fill">
+                <li class="nav-item">
+                    <a class="nav-link text--gray py-3" href="#">
+                        <i class="icon icon-highlight_off text--azul text--xxlg mb-1" aria-hidden="true"></i><br>
+                        Discard
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text--gray py-3" href="#" data-toggle="modal" data-target="#modalAttachments">
+                        <i class="icon icon-save text--azul text--xxlg mb-1" aria-hidden="true"></i><br>
+                        Save
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text--gray py-3" href="#" data-toggle="modal" data-target="#modalAttachments">
+                        <i class="icon icon-attach_file text--azul text--xxlg mb-1" aria-hidden="true"></i><br>
+                        Attach
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text--gray py-3" href="#" data-toggle="modal" data-target="#modalAttachments">
+                        <i class="icon icon-insert_drive_file text--azul text--xxlg mb-1" aria-hidden="true"></i><br>
+                        Submit
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+        <!-- MODAL -->
+
+        <div class="modal fade" tabindex="-1" role="dialog" id="modalAttachments">
+            <div class="modal-dialog  modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header py-2 border-0">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body pt-0">
+
+                        <div class="row px-0 mx-0">
+                            <div class="col-4 p-2">
+                                <img src="images/camera.png" alt="" class="img-fluid img-thumbnail">
+                            </div>
+                            <div class="col-4 p-2">
+                                <img src="images/camera.png" alt="" class="img-fluid img-thumbnail">
+                            </div>
+                            <div class="col-4 p-2">
+                                <img src="images/camera.png" alt="" class="img-fluid img-thumbnail">
+                            </div>
+                        </div>
+                                             
+                        <ul class="list-group list-group__mattach list-group-flush mt-4 text-center">
+                            <a href="#" class="list-group-item text--azul text--md">Attach File or Image</a>
+                            <a href="#" class="list-group-item text--azul text--md">Diagram</a>
+                            <a href="#" class="list-group-item text--azul text--md">3D Scan</a>
+                            <a href="#" class="list-group-item text--azul text--md">Add Notes</a>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+        <script src="libs/slick/slick.min.js"></script>
+
+        <script src="js/main.js"></script>
+
+        <script>
+            funciones.chagueRadioAction();
+            funciones.initSliderDiagramsPhotosOut();
+            funciones.tooltip();
+            funciones.checkboxRadios();
+        </script>
+
+    </body>
+</html>

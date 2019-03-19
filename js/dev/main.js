@@ -52,6 +52,19 @@ var funciones = {
 		})
 	},
 
+	initSliderDiagramsPhotosOut : function ()
+	{
+		$('#carouselAtachments').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			dots: true,
+			centerMode: true,
+			responsive: true
+		});
+	},
+
+
+
 	tooltip : function()
 	{
 		$(".tooltip-orthotic").focusin(function() {
