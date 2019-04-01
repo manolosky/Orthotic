@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Orthotic RX</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0">
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500italic,500,700,900,700italic,900italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="libs/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css"/>
+
+
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+        <link rel="stylesheet" type="text/css" href="css/icomoon/style.css">
+
+        <!-- <link rel="stylesheet" type="text/css" href="css/icomoon/style.css"/> -->
+
+        <!-- media-queries.js (fallback) -->
+        <!--[if lt IE 9]>
+            <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <![endif]-->
+
+        <!--[if lt IE 9]>
+            <script src="dist/html5shiv.js"></script>
+        <![endif]-->
+
+    </head>
+    <body>
+
+        <div class="container">
+            
+            <nav class="navbar navbar-light nav-bar__primary bg-light bg-transparent">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" class="d-inline-block align-top img-fluid" alt="">
+                </a>
+                
+                <ul class="nav justify-content-end align-items-center">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text--azul text--lg mx-1 mt-2 align-middle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            <i class="icon icon-person text--md" aria-hidden="true"></i> <span class="text--bold">AJ</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu--top">
+                            <a class="dropdown-item" href="#">
+                                <i class="icon icon-person" aria-hidden="true"></i> My Profile
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="icon icon-people" aria-hidden="true"></i> Users
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="icon icon-close" aria-hidden="true"></i> Log Out <br> <small>(user@gmail.com)</small>
+                            </a>
+                        </div>
+                    </li>
+                    <button class="navbar-toggler align-middle border-0" type="button" data-toggle="collapse" data-target="#navBarPrimary" aria-controls="navBarPrimary" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="icon icon-menu text--azul mt-0 text--xxxlg" aria-hidden="true"></i>
+                    </button>
+                </ul>
+
+
+                <div class="collapse navbar-collapse navbar-collapse__primary" id="navBarPrimary">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link text-center active" href="#">New Preinscripción</a>
+                        <a class="nav-item nav-link text-center" href="#">3D Scan for New Prescription</a>
+                        <a class="nav-item nav-link text-center" href="#">Repeat Prescription</a>
+                        <a class="nav-item nav-link text-center" href="#">View Prescription</a>
+                        <a class="nav-item nav-link text-center" href="#">View Labs</a>
+                        <a class="nav-item nav-link text-center" href="#">How To Use</a>
+                        <a class="nav-item nav-link text-center" href="#">FAQs</a>
+                        <a class="nav-item nav-link text-center" href="#">Welcome Screen</a>
+                        <a class="nav-item nav-link text-center" href="#">Settings</a>
+                        <a class="nav-item nav-link text-center" href="#">Log Out</a>
+                    </div>
+                </div>
+            </nav>
+
+            <nav aria-label="breadcrumb mb-0">
+                <ol class="breadcrumb breadcrumb--custom mb-0">
+                    <li class="breadcrumb-item align-middle"><a href="#">Welcome</a></li>
+                    <li class="breadcrumb-item-arrow"></li>
+                    <li class="breadcrumb-item align-middle"><a href="#">Quick Entry</a></li>
+                    <li class="breadcrumb-item-arrow"></li>
+                    <li class="breadcrumb-item align-middle active"><a href="#">New Order</a>
+                </ol>
+            </nav>
+
+        </div>
+        
+        <div class="container my-3 pb-5 mb-5">
+
+            <div class="col pt-4 mb-5">
+                <h1 class="text text--azul text--xxlg mb-3">Quick Entry</h1>
+                <h3 class="text text--azul text-center text--md mb-5 mt-3">Prescription Information</h3>
+
+                <div class="row">
+
+                    <div class="form-group col-12">
+                        <p class="text--azul text--md text--lite">
+                            Patient Name
+                        </p>
+                        <div class="input-group input-group-lg mb-3">
+                            <input type="text" class="form-control border-right-0" placeholder="Patient Name" aria-label="" aria-describedby="basic-addon2">
+                            <div class="input-group-append bg-white">
+                                <span class="input-group-text bg-white" id="username">
+                                    <i class="icon icon-ORx-Icons-03"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="alert alert-danger alert-forms text-center mt-0" role="alert">
+                            *Patient Name is Required
+                        </div>
+                    </div>
+
+                    <div class="form-group col-6">
+                        <p class="text--azul text--md text--lite">
+                            Gender
+                        </p>
+                        <select class="form-control form-control-lg" id="exampleFormControlSelect1">
+                            <option>Select...</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group col-6">
+                        <p class="text--azul text--md text--lite">
+                            Date of Birth
+                        </p>
+                        <select class="form-control form-control-lg" id="exampleFormControlSelect1">
+                            <option>Select...</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group col-12">
+                        <p class="text--azul text--md text--lite">
+                            Patient Ref
+                        </p>
+                        <div class="input-group input-group-lg mb-3">
+                            <input type="text" class="form-control border-right-0" placeholder="Patient Name" aria-label="" aria-describedby="basic-addon2">
+                            <div class="input-group-append bg-white">
+                                <span class="input-group-text bg-white" id="username">
+                                    <i class="icon icon-ORx-Icons-03"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-6">
+                        <p class="text--azul text--md text--lite">
+                            Height (Metric)
+                        </p>
+                        <select class="form-control form-control-lg" id="exampleFormControlSelect1">
+                            <option>Select...</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group col-6">
+                        <p class="text--azul text--md text--lite">
+                            Height (Imperial)
+                        </p>
+                        <select class="form-control form-control-lg" id="exampleFormControlSelect1">
+                            <option>Select...</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group col-12">
+                        <p class="text--azul text--md text--lite">
+                            Shoe Size
+                        </p>
+                        <select class="form-control form-control-lg" id="exampleFormControlSelect1">
+                            <option>Select...</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group col-12">
+                        <p class="text--azul text--md text--lite">
+                            Shoe Style (Optional)
+                        </p>
+                        <div class="input-group input-group-lg mb-3">
+                            <input type="text" class="form-control border-right-0" placeholder="Patient Name" aria-label="" aria-describedby="basic-addon2">
+                            <div class="input-group-append bg-white">
+                                <span class="input-group-text bg-white" id="username">
+                                    <i class="icon icon-ORx-Icons-03"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-12">
+                        <p class="text--azul text--md text--lite">
+                            Patient Address
+                        </p>
+                        <div class="input-group input-group-lg mb-3">
+                            <input type="text" class="form-control border-right-0" placeholder="Patient Name" aria-label="" aria-describedby="basic-addon2">
+                            <div class="input-group-append bg-white">
+                                <span class="input-group-text bg-white" id="username">
+                                    <i class="icon icon-ORx-Icons-03"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-12">
+                        <p class="text--azul text--md text--lite">
+                            Patient Address
+                        </p>
+                        <div class="input-group input-group-lg mb-3">
+                            <input type="text" class="form-control border-right-0" placeholder="Patient Name" aria-label="" aria-describedby="basic-addon2">
+                            <div class="input-group-append bg-white">
+                                <span class="input-group-text bg-white" id="username">
+                                    <i class="icon icon-ORx-Icons-03"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-6">
+                        <p class="text--azul text--md text--lite">
+                            Country
+                        </p>
+                        <div class="input-group input-group-lg mb-3">
+                            <input type="text" class="form-control border-right-0" placeholder="Country" aria-label="" aria-describedby="basic-addon2">
+                            <div class="input-group-append bg-white">
+                                <span class="input-group-text bg-white" id="username">
+                                    <i class="icon icon-ORx-Icons-03"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-6">
+                        <p class="text--azul text--md text--lite">
+                            Postcode
+                        </p>
+                        <div class="input-group input-group-lg mb-3">
+                            <input type="text" class="form-control border-right-0" placeholder="Postcode" aria-label="" aria-describedby="basic-addon2">
+                            <div class="input-group-append bg-white">
+                                <span class="input-group-text bg-white" id="username">
+                                    <i class="icon icon-ORx-Icons-03"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-12">
+                        <p class="text--azul text--md text--lite">
+                            Patient Email
+                        </p>
+                        <div class="input-group input-group-lg mb-3">
+                            <input type="text" class="form-control border-right-0" placeholder="Email Address" aria-label="" aria-describedby="basic-addon2">
+                            <div class="input-group-append bg-white">
+                                <span class="input-group-text bg-white" id="username">
+                                    <i class="icon icon-ORx-Icons-03"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-12">
+                        <p class="text--azul text--md text--lite">
+                            Patient Phone Number
+                        </p>
+                        <div class="input-group input-group-lg mb-3">
+                            <input type="text" class="form-control border-right-0" placeholder="Email Address" aria-label="" aria-describedby="basic-addon2">
+                            <div class="input-group-append bg-white">
+                                <span class="input-group-text bg-white" id="username">
+                                    <i class="icon icon-ORx-Icons-03"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="text text--azul text-center text--md mb-5 mt-3">Prescription Information</h3>
+
+                <div class="row">
+                    <div class="form-group col-12">
+                        <p class="text--azul text--md text--lite">
+                            Technology
+                        </p>
+                        <select class="form-control form-control-lg" id="exampleFormControlSelect1">
+                            <option>Select Technologu</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-12">
+                        <p class="text--azul text--md text--lite">
+                            Material
+                        </p>
+                        <select class="form-control form-control-lg" id="exampleFormControlSelect1">
+                            <option>Select Material</option>
+                        </select>
+                    </div>
+
+                    <div class="col-12 mt-4">
+                        <p class="text-center text--azul text--lite">
+                            Select from Available Labs
+                        </p>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="card card-primary mb-3">
+                            <div class="card-header">
+                                <div class="row justify-content-between align-items-center">
+                                    <div class="col-6">
+                                        <h5 class="mb-0">Lab 1 Name</h5>
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <p class="mb-0 align-middle">15.2 Milles <span class="icon-room align-middle text--xxlg"></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="row justify-content-between align-items-center">
+                                    <div class="col-3 col-md-2 text-left">
+                                        <img src="https://dummyimage.com/200x200/c7c7c7/fff" class="img-fluid img-circle" alt="">
+                                    </div>
+                                    <div class="col-9 col-sm-10">
+                                        <p class="mb-0 text--md text--azul text-uppercase">LAST ORDER <span class="text--lite">09.11.19</span></p>
+
+                                        <div class="row">
+                                            <div class="col text-left">
+                                                <img src="images/icon01.svg" alt="" class="img-fluid my-2">
+                                                <p class="text--azul">Service 1</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card card-primary mb-3">
+                            <div class="card-header">
+                                <div class="row justify-content-between align-items-center">
+                                    <div class="col-6">
+                                        <h5 class="mb-0">Lab 2 Name</h5>
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <p class="mb-0 align-middle">15.2 Milles <span class="icon-room align-middle text--xxlg"></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="row justify-content-between align-items-center">
+                                    <div class="col-3 col-md-2 text-left">
+                                        <img src="https://dummyimage.com/200x200/c7c7c7/fff" class="img-fluid img-circle" alt="">
+                                    </div>
+                                    <div class="col-9 col-sm-10">
+                                        <p class="mb-0 text--md text--azul text-uppercase">LAST ORDER <span class="text--lite">09.11.19</span></p>
+
+                                        <div class="row">
+                                            <div class="col text-left">
+                                                <img src="images/icon01.svg" alt="" class="img-fluid my-2">
+                                                <p class="text--azul">Service 1</p>
+                                            </div>
+                                            <div class="col text-left">
+                                                <img src="images/icon01.svg" alt="" class="img-fluid my-2">
+                                                <p class="text--azul">Service 2</p>
+                                            </div>
+                                            <div class="col text-left">
+                                                <img src="images/icon01.svg" alt="" class="img-fluid my-2">
+                                                <p class="text--azul">Service 3</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="fixed-bottom footer-ortothic">
+            <ul class="nav nav-pills nav--footer nav-fill">
+                <li class="nav-item">
+                    <a class="nav-link text--gray py-3" href="#">
+                        <i class="icon icon-ORx-Icons-10 text--azul text--xxlg mb-1" aria-hidden="true"></i><br>
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text--gray py-3" href="#" data-toggle="modal" data-target="#modalAttachments">
+                        <i class="icon icon-ORx-Icons-11 text--azul text--xxlg mb-1" aria-hidden="true"></i><br>
+                        New
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text--gray py-3" href="#" data-toggle="modal" data-target="#modalAttachments">
+                        <i class="icon icon-ORx-Icons-12 text--azul text--xxlg mb-1" aria-hidden="true"></i><br>
+                        Prescription
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text--gray py-3" href="#" data-toggle="modal" data-target="#modalAttachments">
+                        <i class="icon icon-ORx-Icons-13 text--azul text--xxlg mb-1" aria-hidden="true"></i><br>
+                        Lab
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+        <script src="libs/slick/slick.min.js"></script>
+
+        <script src="js/main.js"></script>
+
+        <script>
+            
+        </script>
+
+    </body>
+</html>
