@@ -6,6 +6,19 @@
 .card
 	border-radius .8em
 	overflow hidden
+	&--faqs
+		border-color #303c76
+		& > .card-header
+			background-color #303c76
+			border-color #303c76
+			color white
+			& > h5
+				& > button
+					color white !important
+					text-decoration none
+					&:hover,&:focus,&:active
+						text-decoration none
+		
 	&--prescription
 		text-align left
 		border-radius .8rem
