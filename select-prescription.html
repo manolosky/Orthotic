@@ -39,21 +39,10 @@
             </a>
             
             <ul class="nav justify-content-end align-items-center">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text--azul text--lg mx-1 mt-2 align-middle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                <li class="nav-item">
+                    <a href="#modalMenuUser" role="button" class="nav-link dropdown-toggle text--azul text--lg mx-1 mt-2 align-middle" data-toggle="modal">
                         <i class="icon icon-person text--md" aria-hidden="true"></i> <span class="text--bold">AJ</span>
                     </a>
-                    <div class="dropdown-menu dropdown-menu--top">
-                        <a class="dropdown-item" href="#">
-                            <i class="icon icon-person" aria-hidden="true"></i> My Profile
-                        </a>
-                        <a class="dropdown-item" href="#">
-                            <i class="icon icon-people" aria-hidden="true"></i> Users
-                        </a>
-                        <a class="dropdown-item" href="#">
-                            <i class="icon icon-close" aria-hidden="true"></i> Log Out <br> <small>(user@gmail.com)</small>
-                        </a>
-                    </div>
                 </li>
                 <button class="navbar-toggler align-middle border-0" type="button" data-toggle="collapse" data-target="#navBarPrimary" aria-controls="navBarPrimary" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="icon icon-menu text--azul mt-0 text--xxxlg" aria-hidden="true"></i>
@@ -87,12 +76,12 @@
 
         <div class="container">
             <div class="col">
-                <div class="btn-group btn-group--special noHidden" role="group" aria-label="Basic example">
+                <div class="btn-group btn-group--search noHidden" role="group" aria-label="Basic example">
                     
                     <div class="input-group">
                         <input type="text" class="form-control form-control-lg" placeholder="Search..." aria-label="Search..." aria-describedby="button-addon2">
                         <div class="input-group-append">
-                            <button type="button" class="btn btn-h100 btn-primary btn-lg py-3 text-uppercase">
+                            <button type="button" class="btn btn-h100 btn-primary btn-lg py-3 px-5 text-uppercase">
                                 <span class="icon-search text--lg"></span>
                             </button>
                         </div>
@@ -111,10 +100,9 @@
                 <div class="btn-group btn-group--special" role="group" aria-label="Basic example">
                     <button type="button" class="btn btn-h100 py-3 btn-primary text-uppercase">All</button>
                     <button type="button" class="btn btn-h100 py-3 btn-secondary text-uppercase">Draft</button>
-                    <button type="button" class="btn btn-h100 py-3 btn-success text-uppercase">Sent</button>
+                    <button type="button" class="btn btn-h100 py-3 btn-success text-uppercase">Submitted</button>
                     <button type="button" class="btn btn-h100 py-3 btn-warning text-uppercase">Lab</button>
-                    <button type="button" class="btn btn-h100 py-3 btn-danger text-uppercase">Done</button>
-                    <button type="button" class="btn btn-h100 py-3 btn-primary--claro text-uppercase">Fit</button>
+                    <button type="button" class="btn btn-h100 py-3 btn-danger text-uppercase">Complete</button>
                 </div>
             </div>
         </div>
@@ -264,6 +252,33 @@
                 </li>
             </ul>
         </footer>
+
+        <div class="modal" id="modalMenuUser" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-full" role="document">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" class="text--xxlg">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body p-4 text-center">
+                        <div class="row align-items-center h-100">
+                            <div class="col-6 mx-auto my-5">
+                                <a class="btn btn-link btn-block text--azul text--md" href="#">
+                                    <i class="icon icon-person" aria-hidden="true"></i> My Profile
+                                </a>
+                                <a class="btn btn-link btn-block text--azul text--md" href="#">
+                                    <i class="icon icon-people" aria-hidden="true"></i> Users
+                                </a>
+                                <a class="btn btn-link btn-block text--azul text--md" href="#">
+                                    <i class="icon icon-close" aria-hidden="true"></i> Log Out <br> <small>(user@gmail.com)</small>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>

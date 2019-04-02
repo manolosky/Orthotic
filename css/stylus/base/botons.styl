@@ -30,20 +30,20 @@
 				border-color #0C1545
 				color white
 		&-white
-			border-color #283371
+			border-color #283371 !important
 			background white
 			color #283371
 			&:hover
 				background white
-				border-color #0C1545
+				border-color #0C1545 !important
 				color #283371
 			&--group
 				border-radius 0 6px 6px 0
 			&.active
-				border-color #007bff
+				border-color #007bff !important
 				color #007bff
 				&:hover
-					border-color #007bff
+					border-color #007bff !important
 					color #007bff
 	&-checkbox, &-radios
 		background white
@@ -58,10 +58,27 @@
 	&-rounded
 		border-radius .8rem
 	&-group
+		&--search
+			display flex
+			border-radius .8em
+			overflow hidden
+			.btn-h100
+				flex 1 !important
+			&.noHidden
+				overflow normal
+			& > .input-group
+				& > input
+					border-radius .8em
+					border-color azul
 		&--special
 			display flex
 			border-radius .8em
 			overflow hidden
+			.btn
+				border-color white
+				&.active
+					border-color white !important
+					background #2f56ff !important
 			.btn-h100
 				flex 1 !important
 			&.noHidden
