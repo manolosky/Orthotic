@@ -68,18 +68,45 @@ var funciones = {
 	},
 
 	checkboxRadios: function () {
-		$('.btn-checkbox').on('click', function () {
-			if ($(this).hasClass("active")) {
-				$(this).find('span').removeClass('fa-check-square-o').addClass('fa-square-o');
-			} else {
-				$(this).find('span').removeClass('fa-square-o').addClass('fa-check-square-o');
+		$('label[data-toggle="buttons"]').click(function () {
+
+			var obj = $(this).find('input');
+			var span = $(this).find('span');
+			var type = $(obj).attr('type');
+
+			switch (type) {
+				case 'checkbox':
+					if ($(obj).is(':checked')) {
+						$(obj).prop("checked", false);
+						$(span).removeClass('icon-check_box').addClass('icon-check_box_outline_blank');
+					} else {
+						$(obj).prop("checked", true);
+						$(span).removeClass('icon-check_box_outline_blank').addClass('icon-check_box');
+					}
+					break;
+				case 'radio':
+
+					if ($(obj).is(':checked')) {
+						$(obj).prop("checked", false);
+						//$(span).removeClass('icon-radio_button_checked').addClass('icon-radio_button_unchecked')
+					} else {
+						$(obj).prop("checked", true);
+						//$(span).removeClass('icon-radio_button_unchecked').addClass('icon-radio_button_checked')
+					}
+					break;
 			}
 		});
 
-		$('.btn-radios').on('click', function () {
-			if (!$(this).hasClass("active")) {
-				$(this).parent().parent().find('div.form-group').find('label').find('span').removeClass('fa-dot-circle-o').addClass('fa-circle-o');
-				$(this).find('span').removeClass('fa-circle-o').addClass('fa-dot-circle-o');
+		$('label[data-toggle="buttons"] input[type="radio"]').change(function () {
+			var name = $(this).attr('name');
+			var span = $(this).parent().find('span');
+
+			if ($(this).is(':checked')) {
+				$('input[type="radio"][name="' + name + '"]').parent().find('span').removeClass('icon-radio_button_checked').addClass('icon-radio_button_unchecked');
+				$('input[type="radio"][name="' + name + '"]').parent().removeClass('active');
+				$(span).removeClass('icon-radio_button_unchecked').addClass('icon-radio_button_checked');
+			} else {
+				$(span).removeClass('icon-radio_button_checked').addClass('icon-radio_button_unchecked');
 			}
 		});
 	}
