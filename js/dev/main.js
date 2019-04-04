@@ -126,6 +126,13 @@ var funciones = {
 			}
 
 		});
+	},
+
+	menuPrincipal: function(){
+		$('button[data-target="#navBarPrimary"]').click(function(){
+			$(this).find('i').toggleClass('icon-menu')
+			$(this).find('i').toggleClass('icon-close')
+		})
 	}
 
 }

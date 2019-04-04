@@ -109,6 +109,13 @@ var funciones = {
 				$(span).removeClass('icon-radio_button_checked').addClass('icon-radio_button_unchecked');
 			}
 		});
+	},
+
+	menuPrincipal: function () {
+		$('button[data-target="#navBarPrimary"]').click(function () {
+			$(this).find('i').toggleClass('icon-menu');
+			$(this).find('i').toggleClass('icon-close');
+		});
 	}
 
 };
