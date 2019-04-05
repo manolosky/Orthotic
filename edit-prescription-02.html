@@ -220,7 +220,7 @@
                     </div>
 
                     <div class="input-group col-12 mb-3">
-                        <label class="btn btn-radios btn-block py-3 form-control" >
+                        <label class="btn btn-radios btn-block py-3 form-control" data-toggle="buttons">
                             <input type="radio" name="styleCustom" id="styleDesignBF2" autocomplete="off"> <span class="icon icon-radio_button_unchecked text--xlg align-middle"></span> Custom Selective
                         </label>
                         <button type="button" class="btn btn-outline-white btn-outline-white--group dropdown-toggle border-left-0" data-toggle="dropdown">
@@ -255,20 +255,32 @@
 
                 <div class="row">
                     <div class="form-group col-6">
-                        <p class="text--azul text--md text--lite">
+                        <label for="" class="text--azul text--md text--lite">
                             Select Degrees 
-                        </p>
-                        <select class="form-control form-control-lg" id="exampleFormControlSelect1">
-                            <option>Select</option>
-                        </select>
+                        </label>
+                        <div class="custom-select">
+                            <select class="form-control form-control-lg">
+                                <option>Select</option>
+                                <option>Option 1</option>
+                                <option>Option 2</option>
+                                <option>Option 3</option>
+                                <option>Option 4</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="form-group col-6">
-                        <p class="text--azul text--md text--lite">
+                        <label for="" class="text--azul text--md text--lite">
                             Select Control 
-                        </p>
-                        <select class="form-control form-control-lg" id="exampleFormControlSelect1">
-                            <option>Select</option>
-                        </select>
+                        </label>
+                        <div class="custom-select">
+                            <select class="form-control form-control-lg">
+                                <option>Select</option>
+                                <option>Option 1</option>
+                                <option>Option 2</option>
+                                <option>Option 3</option>
+                                <option>Option 4</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
 
@@ -488,6 +500,7 @@
             funciones.tooltip();
             funciones.checkboxRadios();
             funciones.menuPrincipal();
+            funciones.customSelects();
         </script>
 
     </body>
