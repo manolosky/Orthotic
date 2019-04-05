@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Orthotic RX</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0">
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500italic,500,700,900,700italic,900italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="libs/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css"/>
+
+
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+        <link rel="stylesheet" type="text/css" href="css/icomoon/style.css">
+
+        <!-- <link rel="stylesheet" type="text/css" href="css/icomoon/style.css"/> -->
+
+        <!-- media-queries.js (fallback) -->
+        <!--[if lt IE 9]>
+            <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <![endif]-->
+
+        <!--[if lt IE 9]>
+            <script src="dist/html5shiv.js"></script>
+        <![endif]-->
+
+    </head>
+    <body>
+            
+        <nav class="navbar navbar-light nav-bar__primary bg-light bg-transparent">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" class="d-inline-block align-top img-fluid" alt="">
+            </a>
+            
+            <ul class="nav justify-content-end align-items-center">
+                <li class="nav-item">
+                    <a href="#modalMenuUser" role="button" class="nav-link dropdown-toggle text--azul text--lg mx-1 mt-2 align-middle" data-toggle="modal">
+                        <i class="icon icon-person text--md" aria-hidden="true"></i> <span class="text--bold">AJ</span>
+                    </a>
+                </li>
+                <button class="navbar-toggler align-middle border-0" type="button" data-toggle="collapse" data-target="#navBarPrimary" aria-controls="navBarPrimary" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="icon icon-menu text--azul mt-0 text--xxxlg" aria-hidden="true"></i>
+                </button>
+            </ul>
+
+
+            <div class="collapse navbar-collapse navbar-collapse__primary" id="navBarPrimary">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link text-center active" href="#">New Preinscripción</a>
+                    <a class="nav-item nav-link text-center" href="#">3D Scan for New Prescription</a>
+                    <a class="nav-item nav-link text-center" href="#">Repeat Prescription</a>
+                    <a class="nav-item nav-link text-center" href="#">View Prescription</a>
+                    <a class="nav-item nav-link text-center" href="#">View Labs</a>
+                    <a class="nav-item nav-link text-center" href="#">How To Use</a>
+                    <a class="nav-item nav-link text-center" href="#">FAQs</a>
+                    <a class="nav-item nav-link text-center" href="#">Welcome Screen</a>
+                    <a class="nav-item nav-link text-center" href="#">Settings</a>
+                    <a class="nav-item nav-link text-center" href="#">Log Out</a>
+                </div>
+            </div>
+        </nav>
+
+        <nav aria-label="breadcrumb mb-0">
+            <ol class="breadcrumb breadcrumb--custom mb-0">
+                <li class="breadcrumb-item align-middle"><a href="#">Welcome</a></li>
+                <li class="breadcrumb-item-arrow"></li>
+                <li class="breadcrumb-item align-middle active"><a href="#">FAQs</a>
+            </ol>
+        </nav>
+        
+        <div class="container my-3 pb-5 mb-5">
+
+            <div class="col pt-4 mb-5 text-center">
+                <h1 class="text text--azul text--xxlg mb-3">Test Modal</h1>
+
+
+                <a href="#modalMessage" role="button" class="btn btn-primary btn-lg py-3" data-toggle="modal">
+                    Click here to test
+                </a>
+
+
+            </div>
+        </div>
+
+        <footer class="fixed-bottom footer-ortothic">
+            <ul class="nav nav-pills nav--footer nav-fill">
+                <li class="nav-item">
+                    <a class="nav-link text--gray py-3" href="#">
+                        <i class="icon icon-ORx-Icons-10 text--azul text--xxlg mb-1" aria-hidden="true"></i><br>
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text--gray py-3" href="#" data-toggle="modal" data-target="#modalAttachments">
+                        <i class="icon icon-ORx-Icons-11 text--azul text--xxlg mb-1" aria-hidden="true"></i><br>
+                        New
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text--gray py-3" href="#" data-toggle="modal" data-target="#modalAttachments">
+                        <i class="icon icon-ORx-Icons-12 text--azul text--xxlg mb-1" aria-hidden="true"></i><br>
+                        Prescription
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text--gray py-3" href="#" data-toggle="modal" data-target="#modalAttachments">
+                        <i class="icon icon-ORx-Icons-13 text--azul text--xxlg mb-1" aria-hidden="true"></i><br>
+                        Lab
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+        <div class="modal" id="modalMenuUser" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-full" role="document">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" class="text--xxlg">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body p-4 text-center">
+                        <div class="row align-items-center h-100">
+                            <div class="col-6 mx-auto my-5">
+                                <a class="btn btn-link btn-block text--azul text--md" href="#">
+                                    <i class="icon icon-person" aria-hidden="true"></i> My Profile
+                                </a>
+                                <a class="btn btn-link btn-block text--azul text--md" href="#">
+                                    <i class="icon icon-people" aria-hidden="true"></i> Users
+                                </a>
+                                <a class="btn btn-link btn-block text--azul text--md" href="#">
+                                    <i class="icon icon-close" aria-hidden="true"></i> Log Out <br> <small>(user@gmail.com)</small>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL PARA LOS MENSAJES -->
+
+        <div class="modal" id="modalMessage" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-full" role="document">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" class="text--xxlg">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body p-4 text-center">
+                        <div class="row align-items-center h-100">
+                            <div class="col-6 mx-auto my-5">
+								
+								<h3 class="text--azul text--lg text--bold mb-0">
+									Are you sure you want to discard the current order?
+								</h3>
+								<p class="text--azul text--lg text--lite mb-0">
+									All information will be lost.
+								</p>
+
+								<button type="submit" class="btn btn-red btn-block btn-lg mb-3 mt-4 py-3">Discard</button>
+								<button type="submit" class="btn btn-primary btn-block btn-lg mb-3 mt-4 py-3">Continue Working</button>
+							</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+        <script src="libs/slick/slick.min.js"></script>
+
+        <script src="js/main.js"></script>
+
+        <script>
+            funciones.menuPrincipal();
+        </script>
+
+    </body>
+</html>
